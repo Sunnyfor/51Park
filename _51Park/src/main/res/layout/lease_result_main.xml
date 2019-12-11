@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【车位租赁】页面 -->
+
+    <include
+        android:id="@+id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View 
+        android:id="@id/line_view"
+        android:layout_below="@id/title_ic"
+        style="@style/View_W_Black_Style" />
+    
+
+    <TextView
+        android:id="@+id/success_tv"
+        style="@style/Common_TextView_Style"
+        android:layout_below="@id/line_view"
+        android:layout_margin="30dp"
+        android:drawablePadding="20dp"
+        android:drawableTop="@drawable/icon_pay_success"
+        android:text="购买完成，您购买的包月服务将于2015年9月16日开始"
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@id/finish_btn"
+        style="@style/Common_Button_Red_Margin_Style"
+        android:layout_below="@id/success_tv"
+        android:layout_marginTop="@dimen/px80"
+        android:text="@string/wan_cheng" />
+
+</RelativeLayout>

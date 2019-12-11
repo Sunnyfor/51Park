@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 屏幕自适应 -->
+    <declare-styleable name="AutoLayout_Layout">
+        <attr name="layout_auto_textSizeBaseWidth" format="boolean" />
+        <attr name="layout_auto_width" format="integer" />
+        <attr name="layout_auto_height" format="integer" />
+        <attr name="layout_auto_margin" format="integer" />
+        <attr name="layout_auto_marginLeft" format="integer" />
+        <attr name="layout_auto_marginTop" format="integer" />
+        <attr name="layout_auto_marginRight" format="integer" />
+        <attr name="layout_auto_marginBottom" format="integer" />
+        <attr name="layout_auto_marginStart" format="integer" />
+        <attr name="layout_auto_marginEnd" format="integer" />
+        <attr name="layout_auto_textSize" format="integer" />
+        <attr name="layout_auto_maxWidth" format="integer" />
+        <attr name="layout_auto_maxHeight" format="integer" />
+        <attr name="layout_auto_minWidth" format="integer" />
+        <attr name="layout_auto_minHeight" format="integer" />
+        <attr name="layout_auto_padding" format="integer" />
+        <attr name="layout_auto_paddingTop" format="integer" />
+        <attr name="layout_auto_paddingBottom" format="integer" />
+        <attr name="layout_auto_paddingLeft" format="integer" />
+        <attr name="layout_auto_paddingRight" format="integer" />
+    </declare-styleable>
+
+    <!-- 【SwitchButton】 -->
+    <declare-styleable name="SwitchButton">
+        <attr name="onDrawable" format="reference" />
+        <attr name="offDrawable" format="reference" />
+        <attr name="thumbDrawable" format="reference" />
+        <attr name="thumb_margin" format="dimension|reference" />
+        <attr name="thumb_marginTop" format="dimension|reference" />
+        <attr name="thumb_marginBottom" format="dimension|reference" />
+        <attr name="thumb_marginLeft" format="dimension|reference" />
+        <attr name="thumb_marginRight" format="dimension|reference" />
+        <attr name="thumb_width" format="dimension|reference" />
+        <attr name="thumb_height" format="dimension|reference" />
+        <attr name="onColor" format="color|reference" />
+        <attr name="offColor" format="color|reference" />
+        <attr name="thumbColor" format="color|reference" />
+        <attr name="thumbPressedColor" format="color|reference" />
+        <attr name="animationVelocity" format="integer" />
+        <attr name="radiu" format="integer" />
+        <attr name="measureFactor" format="float" />
+        <attr name="insetLeft" format="dimension|reference" />
+        <attr name="insetRight" format="dimension|reference" />
+        <attr name="insetTop" format="dimension|reference" />
+        <attr name="insetBottom" format="dimension|reference" />
+    </declare-styleable>
+
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction" />
+        <attr name="bottomOffset" format="dimension" />
+        <attr name="topOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+
+    <!-- 【有贝先付】 -->
+    <attr name="fontPath" fomat="string" />
+
+    <declare-styleable name="CircleButton">
+        <attr name="cb_color" format="color" />
+        <attr name="cb_pressedRingWidth" format="dimension" />
+        <attr name="cb_duration" format="integer" />
+    </declare-styleable>
+
+    <!-- 【上传照片】 -->
+    <declare-styleable name="NetWorkImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+        <attr name="isShowRoundCorner" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="RoundAngleWidth" format="dimension" />
+        <attr name="RoundAngleHeight" format="dimension" />
+    </declare-styleable>
+
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_Alpha_Style" >
+
+    <!-- 【智能推荐停车场】界面 -->
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <RelativeLayout style="@style/Layout_Match_Horizontal_Style" >
+
+        <!-- 地图 -->
+
+        <com.amap.api.maps2d.MapView
+            android:id="@id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:clickable="true" />
+
+        <!-- 【搜索图标】 -->
+
+        <ProgressBar
+            android:id="@+id/search_pb"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/line_view2"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <!-- 路况 -->
+
+        <CheckBox
+            android:id="@+id/lukuang_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/search_pb"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_map_lukuang"
+            android:button="@null"
+            android:contentDescription="@string/image" />
+
+        <!-- 悬浮窗 -->
+
+        <FrameLayout
+            android:id="@+id/window_fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <cn.com.unispark.define.CycleViewPager
+                android:id="@id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/transparent"
+                android:clickable="true" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

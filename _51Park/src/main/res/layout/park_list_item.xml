@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_White_Style" >
+
+    <!-- 【车位列表】子条目 -->
+
+    <View style="@style/View_W_Style" />
+
+    <RelativeLayout
+        style="@style/Layout_Match_Vertical_Alpha_Style"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <!-- 车位状态图标 -->
+
+        <ImageView
+            android:id="@id/state_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_park_gray"
+            android:contentDescription="@string/image" />
+
+        <!-- 到这去 (距离) -->
+
+        <TextView
+            android:id="@id/distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:drawableTop="@drawable/icon_park_nav"
+            android:gravity="center"
+            android:text="@string/ling_mi"
+            android:textColor="@color/gray_font" />
+
+        <View
+            android:id="@id/line_view"
+            style="@style/View_H_Match_Style"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/distance_tv" />
+
+        <!-- 停车场名称 -->
+
+        <TextView
+            android:id="@id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/line_view"
+            android:singleLine="true"
+            android:text="@string/bai_hui_yi_bo_ting_che"
+            android:textColor="@color/black_font" />
+
+        <!-- 总车位（文字）（数量） 空车位（文字）-->
+
+        <TextView
+            android:id="@id/total_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name_tv"
+            android:layout_below="@id/name_tv"
+            android:text="@string/zong_che_wei_mao_hao"
+            android:textColor="@color/gray_font" />
+
+        <!-- 空车位（数量） -->
+
+        <TextView
+            android:id="@id/empty_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/total_count_tv"
+            android:layout_toRightOf="@id/total_count_tv"
+            android:text="@string/kong_che_wei_mao_hao"
+            android:textColor="@color/green_font" />
+
+        <!-- 空车位（提示语） -->
+
+        <TextView
+            android:id="@id/prompt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/empty_count_tv"
+            android:layout_toRightOf="@id/empty_count_tv"
+            android:text="@string/jin_gong_can_kao"
+            android:textColor="@color/gray_fontbb" />
+
+        <!-- 包租车位图标 -->
+
+        <ImageView
+            android:id="@id/lease_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/total_count_tv"
+            android:layout_toRightOf="@id/prompt_tv"
+            android:contentDescription="@string/image"
+            android:src="@drawable/icon_map_lease"
+            android:visibility="visible" />
+
+        <!-- 停车场地址 -->
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_count_tv"
+            android:layout_toLeftOf="@id/line_view"
+            android:text="@string/yi_hai_da_sha_xue_yuan_lu"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+</RelativeLayout>

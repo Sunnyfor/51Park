@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/layout_activity_title"
+        layout="@layout/uubee_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <com.uubee.prepay.view.ProgressWebView
+        android:id="@+id/wv_help"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_activity_title"
+        android:paddingBottom="@dimen/uubee_activity_vertical_margin"
+        android:paddingLeft="@dimen/uubee_activity_horizontal_margin"
+        android:paddingRight="@dimen/uubee_activity_horizontal_margin"
+        android:paddingTop="@dimen/uubee_activity_vertical_margin"/>
+</RelativeLayout><!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/layout/uubee_activity_help.xml -->

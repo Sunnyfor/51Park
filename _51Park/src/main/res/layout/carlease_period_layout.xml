@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style" >
+
+    <TextView
+        android:id="@+id/lease_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/zu_qi" />
+
+    <View style="@style/View_W_Style" />
+    <!-- 停车场名称 -->
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+        android:weightSum="4" >
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Vertical_Alpha_Style"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_top1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lease_preiod_one_icon"
+                android:gravity="center"
+                android:text="10次"
+                android:textColor="@color/white" />
+
+            <!-- 停车场地址 -->
+
+            <TextView
+                android:id="@id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元"
+                android:textColor="@color/gray_font" />
+        </LinearLayout>
+
+        <View style="@style/View_H_Style" android:layout_gravity="bottom"/>
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Vertical_Alpha_Style"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_top2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lease_preiod_two_icon"
+                android:gravity="center"
+                android:text="10次"
+                android:textColor="@color/white" />
+
+            <!-- 停车场地址 -->
+
+            <TextView
+                android:id="@id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元"
+                android:textColor="@color/gray_font" />
+        </LinearLayout>
+
+        <View style="@style/View_H_Style" android:layout_gravity="bottom"/>
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Vertical_Alpha_Style"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_top3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lease_preiod_three_icon"
+                android:gravity="center"
+                android:text="10次"
+                android:textColor="@color/white" />
+
+            <!-- 停车场地址 -->
+
+            <TextView
+                android:id="@id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元"
+                android:textColor="@color/gray_font" />
+        </LinearLayout>
+
+        <View style="@style/View_H_Style" android:layout_gravity="bottom"/>
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Vertical_Alpha_Style"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_top4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lease_preiod_four_icon"
+                android:gravity="center"
+                android:text="10次"
+                android:textColor="@color/white" />
+
+            <!-- 停车场地址 -->
+
+            <TextView
+                android:id="@id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元"
+                android:textColor="@color/gray_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

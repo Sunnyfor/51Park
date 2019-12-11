@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/alipay_num_selected" android:state_pressed="true"/>
+    <item android:drawable="@drawable/alipay_num_noselect" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/alipay_num_noselect" android:state_enabled="true"/>
+    <item android:drawable="@drawable/alipay_num_noselect" android:state_focused="true"/>
+    <item android:drawable="@drawable/alipay_num_noselect"/>
+
+</selector>
+
+

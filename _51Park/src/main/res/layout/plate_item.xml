@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_Style"
+    android:background="@color/white" >
+
+    <!-- 【车牌管理】的子条目 -->
+
+
+    <!-- 座驾牌号 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@id/test0_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/zuo_jia_pai_hao"
+            android:textColor="@color/gray_font" />
+
+        <!-- <TextView
+            android:id="@+id/tv_defaultcard"
+            android:drawableLeft="@drawable/icon_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawablePadding="@dimen/px2"
+            android:text="@string/default_str"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/gray_font" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/province_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_plate_card" >
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@id/province_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text=" ● "
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@id/plate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

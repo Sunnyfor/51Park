@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 是无忧停车场么-->
+    <item name="isjoin_iv" type="id"/>
+
+    <!-- 搜索 -->
+    <item name="search_tv" type="id"/>
+    <item name="search_et" type="id"/>
+    <item name="search_ll" type="id"/>
+
+    <!-- 自动支付 -->
+    <item name="auto_pay" type="id"/>
+    <item name="auto_pay_tv" type="id"/>
+    <item name="auto_pay_ll" type="id"/>
+
+    <!-- 联系客服 -->
+    <item name="contact_rl" type="id"/>
+    <item name="contact_tv" type="id"/>
+
+    <!-- 账单 -->
+    <item name="bill_rl" type="id"/>
+
+    <!-- 支付方式 -->
+    <item name="pay_way_tv" type="id"/>
+
+    <!-- 支付时间 -->
+    <item name="pay_time_tv" type="id"/>
+
+    <!-- 支付成功 -->
+    <item name="pay_success_tv" type="id"/>
+
+    <!-- 本地优惠 -->
+    <item name="discount_rl" type="id"/>
+    <item name="discount_tv" type="id"/>
+
+    <!-- 租赁 -->
+    <item name="lease_rl" type="id"/>
+    <item name="lease_iv" type="id"/>
+
+    <!-- 省份 -->
+    <item name="province_rl" type="id"/>
+    <item name="province_tv" type="id"/>
+
+    <!-- 账户余额 -->
+    <item name="remain_rl" type="id"/>
+    <item name="remain_tv" type="id"/>
+
+    <!-- 停车券 -->
+    <item name="coupons_rl" type="id"/>
+    <item name="coupons_tv" type="id"/>
+
+    <!-- 停车卡/会员卡 -->
+    <item name="vipcard_rl" type="id"/>
+    <item name="vipcard_tv" type="id"/>
+
+    <!-- 信用卡 -->
+    <item name="credit_rl" type="id"/>
+    <item name="credit_tv" type="id"/>
+
+    <!-- 容器 -->
+    <item name="container_rl" type="id"/>
+
+    <!-- 到这去/去这儿/开始导航 -->
+    <item name="nav_rl" type="id"/>
+    <item name="nav_tv" type="id"/>
+    <item name="nav_iv" type="id"/>
+
+    <!-- 当前位置 -->
+    <item name="location_tv" type="id"/>
+
+    <!-- 支付宝 -->
+    <item name="alipay_rbtn" type="id"/>
+
+    <!-- 微信 -->
+    <item name="wechat_rbtn" type="id"/>
+
+    <!-- 有贝 -->
+    <item name="uubee_rbtn" type="id"/>
+
+    <!-- 信用卡 -->
+    <item name="credit_rbtn" type="id"/>
+
+    <!-- 性别 -->
+    <item name="sex_tv" type="id"/>
+
+    <!-- 姓名/停车场名称 -->
+    <item name="name_tv" type="id"/>
+    <item name="name_et" type="id"/>
+
+    <!-- 手机号 -->
+    <item name="phone_tv" type="id"/>
+    <item name="phone_et" type="id"/>
+
+    <!-- 价格/停车场价格 -->
+    <item name="price" type="id"/>
+    <item name="price_rl" type="id"/>
+    <item name="price_iv" type="id"/>
+    <item name="price_tv" type="id"/>
+
+    <!-- 子条目图标 -->
+    <item name="icon_iv" type="id"/>
+
+    <!-- 没有数据显示的图片和文字提示 -->
+    <item name="data_null_tv" type="id"/>
+
+    <!-- 逻辑组件名称 -->
+
+
+    <!-- 返回按钮 -->
+    <item name="back_btn" type="id"/>
+    <item name="back_ll" type="id"/>
+
+    <!-- 确认按钮 -->
+    <item name="sure_btn" type="id"/>
+    <!-- 完成按钮 -->
+    <item name="finish_btn" type="id"/>
+
+    <!-- 关闭按钮 -->
+    <item name="close_btn" type="id"/>
+    <item name="close_rl" type="id"/>
+
+    <!-- 清除按钮 -->
+    <item name="clear_btn" type="id"/>
+    <item name="clear_iv" type="id"/>
+
+    <!-- 提示 -->
+    <item name="prompt_tv" type="id"/>
+
+    <!-- 停车场地址 -->
+    <item name="address_tv" type="id"/>
+
+    <!-- 路线 -->
+    <item name="route_ll" type="id"/>
+    <item name="route_tv" type="id"/>
+
+    <!-- 停车场详情 -->
+    <item name="detail_rl" type="id"/>
+    <item name="detail_ll" type="id"/>
+    <item name="detail_tv" type="id"/>
+
+    <!-- 停车场距离 -->
+    <item name="distance_tv" type="id"/>
+
+    <!-- 停车场描述图片 -->
+    <item name="desc_iv" type="id"/>
+
+    <!-- 租赁类型 -->
+    <item name="type_tv" type="id"/>
+
+    <!-- 免费停车场 -->
+    <item name="free_iv" type="id"/>
+
+    <!-- 无忧停车场 -->
+    <item name="join_iv" type="id"/>
+
+    <!-- 包月停车场/包月（图标）（文字） -->
+    <item name="month_iv" type="id"/>
+    <item name="month_tv" type="id"/>
+
+    <!-- 计次停车场 /计次（图标）（文字） -->
+    <item name="meter_iv" type="id"/>
+    <item name="meter_tv" type="id"/>
+
+    <!-- 离场时间 -->
+    <item name="leave_time_tv" type="id"/>
+
+    <!-- 标题 -->
+    <item name="title_tv" type="id"/>
+
+    <!-- 内容 -->
+    <item name="content_tv" type="id"/>
+
+    <!-- 时间/停车时间 -->
+    <item name="time_tv" type="id"/>
+
+    <!-- 车牌号 -->
+    <item name="plate_tv" type="id"/>
+    <item name="plate_ll" type="id"/>
+
+    <!-- 二维码 -->
+    <item name="qrcode_iv" type="id"/>
+
+    <!-- 现金 -->
+    <item name="cash_tv" type="id"/>
+
+    <!-- 交易状态/停车场状态 -->
+    <item name="state_ll" type="id"/>
+    <item name="state_tv" type="id"/>
+    <item name="state_iv" type="id"/>
+
+    <!-- 数量/空车位数量 -->
+    <item name="count_tv" type="id"/>
+    <item name="total_count_tv" type="id"/>
+    <item name="empty_count_tv" type="id"/>
+
+    <!-- 订单编号 -->
+    <item name="order_ll" type="id"/>
+    <item name="order_num_tv" type="id"/>
+
+    <!-- 停车时长 -->
+    <item name="long_tv" type="id"/>
+
+    <!-- 停车费用 -->
+    <item name="park_fee_tv" type="id"/>
+
+    <!-- 日间价格 -->
+    <item name="today_price_tv" type="id"/>
+    <!-- 夜间价格 -->
+    <item name="night_price_tv" type="id"/>
+    <!-- 会员卡号 -->
+    <item name="user_card_tv" type="id"/>
+    <!-- 用户名称 -->
+    <item name="user_name_tv" type="id"/>
+
+    <!-- 应交金额 -->
+    <item name="should_pay_tv" type="id"/>
+    <!-- 余额支付 -->
+    <item name="remain_pay_tv" type="id"/>
+    <!-- 实交金额 -->
+    <item name="actual_pay_tv" type="id"/>
+
+    <!-- 常用组件名称 -->
+    <item name="dialog" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="listview" type="id"/>
+    <item name="listview0" type="id"/>
+    <item name="viewpager" type="id"/>
+    <item name="viewpager1" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="radiogroup" type="id"/>
+    <item name="mapview" type="id"/>
+    <item name="progressbar" type="id"/>
+
+    <!-- 测试组件名称 -->
+    <item name="image" type="id"/>
+    <item name="test0_iv" type="id"/>
+    <item name="test1_iv" type="id"/>
+    <item name="test2_iv" type="id"/>
+    <item name="test3_iv" type="id"/>
+    <item name="test0_tv" type="id"/>
+    <item name="test1_tv" type="id"/>
+    <item name="test2_tv" type="id"/>
+    <item name="test3_tv" type="id"/>
+    <item name="test0_ll" type="id"/>
+    <item name="test1_ll" type="id"/>
+    <item name="test2_ll" type="id"/>
+    <item name="test0_rl" type="id"/>
+    <item name="test1_rl" type="id"/>
+    <item name="test2_rl" type="id"/>
+    <item name="more_iv" type="id"/>
+    <item name="line_iv" type="id"/>
+    <item name="text_1" type="id"/>
+
+    <item name="title_ic" type="id"/>
+    <item name="title_rl" type="id"/>
+    
+    <!-- 分割线 -->
+    <item name="line_view" type="id"/>
+    <item name="line0_view" type="id"/>
+    <item name="line1_view" type="id"/>
+    <item name="line2_view" type="id"/>
+
+    <!--  -->
+
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="quit" type="id"/>
+
+</resources>

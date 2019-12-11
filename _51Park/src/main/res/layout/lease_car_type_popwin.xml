@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_White_Style"
+    android:background="@color/transparent20" >
+
+    <!-- 【PopupWindow】弹框 -->
+
+    <LinearLayout
+        android:id="@+id/lease_type_ll"
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        android:layout_alignParentRight="true"
+        tools:ignore="UselessParent" >
+
+        <View style="@style/View_W_Style" />
+
+        <TextView
+            android:id="@+id/pop_all_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/quan_bu"
+            android:textColor="@color/black_font" />
+
+        <View style="@style/View_W_Style" />
+
+        <TextView
+            android:id="@+id/pop_month_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/bao_yue"
+            android:textColor="@color/black_font" />
+
+        <View style="@style/View_W_Style" />
+
+        <TextView
+            android:id="@+id/pop_meter_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ji_ci"
+            android:textColor="@color/black_font" />
+
+        <View style="@style/View_W_Style" />
+    </LinearLayout>
+
+</RelativeLayout>

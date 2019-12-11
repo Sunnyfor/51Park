@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/ico_divider"
+    android:tileMode="repeat">
+</bitmap>
+<!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/drawable/pay_divider.xml -->

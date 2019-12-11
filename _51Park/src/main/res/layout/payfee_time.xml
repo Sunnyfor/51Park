@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_White_Style" >
+    
+    <!-- 交停车费之计时布局（呼吸灯效果） -->
+
+    <RelativeLayout
+        android:id="@+id/parkfee1_ll"
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        tools:ignore="UselessParent" >
+
+        <!-- 呼吸灯 -->
+
+        <RelativeLayout
+            android:id="@+id/park_fee_rl"
+            style="@style/Layout_Wrap_Vertical_Alpha_Style"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"            
+            android:layout_margin="10dp" >
+
+            <!-- 呼吸灯的图片 -->
+
+            <ImageView
+                android:id="@id/image"
+                style="@style/Layout_Wrap_Vertical_Style"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/bg_payfee_light"
+                android:contentDescription="@string/image"
+                android:gravity="center" />
+
+            <!-- 停车费用（文字） -->
+
+            <TextView
+                android:id="@+id/test_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="@string/ting_che_fei_yong"
+                android:textColor="@color/gray_fontbb"
+                android:textSize="@dimen/px24" />
+
+            <RelativeLayout
+                android:id="@id/test0_rl"
+                style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test_tv"
+                android:layout_marginTop="5dp"
+                android:gravity="center" >
+
+                <!-- 停车费用 -->
+
+                <TextView
+                    android:id="@+id/park_fee1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ling_dian_ling_ling"
+                    android:textColor="@color/red_font"
+                    android:textSize="@dimen/px64"
+                    android:textStyle="bold" />
+
+                <!-- 单位：元 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/park_fee1_tv"
+                    android:layout_toRightOf="@id/park_fee1_tv"
+                    android:paddingBottom="8dp"
+                    android:text="@string/yuan"
+                    android:textColor="@color/red_font"
+                    android:textSize="@dimen/px24" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/test0_ll"
+                style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+                android:layout_height="25dp"
+                android:layout_below="@id/test0_rl"
+                android:layout_margin="10dp"
+                android:gravity="center" >
+
+                <!-- 时 -->
+
+                <TextView
+                    android:id="@+id/park_time_hour_tv"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_time"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_drawable"
+                    android:text="@string/ling_ling_ling"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px28" />
+
+                <!-- 冒号 -->
+
+                <TextView
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/mao_hao"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px28" />
+
+                <!-- 分 -->
+
+                <TextView
+                    android:id="@+id/park_time_minute_tv"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_time"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_drawable"
+                    android:text="@string/ling_ling"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px28" />
+            </LinearLayout>
+
+            <!-- 停车时间（文字） -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test0_ll"
+                android:gravity="center"
+                android:text="@string/ting_che_shi_jian"
+                android:textColor="@color/gray_fontbb"
+                android:textSize="@dimen/px24" />
+        </RelativeLayout>
+		
+         <!-- 包月/计次用户 -->
+
+        <ImageView
+            android:id="@+id/month_user_iv"
+            style="@style/Layout_Wrap_Vertical_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/image"
+            android:background="@drawable/label_meter_user"
+            android:visibility="gone" />
+        
+        <!-- 结账提示语 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px20"
+            android:gravity="center"
+            android:text="@string/ti_xing_jie_zhang_shi"
+            android:textColor="@color/gray_font"
+            android:layout_below="@id/park_fee_rl"
+            android:textSize="@dimen/px20" />
+    </RelativeLayout>
+
+</LinearLayout>

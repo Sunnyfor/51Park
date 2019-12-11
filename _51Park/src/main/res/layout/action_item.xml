@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_White_Style" >
+
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_font"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- 过期标识 -->
+
+    <ImageView
+        android:id="@+id/outdate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/image"
+        android:scaleType="fitXY"
+        android:src="@drawable/label_out_date" />
+
+    <!-- 活动图片 -->
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_ll"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/image"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_default_park" />
+
+</RelativeLayout>

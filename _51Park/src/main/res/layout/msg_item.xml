@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+    <!-- 【消息推送】子条目 -->
+
+
+    <!-- 子条目图标 -->
+
+    <ImageView
+        android:id="@id/icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image"
+        android:src="@drawable/icon_notice" />
+
+    <!-- 更多按钮 -->
+
+    <ImageView
+        android:id="@id/more_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image"
+        android:src="@drawable/btn_more" />
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/more_iv"
+        android:layout_toRightOf="@id/icon_iv" >
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black_font" />
+
+        <!-- 内容简介 -->
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/gray_font" />
+
+        <!-- 发布时间 -->
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_font" />
+    </LinearLayout>
+
+</RelativeLayout>

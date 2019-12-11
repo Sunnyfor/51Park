@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 【地图】界面:标题栏和选项卡,底部当前位置显示 -->
+
+    <include
+        android:id="@id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/map_title" />
+
+    <!-- 容器 -->
+    <RelativeLayout
+        android:id="@id/container_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+
+    <!-- 当前位置 -->
+
+    <!-- <TextView
+        android:id="@id/location_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/dang_qian_wei_zhi"
+        android:textColor="@color/black_font66" /> -->
+
+</LinearLayout>

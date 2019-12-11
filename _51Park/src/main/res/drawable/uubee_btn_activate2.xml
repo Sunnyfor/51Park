@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <corners android:radius="5dp" />
+
+            <solid android:color="#48d3dc" />
+        </shape></item>
+    <item><shape>
+            <corners android:radius="5dp" />
+
+            <stroke android:width="2px" android:color="#48d3dc" />
+
+            <solid android:color="@android:color/white" />
+        </shape></item>
+
+</selector> 
+<!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/drawable/selector_btn_activate.xml -->

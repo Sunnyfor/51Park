@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style" >
+
+    <!-- 【清空全部历史记录】ListView底部View -->
+
+    <Button
+        android:id="@id/close_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_h"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/qing_kong_quan_bu_li_shi_ji_lu"
+        android:textColor="@color/gray_font"
+        android:textSize="18sp" />
+
+    <View style="@style/View_W_Style" />
+
+</LinearLayout>

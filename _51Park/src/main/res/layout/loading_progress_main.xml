@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Alpha_Style"
+    android:gravity="center" >
+
+    <!-- 小人动画进度条 -->
+
+    <LinearLayout
+        android:id="@+id/loading_ll"
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        android:layout_width="wrap_content"
+        android:background="@drawable/layer_dialog_circle_gray"
+        tools:ignore="UselessParent,UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/loading_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/anim_loading_51park"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/loading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black_font" />
+    </LinearLayout>
+
+</LinearLayout>

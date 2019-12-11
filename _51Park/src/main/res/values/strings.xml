@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:name:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Test -->
+    <string name="test">测试</string>
+    <string name="image">图片或按钮</string>
+    <string name="app_name">无忧停车</string>
+
+    <!-- 【新加】 -->
+    <string name="qu_kai_qi">去开启</string>
+    <string name="zi_dong_zi_fu_dou_hao">自动支付，支付更快捷 </string>
+    <string name="ge_ren_zi_liao">个人资料</string>
+    <string name="zan_wu_shou_fei_xin_xi">暂无收费信息</string>
+    <string name="she_zhi">设置</string>
+    <string name="xia_zai">下载</string>
+    <string name="wei_xia_zai">未下载</string>
+    <string name="dui_huan">兑换</string>
+    <string name="dui_huan_ma">兑换码</string>
+    <string name="qing_shu_ru_dui_huan_ma">请输入兑换码</string>
+    <string name="wu_ding_dan">无订单</string>
+    <string name="ting_che_zhong">停车中</string>
+    <string name="dai_zhi_fu">待支付</string>
+    <string name="dai_chu_chang">待出场</string>
+    <string name="yu_e_ming_xi">余额明细</string>
+
+    <!-- #################################################### -->
+    <string name="zhao_shang_yin_hang">帐单信息</string>
+    <string name="shou_qing">售罄</string>
+    <string name="hui_yuan_wei_bang_ka">请点击“绑定停车卡”，扫描卡上二维码进行绑定。</string>
+    <string name="hui_yuan_yi_bang_ka">会员卡用户,可以在出场交停车费的时候，用会员卡进行扫卡。</string>
+    <string name="xing_ming">姓名</string>
+    <string name="xing_bie">性别</string>
+    <string name="shou_ji_hao">手机号</string>
+    <string name="qing_shu_ru_xing_ming">请输入姓名</string>
+    <string name="xian_sheng">先生</string>
+    <string name="nv_shi">女士</string>
+    <string name="bao_cun">保存</string>
+    <string name="zuo_jia_pai_hao">座驾牌号</string>
+    <string name="tian_jia_che_pai">添加车牌</string>
+    <string name="zu_qi">租期</string>
+    <string name="yi_wu_ba_xing">158****3131</string>
+    <string name="wen_xin_ti_shi_chong_zhi">温馨提示：充值后不予退款</string>
+    <string name="fu_wu_xu_zhi">服务须知</string>
+    <string name="lian_xi_ke_fu">联系客服</string>
+    <string name="si_ling_ling">400&#8211;709&#8211;5151</string>
+    <string name="li_ji_gou_mai">立即购买</string>
+    <string name="tui_jian_gei_xiao_huo_ban">推荐给小伙伴</string>
+    <string name="gou_mai_xu_zhi">购买须知</string>
+    <string name="gui_ze_ti_xing">规则提醒：包月与计次服务不能同享。</string>
+    <string name="cha_kan_guo_qi_lie_biao">查看过期列表>></string>
+    <string name="xu_fei">续费</string>
+    <string name="kai_shi_dao_hang">开始导航</string>
+    <string name="kong_yu_che_wei_jin_gong_can_kao">(空余车位仅供参考)</string>
+    <string name="jin_gong_can_kao">(仅供参考)</string>
+    <string name="ling">0</string>
+    <string name="ling_ling">00</string>
+    <string name="ling_ling_ling">000</string>
+    <string name="ling_dian_ling_ling">0.00</string>
+    <string name="ling_mi">0米</string>
+    <string name="ling_zhao">0M</string>
+    <string name="jian_cha_geng_xin">检查更新</string>
+    <string name="ling_yuan">0元</string>
+    <string name="ling_shi_ling_fen">0小时0分</string>
+    <string name="yi_jin_chang">已进场</string>
+    <string name="yu_fu_fei">预付费</string>
+    <string name="wei_zhi_fu">未支付</string>
+    <string name="wei_chu_chang">未出场</string>
+    <string name="qing_shu_ru_chan_ping_yi_jian">请输入产品意见，我们将不断优化体验</string>
+    <string name="qing_shu_ru_nin_de_shou_ji_hao">请输入您的手机号/邮箱等(选填)</string>
+    <string name="qing_kong_quan_bu_li_shi_ji_lu">清空全部历史记录</string>
+    <string name="shou_fei_xiang_qing">收费详情</string>
+    <string name="ri_jian_shi_jian_duan">日间(7：00 &#8211; 21：00)</string>
+    <string name="ye_jian_shi_jian_duan">夜间(21：00 &#8211; 7：00)</string>
+    <string name="shou_shi_wu_fen_zhong">首15分钟内</string>
+    <string name="shi_wu_dao_san_shi">15 &#8211; 30分钟</string>
+    <string name="yi_xiao_shi_yi_nei">1小时以内</string>
+    <string name="chao_guo_yi_xiao_shi">超过一小时</string>
+    <string name="da_kai">打开</string>
+    <string name="guan_bi">关闭</string>
+    <string name="dui_zhun_er_wei_ma">对准二维码到框内即可扫描</string>
+
+    <!-- 【主页】 -->
+    <string name="shou_ye">首页</string>
+    <string name="bai_bao_xiang">服务</string>
+    <string name="wo_de">我的</string>
+
+    <!-- 【首页】 -->
+    <string name="sao_yi_sao">扫一扫</string>
+    <string name="wo_de_er_wei_ma">我的二维码</string>
+    <string name="zhao_che_wei">找车位</string>
+    <string name="ji_lu_che_wei">缴车费</string>
+    <string name="zuo_jia_wei_zhi">座驾位置</string>
+    <string name="fu_jin_you_ting_che_chang">附近有0个停车场</string>
+    <string name="bai_hui_yi_bo_ting_che">百会易泊测试停车场</string>
+    <string name="sou_suo">搜索</string>
+    <string name="sou_suo_di_dian">搜索地点</string>
+    <string name="jing_b_yi_er_san_si_wu">京B12345</string>
+    <string name="jia_ge_mao_hao">价格：</string>
+    <string name="mao_hao">:</string>
+    <string name="yuan">元</string>
+    <string name="ti_shi_qing_nin_zai">提示：请您在</string>
+    <string name="shi_shi_wu_fen_qian">10时15分前</string>
+    <string name="ti_shi_li_chang">离场,超时需补交停车费。</string>
+    <string name="dang_qian_mei_you_ding_dan">当前没有订单哦</string>
+    <string name="zhi_fu_cheng_gong">支付成功</string>
+    <string name="jia_zai_zhong">加载中</string>
+    <string name="dang_qian_wei_zhi">当前位置：海淀区学院路艺海大厦</string>
+
+    <!-- 【首页】【找车位】推荐停车场 -->
+    <string name="yi_hai_da_sha_xue_yuan_lu">学院路7号艺海大厦</string>
+    <string name="zong_mao_hao">总：</string>
+    <string name="kong_mao_hao">空：</string>
+    <string name="zong_che_wei_mao_hao">总车位：</string>
+    <string name="kong_che_wei_mao_hao">空车位：</string>
+    <string name="lu_xian">路线</string>
+    <string name="xiang_qing">详情</string>
+    <string name="dao_zhe_qu">到这去</string>
+
+    <!-- 【首页】【找车位】停车场详情 -->
+    <string name="bai_tian_mao_hao">白天：</string>
+    <string name="er_bai_wu_shi_yuan_time" tools:ignore="TypographyDashes">1.25元/15分钟(07:00-21:00)</string>
+    <string name="ye_wan_mao_hao">夜晚：</string>
+    <string name="nin_zai_ben_chang_gou_mai">您在本场购买的租赁服务将于2015年10月25日到期</string>
+    <string name="che_wei_qing_kuang_yu_ce">车位情况预测</string>
+    <string name="li_ji_chong_zhi">立即充值</string>
+    <string name="chong_zhi">充值</string>
+    <string name="chong_zhi_ji_lu">充值记录</string>
+    <string name="chong_zu">充足</string>
+    <string name="jiao_shao">较少</string>
+    <string name="jin_que">紧缺</string>
+    <string name="qu_zhe_er">去这儿</string>
+
+    <!-- 【首页】座驾位置 -->
+    <string name="wan_cheng_zhao_che">完成找车</string>
+    <string name="qing_chu_tu_pian">（清除图片）</string>
+
+    <!-- 【首页】交停车费 -->
+    <string name="ting_che_jiao_fei_zhi_fu_cheng_gong">停车缴费支付成功</string>
+    <string name="gan_xie_nin_de_zhi_chi">感谢您的支持，欢迎下次光临</string>
+    <string name="cha_kan_ding_dan_xin_xi">查看订单信息</string>
+    <string name="wan_cheng">完成</string>
+    <string name="wan_cheng_bang_ding">完成绑定</string>
+    <string name="che_pai_hao">车牌号</string>
+    <string name="che_pai_hao_mao_hao">车牌号：</string>
+    <string name="ting_che_chang_mao_hao">停车场：</string>
+    <string name="ting_che_chang">停车场</string>
+    <string name="parkname">停车场</string>
+    <string name="ting_che_fei_yong">停车费用</string>
+    <string name="ben_di_you_hui">优惠金额</string>
+    <string name="yu_e_xiao_fei">余额消费</string>
+    <string name="yu_e_zhi_fu">余额支付</string>
+    <string name="ling_yuan_zhi_fu">零元支付</string>
+    <string name="ting_che_shi_jian">停车时间</string>
+    <string name="ti_xing_jie_zhang_shi">提醒：结账时向收费员提供无忧停车卡或让收费员扫描我的二维码</string>
+    <string name="zhang_dan_xin_xi">帐单信息</string>
+    <string name="zhang_hu_yu_e">账户余额</string>
+    <string name="qing_hua_ting_che_chang">清华科技园地下停车场</string>
+    <string name="dong_cheng_qu_wang_fu_jin">东城区王府井大街99号</string>
+    <string name="hui_yuan_ka_hao">会员卡号</string>
+    <string name="yong_hu_ming_cheng">用户名称</string>
+    <string name="che_pai_hao_ma">车牌号码</string>
+    <string name="ting_che_shi_chang">停车时长</string>
+    <string name="park_long_colon">停车时长：</string>
+    <string name="yi_yong_you_hui_quan">已用优惠券</string>
+    <string name="yi_yu_fu_jin_e">已预付金额</string>
+    <string name="xu_bu_jiao_jin_e">需补交金额</string>
+    <string name="sheng_yu_ying_fu">剩余应付</string>
+    <string name="que_ding_zhi_fu">确定支付</string>
+    <string name="shi_jiao_jin_e">实付金额</string>
+    <string name="ying_jiao_jin_e">停车费用</string>
+    <string name="ying_fu_jin_e_mao_hao">应付金额：</string>
+    <string name="er_shi_er_yuan">￥22</string>
+    <string name="wei_bang_ding">未绑定</string>
+    <string name="wei_bang_ding_hui_yuan_ka">未绑定会员卡</string>
+    <string name="wei_bang_ding_che_pai_hao">未绑定车牌号</string>
+    <string name="wei_xuan_ze_you_hui_quan">未选择优惠券</string>
+    <string name="si_xiao_shi_shi_fen_zhong">4小时10分</string>
+    <string name="ding_dan_bian_hao">订单编号</string>
+    <string name="zhi_fu_shi_jian">支付时间</string>
+    <string name="zhi_fu_fang_shi">支付方式</string>
+    <string name="jiao_yi_zhuang_tai">交易状态</string>
+    <string name="jiao_yi_cheng_gong">交易成功</string>
+    <string name="xian_jin">现金</string>
+    <string name="you_hui_quan">优惠券</string>
+    <string name="you_hui">优惠</string>
+    <string name="bu_xuan_ze_you_hui_quan">不选择优惠券</string>
+    <string name="dai_jin_quan">(代金券)</string>
+    <string name="xuan_ze_zhi_fu_fang_shi">请选择支付方式</string>
+    <string name="xin_yong_ka">信用卡</string>
+    <string name="zhi_fu_bao">支付宝</string>
+    <string name="wei_xin">微信</string>
+    <string name="you_bei_xian_fu">有贝先付</string>
+    <string name="da_bai_tiao">打白条</string>
+    <string name="fan_hui">返  回</string>
+    <string name="bei_zhu">备  注</string>
+
+    <!-- 【百宝箱】 -->
+    <string name="che_wei_zu_lin">长租车位</string>
+    <string name="geng_pian_yi_geng_you_hui">更便宜 更优惠</string>
+    <string name="qi_che_zhuan_jia">汽车专家</string>
+    <string name="qi_che_wen_da">汽车问答</string>
+    <string name="huo_dong_zhong_xin">活动中心</string>
+    <string name="huo_dong_bu_ting">车停活动不停止，还等什么</string>
+    <string name="yao_yi_yao">摇一摇</string>
+    <string name="yao_chu_geng_duo_fu_li">要出更多福利，敬请期待</string>
+    <string name="che_xing_yi">违章查询</string>
+    <string name="qing_song_cha_wei_zhang">轻松查违章</string>
+
+    <!-- 【百宝箱】车位租赁 -->
+    <string name="bao_zu">包租</string>
+    <string name="cheng_qu_xuan_ze">城区选择</string>
+    <string name="lei_xing">类   型</string>
+    <string name="mian_fei">免费</string>
+    <string name="quan_bu">全部</string>
+    <string name="bao_yue">包月</string>
+    <string name="wu_you">无忧</string>
+    <string name="ji_ci">计次</string>
+    <string name="current_order">当前订单</string>
+    <string name="history_order">历史订单</string>
+
+    <!-- 【我的】 -->
+    <!-- 【我的】设置 -->
+    <string name="zi_dong_zhi_fu">自动支付</string>
+    <string name="da_kai_hou_zi_dong">打开后将自动使用余额、信用卡支付停车费；</string>
+    <string name="li_xian_di_tu">离线地图</string>
+    <string name="cheng_shi_qie_huan">城市切换</string>
+    <string name="bei_jing_shi">北京市 </string>
+    <string name="qing_chu_huan_cun">清除缓存</string>
+    <string name="qing_xuan_ze_chong_zhi">请选择充值金额</string>
+    <string name="qing_deng_lu">请登录</string>
+    <string name="guan_yu_wo_men">关于我们</string>
+    <string name="tui_chu_deng_lu">退出登录</string>
+
+    <!-- 88888888888888888888888888888888888888888888888888888888888888888888 -->
+    <!-- 【注册】 -->
+    <string name="free_regist">新用户注册，免费送</string>
+    <string name="voucher_20">20元优惠券</string>
+    <string name="please_input_imagecode">请输入右边的图形码</string>
+    <string name="please_input_message">请输入验证码</string>
+    <string name="please_input_phone">请输入11位手机号码</string>
+    <string name="please_input_username">请输入帐号</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_carcode">请添加车牌号</string>
+    <string name="next">下一步</string>
+    <string name="finish_regist">完成注册</string>
+
+    <!-- 【登录】 -->
+    <string name="login">登  录</string>
+    <string name="auto_login">自动登录</string>
+    <string name="find_password">忘记密码？</string>
+    <string name="get_vertify_code">获取验证码</string>
+    <string name="regist_new_user">注册新用户点这里 ></string>
+    <string name="read_agreenment">点击登录，即表示您已同意</string>
+    <string name="park_server_ment">《无忧停车服务协议》</string>
+    <string name="baihui_version">版权所有@2014 北京百会易泊科技有限公司</string>
+
+    <!-- 【首页】 -->
+    <string name="time">2015&#8211;03&#8211;14 16:37</string>
+    <string name="order_num">2015080514555858980</string>
+    <string name="search">搜索</string>
+    <string name="near">周边</string>
+    <string name="payfor">缴停车费</string>
+    <string name="mine">我的</string>
+    <string name="experience">立即体验</string>
+    <string name="no_pay">未支付</string>
+    <string name="jine">金额：</string>
+    <string name="order">订单号：</string>
+
+    <!-- 【地图】 -->
+    <string name="search_park_area">搜索停车区域</string>
+    <string name="qinghua_tech_park">清华科技园区地下停车场</string>
+    <string name="balance_null_car">剩余空车位:</string>
+    <string name="null_car_count">184 个</string>
+    <string name="details">详情</string>
+    <string name="distance">1.6千米"</string>
+    <string name="payfor_price">收费价格：1.25元/15分钟(07:00 &#8211; 21:00)</string>
+
+    <!-- 【我的】 -->
+    <string name="person_center">个人中心</string>
+    <string name="feedbackstr">产品功能建议与反馈</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="my_park">我的车位</string>
+    <string name="current_money">当前余额</string>
+    <string name="accountbalance">账户余额</string>
+    <string name="money">￥0.00</string>
+    <string name="parkingcard">停车卡</string>
+    <string name="credit">信用卡</string>
+    <string name="vipcard">会员卡</string>
+    <string name="voucher">优惠券</string>
+    <string name="plate_manager">车牌管理</string>
+    <string name="park_record">停车记录</string>
+    <string name="qrcode_card">我的二维码</string>
+    <string name="msg_push">消息中心</string>
+    <string name="qrcode_sao">扫描二维码</string>
+    <string name="setting">设置</string>
+    <string name="my_lease">我的租赁</string>
+    <string name="car_plate">车牌号：</string>
+    <string name="message">消息</string>
+    <string name="ting_che_quan">停车券</string>
+    <string name="modify_car">修改车牌</string>
+    <string name="recharge">充值</string>
+    <string name="collect_folder">收藏夹</string>
+    <string name="person_info">个人资料</string>
+    <string name="active_zhuanqu">活动专区</string>
+    <string name="my_dingdan">我的订单</string>
+    <string name="my_dianping">我的点评</string>
+    <string name="consume_pay">消费充值</string>
+    <string name="mywalletstring">绑停车卡、信用卡</string>
+    <string name="quit">注销退出</string>
+
+    <!-- 【充值】 -->
+    <string name="zhi_fu_bao_chong_zhi">支付宝充值</string>
+    <string name="wei_xin_chong_zhi">微信充值</string>
+    <string name="qu_xiao">取消</string>
+
+    <!-- 【会员卡】 -->
+    <string name="bang_ding_ting_che_ka">绑定停车卡</string>
+    <string name="bang_ka_ri_qi">绑卡日期：2015.03.15</string>
+    <string name="ka_hao">卡号：201503159067</string>
+
+    <!-- 【设置】 -->
+    <string name="back_btn">返回按钮</string>
+    <string name="chemi">车秘-汽车管家</string>
+    <string name="yi_jian_fan_kui">意见反馈</string>
+    <string name="fulishe">福利社</string>
+    <string name="zidong_dingwei">自动定位</string>
+    <string name="xiaoxi_tuisong">消息推送</string>
+    <string name="xinshou_zhinan">新手指南</string>
+    <string name="jiancha_gengxin">检查更新</string>
+    <string name="yaoyiyao">摇一摇</string>
+    <string name="chengshi_qiehuan">城市切换</string>
+    <string name="tuijian_pengyou">推荐给朋友</string>
+    <string name="erweima_fenxiang">二维码分享</string>
+    <string name="ge_ren_ming_pian">个人名片</string>
+    <string name="gei_shou_fei_yuan_sao_yi_sao">给收费员扫一扫完成停车缴费</string>
+
+    <!-- 【新手指南】 -->
+    <string name="helper_button">1.操作按钮说明:</string>
+    <string name="current_location">当前位置:定位到用户当前的位置</string>
+    <string name="login_username">登录用户</string>
+    <string name="route_state">卫星视图  实时路况</string>
+    <string name="helper_icon_des">2.电子地图上停车场图标各种颜色及标识的说明:</string>
+    <string name="helpinfo_green_icon">停车指数3级(车位够用)</string>
+    <string name="helpinfo_yellow_icon">停车指数4级(车位较少)</string>
+    <string name="helpinfo_red_icon">停车指数5级(车位紧张)</string>
+    <string name="helpinfo_gray_icon">空车位数量未知</string>
+    <string name="helpinfo_gray_ban_icon">停车场已关闭</string>
+    <string name="helper_tingche_zhishu">停车指数预报：未来5小时停车指数变化趋势</string>
+    <string name="park_entry_east">停车场单向东入口</string>
+    <string name="park_entry_south">停车场单向南入口</string>
+    <string name="park_entry_west">停车场单向西入口</string>
+    <string name="park_entry_north">停车场单向北入口</string>
+    <string name="park_exit_east">停车场单向东出口</string>
+    <string name="park_exit_south">停车场单向南出口</string>
+    <string name="park_exit_west">停车场单向西出口</string>
+    <string name="park_exit_north">停车场单向北出口</string>
+    <string name="park_op_east">停车场东进出口</string>
+    <string name="park_op_south">停车场南进出口</string>
+    <string name="park_op_west">停车场西进出口</string>
+    <string name="park_op_north">停车场北进出口</string>
+
+    <!-- 【事故处理】 -->
+    <string name="problem_ing">事故发生时</string>
+    <string name="xianchang_paishe">现场拍摄</string>
+    <string name="baohu_xianchang">保护现场</string>
+    <string name="jinji_jiuyuan">紧急救援</string>
+    <string name="zeren_rending">责任认定</string>
+    <string name="tongzhi_baoxian_gongsi">通知保险公司</string>
+    <string name="problem_after">事故发生后</string>
+    <string name="shangcan_jianding">伤残鉴定</string>
+    <string name="shigu_peichang">事故赔偿</string>
+    <string name="baoxian_lipei">保险理赔</string>
+    <string name="other">其他</string>
+    <string name="jiuhou_jiache">酒后驾车</string>
+    <string name="shigu_siliao">事故私了</string>
+    <string name="luwai_shigu">路外事故</string>
+
+    <!-- start 支付宝 -->
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装移动快捷支付，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+    <!-- end 支付宝 -->
+    <!-- start注册 -->
+    <!-- 注册界面的获取获取验证码的按钮 -->
+    <string name="obtain">获取</string>
+    <string name="parktitle">预约提示</string>
+    <!-- 验证码获取成功后的提示信息 -->
+    <string name="msg_already_send">验证码已发送至您的手机，请查收短信</string>
+    <!-- 后台 验证出现异常时的提示信息 -->
+    <string name="find_exception">出现异常，请60s后重新获取</string>
+    <!-- key验证失败出现的提示信息 -->
+    <string name="verification_failed">KEY验证失败,请60s后重新获取</string>
+    <!-- 手机号不合法出现的提示信息 -->
+    <string name="tel_number_valid">手机号不合法，请输入正确的手机号</string>
+    <!-- 手机号为空时出现的提示信息 -->
+    <string name="tel_number_null">手机号不能为空，请输入正确的手机号</string>
+    <!-- 注册界面中输入手机号 -->
+    <string name="input_tel">请输入手机号</string>
+    <!-- 注册界面中请输入验证码 -->
+    <string name="input_verification">请输入验证码</string>
+    <!-- 注册界面中请输入密码 -->
+    <string name="input_password">6 &#8211; 16位字母或数字</string>
+    <!-- 注册界面中请输入车牌号 -->
+    <string name="input_cph">示例:京POHN72</string>
+    <!-- end 注册 -->
+
+
+    <!-- 登录界面 start -->
+    <string name="login_title_text">会员登录</string>
+    <string name="login_btn_text">登录</string>
+    <string name="login_user_text">账号：</string>
+    <string name="login_pwd_text">密码：</string>
+    <string name="login_edituser_text">绑定手机号</string>
+    <string name="login_editpwd_text">请输入密码</string>
+    <string name="login_auto_text">自动登录</string>
+    <string name="login_forgetpwd_text">忘记密码</string>
+
+    <!-- 登录界面结束 -->
+    <string name="key">83e25921245f249bc4ed739a97b46b1c</string>
+    <string name="wu_dao_kou">五道口</string>
+    <string name="title">请输入搜索内容</string>
+    <string name="get_mylocation">正在获取您的位置</string>
+    <string name="helper_version_des">1.软件版本:</string>
+    <string name="helper_copyright">2.版权声明:</string>
+    <string name="version_des">软件版本：2.0\n发布日期：2013 &#8211; 5 &#8211; 15\n版权所有：北京紫光百会科技有限公司 \n官方网址：http://www.51park.com.cn</string>
+    <string name="copyright">\t\t我公司独立拥有或与相关内容提供者共同拥有51park网站内相关内容（包括但不限于文字、图片、音频、视频资料及页面设计、编排、软件等）的版权和/或其他相关知识产权。“51park”、“51park智能停车网”为我公司及其关联公司的注册商标，受中国法律保护。\n\n \t\t除非中国法律另有规定，未经我公司书面许可，对于我公司拥有版权和/或其他知识产权的任何内容，任何人不得复制或在非我公司所属的服务器上做镜像或以其他任何方式进行使用；对于“51park”、“51park智能停车网”等商标，任何人不得擅自使用。\n\n \t\t违反上述声明而给我公司造成损失的，我公司将依法追究其法律责任。</string>
+    <string name="shigu_cl">征询多名事故处理资深专家意见，并提供酒后代驾、事故私了等服务。</string>
+    <string name="car_all">那些有缘无分的精彩也许最终没能成为我们的选择，但这并不妨碍我们去认识和喜爱。</string>
+
+    <string-array name="style_tingche">
+        <item>包月</item>
+        <item>错时</item>
+        <item>预订</item>
+        <item>洗车</item>
+        <item>美容</item>
+    </string-array>
+
+    <!-- 高德导航语音 -->
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+    <string name="app_id">输入您讯飞的appid</string>
+
+    <!-- 上拉刷新，下拉加载更多 -->
+    <string name="hello">Hello World, XListViewActivity!</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载 &#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!--  -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <!--  -->
+
+    <string name="title_btn_back">返回</string>
+    <string name="juli_a">默认距离</string>
+    <string name="default_str">默认</string>
+    <string name="juli_b">1000米以内</string>
+    <string name="juli_c">500米以内</string>
+    <string name="juli_d">300米以内</string>
+    <string name="zulin">汽车租赁</string>
+    <string name="cuoshi">错时停车</string>
+    <string name="yuyue">预定车位</string>
+    <string name="xiche">预约洗车</string>
+    <string name="meirong">汽车美容</string>
+    <string name="title_route_guide_demo">1. GPS导航(RouteGuideDemo)</string>
+    <string name="title_route_plan_demo">2. 路线规划(RoutePlanDemo)</string>
+    <string name="car_a">dd</string>
+    <string name="car_b">　　仅仅喝了一听350毫升的啤酒，半个小时之后，在专业仪器测试下，三位司机“遇险”后刹车反应时间均延长了两倍左右。清华大学汽车碰撞实验室曾进行了“远离酒后驾驶”的活动，在实验室证明了酒后驾驶的危险性。在饮一听350毫升啤酒前，他们的刹车反应时间分别为0.75秒、0.56秒和0.56秒。饮酒30分钟后，酒精开始在体内发挥作用，同样的机器测试结果显示，三人的反应时间分别提高到1.22秒、1.38秒和1.05秒。</string>
+    <string name="car_c" />
+    <string name="car_d">　　许多朋友都很好奇，酒后驾车以及醉酒驾车的酒精测试的判定标准究竟是什么？　　\n　　根据国家质量监督检验检疫局发布的《车辆驾驶人员血液、呼气酒精含量阈值与检验》规定，驾驶人员每100毫升血液酒精含量大于或等于20毫克，并每100毫升血液酒精含量小于80毫克为饮酒后驾车；每100毫升血液酒精含量大于或等于80毫克为醉酒驾车。</string>
+    <string name="car_e">　　有关专家根据标准大体估算了一下:20mg/100ml大致相当于一杯啤酒;80mg/100ml,则相当于三两低度白酒或者两瓶啤酒;100mg/100ml,大致相当于半斤低度白酒或者三瓶啤酒。</string>
+    <string name="car_f">　　从各方交通事故的统计情况来看，酒后驾车尤其是醉酒驾车无疑是造成交通事故的首要原因，而新的道路交通安全法则是将酒驾分为酒后驾车以及醉酒驾车两个档次，并加重了对驾驶员的处罚力度。 \n\n关于处罚　　\n　　饮酒后驾驶机动车的，处暂扣六个月机动车驾驶证，并处一千元以上二千元以下罚款。因饮酒后驾驶机动车被处罚，再次饮酒后驾驶机动车的，处十日以下拘留，并处一千元以上二千元以下罚款，吊销机动车驾驶证。 　　\n\n　　醉酒驾驶机动车的，由公安机关交通管理部门约束至酒醒，吊销机动车驾驶证，依法追究刑事责任；五年内不得重新取得机动车驾驶证。 　　\n\n　　饮酒后驾驶营运机动车的，处十五日拘留，并处五千元罚款，吊销机动车驾驶证，五年内不得重新取得机动车驾驶证。 　　\n\n　　醉酒驾驶营运机动车的，由公安机关交通管理部门约束至酒醒，吊销机动车驾驶证，依法追究刑事责任；十年内不得重新取得机动车驾驶证，重新取得机动车驾驶证后，不得驾驶营运机动车。</string>
+    <string name="car_g">　　这是很多车主朋友都很关心的问题，但是由于每个人的身体情况以及酒量大小各不相同，所以这个问题也是因人而异。一般认为，若是普通的饮酒，且未喝醉的情况下，至少需要5~8小时才能开车。而若是喝醉了，则最好24小时后再考虑开车。</string>
+    <string name="car_h">　　其实除了一些专业的测量仪器之外，还有一些方法可以测试饮酒是否过量，大体有回转、单立、同心圆三种方法。 　　\n\n　　行走回转法：测试的人先将左脚置于直线上，再将右脚置于左脚前，其右脚跟须紧邻左脚趾，双手平贴身体两侧，必须根据此要领行走九步，然后回转，再往回走九步，测试者在行走时，双手必须平贴身体两侧，并喊出行走步数，眼睛随时注视脚步，回转时，前脚应置于直线上，并以其为回转轴，依方向小步回转。以行走回转法测试时，只要违反上述其中一项规定，就记一点，多过一点，就显示测试者血液中的酒精浓度已超过标准。 　　\n\n　　单脚站立法：测试者应先保持立正姿势，未接受动作命令前，都保持此一姿势，然后进行行走测试，此时，测试者应双手平贴身体两侧，举起右脚或左脚，离地十五公分，眼睛注视举起的脚，同时开始大声读秒计数，直到卅秒为止，如果测试者计数过快或过慢，即停止测试。以此一方法测试时，违反上述规定一项就记一点，超过一点，其血液中的酒精浓度就可能已超过所规定的标准。 　　\n\n　　同心圆法：同心圆法分为指示与平衡阶段。在指示阶段，测试者在印制好的三重圆圈图上，直径分别是四、四点三、四点六公分，先听指示将笔尖放于内圈，维持上述动作于原位置，直到指示开始动作为止；在平衡阶段，测试者接获「开始动作」的指示后，即沿内圈开始画线，画完一圈为止。测试者画圈时间超过十五秒或所画之圆圈不连续、相临圆圈接触点超过六点以上，就显示测试者的呼气酒精浓度已超过了规定。</string>
+    <string name="siliao_a">　　事故私了，是指发生交通事故后，受害者以及肇事者不经过司法手续而私下了结。 \n\n一、保护现场、维护自身安全　　\n　　发生事故保护现场是处理事故的第一个程序和环节，主要作用是：一、能在相对安全的范围内“私了”事故，防止二次事故的发生；二、一旦“私了”不成，由警察介入调查时，保护现场有利于澄清事故事实，分清事故责任，同时也是当事人应尽的责任。 \n\n二、了解双方车内是否有人员受伤　　\n　　根据相关法律规定，发生交通事故未造成人身伤亡，或当事人仅受轻微伤的，都可以“私了”。由此，如何判断当事人的伤情成了“私了”能否继续进行下去的关键。交通事故造成的人体轻微伤的种类很多。若当事人仅有皮下淤血和表皮擦伤，自认为伤情轻微，做好记录，双方签字后，即可当场“私了”。 \n\n三、确定是“私了”还是“公了” 　　\n\n　　为了确定究竟是选择“私了”还是“公了”，我们有必要了解一下两者的区别。 　　\n\n　　1、“私了”事故时，当事人之间对事故事实或对责任确定看法不一致，可保留现场“招”警察介入；“公了”事故时，只要警察认为事故事实清楚并已确定了责任，就必须撤除现场，即使当事人不同意撤除，警察也可以强制撤除。 　　\n\n　　2、“私了”事故时，当事人之间可以就赔偿问题“讨价还价”；“公了”事故时，警察只按照责任的划分及法律规定作出原则性的结论，而不参与当事人之间具体的“讨价还价”和转交现金。 　　\n\n　　3、“私了”事故，不存在对违法行为进行处罚的问题；“公了”事故时，警察必须履行职责，对证据确凿的当事人违法行为必须按照法律的相关规定进行处罚。 　　\n\n　　由此看来，“私了”与“公了”各有所长。而磕磕碰碰在所难免，遇到小的交通事故，与其怄气吵架或报警，让成百上千辆车堵在路上“陪绑”，还不如双方共同选择“私了”的方法解决事故。而若发生了人员伤亡，还是等待警察介入进行“公了”吧。 \n\n四、固定、采集有关证据　　\n　　虽然“私了”交通事故所涉及的内容不多，方法也简单，但是一些能够证明交通事故发生真实情况的相关证据，还是必须固定和采集。这对保护双方当事人的合法权益是至关重要的。具体作用在于：　　\n　　1、双方对事故事实有争议“招”警察介入时，可以据理力争。　　\n　　2、向保险公司进行索赔时有根有据。　　\n　　3、防止对方在撤除现场后“变卦”而造成麻烦。 \n\n五、共同认可事故发生的事实　　\n　　事故当事人双方不能就交通事故问题进行协商，共同认可，就会产生分歧。一般来说，双方共同选择“私了”的方式处理事故，那么就应当采取理智的、诚信的态度对事故发生的事实尽快达成共识，不要在一些枝节末梢上纠缠不休。若是在某些细节上产生了分歧，可以寻找附近的路人或者摆摊人进行询问。 \n\n六、撤除现场协商赔偿　　\n　　现场勘查完毕，双方共同认可了事故事实后，应当自行移动车辆至不妨碍交通的地点，然后进行赔偿问题的协商。建议按照下列的方法将事故车辆移至不妨碍交通的地点：　　\n　　1、开启危险报警闪光灯，设置警告标志，夜间还需要开启示宽灯和尾灯；　　\n　　2、在高速公路上，要将车辆移至就近的服务区、应急车道内或者硬路肩上；　　\n　　3、在城市快速路上，要将车辆移至就近的应急车道内或者辅路的非机动车道内；　　\n　　4、在其他道路上，要将车辆移至就近的非机动车道或者人行道上。 　　\n\n　　在采取以上安全措施工作后，就可以在不妨碍交通的情况下，协商解决赔偿事宜了。</string>
+    <string name="siliao_b">一、要理智地面对事故现实　　\n　　发生了事故，见到自己的爱车受到损坏，难免心生怒火、情绪急躁。有的当事人情急之中，忘了保护现场、勘查现场的正事，在没有获取证据的情况下直接和对方去理论是非，往往话不投机，发生口角，更有甚者还拳脚相加。结果，重要证据灭失，小事变大，非但事故无法“私了”，还要为此付出沉重的代价。 \n\n二、遇到人员受伤切勿轻易“私了” 　　\n　　遇到有人员受伤的事故要谨慎行事，不要轻易选择“私了”的方法处理事故。这是因为当事故发生时，当事人可能只是感觉某个部位略有不适，没有大碍，于是便进行了“私了”，而事后有可能伤情加重，甚至是死亡。 \n\n三、“私了”事故时要防止财物的丢失　　\n　　“私了”事故时间虽然短暂，但是双方都是在车外进行勘查、记录和协商，注意力都集中在了处理事故当中，往往会忽略自己的财物。此时如果遇到扒窃者，就会祸不单行，造成更大的损失。 \n\n四、怀疑对方“碰瓷”不要“私了” 　　\n　　泛指一些投机取巧、敲诈勒索的行为。“碰瓷”现象在事故发生前一般是比较隐蔽的，“碰瓷”的手段也是多种多样的，但往往会有以下特点。　　\n　　1、在慢速行驶或行走中进行“碰瓷”。　　\n　　2、“碰瓷”者的行驶路线“正常”。　　\n　　3、“碰瓷”者虽称受伤，但不肯去医院救治。　　\n　　4、索要赔偿时，“碰瓷”者“狮子大开口”而且只要现金。外地司机遭遇本地车辆“碰瓷”的事情较多。 \n\n五、遇到对方交通肇事逃逸怎么办　　\n　　交通肇事逃逸行为主要有两种表现形式。一、发生事故后驾车逃逸；二、发生事故后当事人弃车逃逸。虽然说可以“私了”的交通事故后果均不严重，但是这两种逃逸行为在“私了”事故中也时有发生。　　\n　　由于“私了”中的逃逸者一般都与当事人见过面、接触过，所以若是发生了肇事逃逸的情况，我们千万不能着急，可以通过记忆以下车辆特征来报警求助。　　\n　　1、车辆的型号。如：小客车、吉普车、旅行车、大客车、大货车、小货车等。　　\n　　2、车辆的颜色。如：红色、绿色、白色、黑色、黄色等。　　\n　　3、车辆号牌。包括：颜色（如：小客车为蓝色，大客车为黄色）、号码（最好记全，无法记全也应当记住其中前面或后面的两个数字）。　　\n　　4、车辆的其他主要特征。如：车身上的图案、文字；有无装载物，装载物的名称等。　　\n　　5、逃逸者本人的主要特征。如：身高、体态（胖瘦）、年岁（青年、中年、老年或约多少岁）、长相（身体外露的部位是否有疤痕、纹身、黑痣等）、衣着等。 \n\n六、要核实准确对方的身份　　\n　　“私了”中尤其需要注意的是必须准确核实对方的身份以及一些相关情况。我们可以通过以下方式去获得这些信息。　　\n　　1、通过居民身份证进行核实　　\n　　2、通过机动车驾驶证进行核实　　\n　　3、注意了解对方的确切住址　　\n　　4、注意驾驶证上的“单位”和“职业” 　　\n　　5、注意分辩对方的驾驶人与乘车人 \n\n七、与外国人发生事故“私了”时应当注意的问题　　\n　　随着我国逐渐扩大的对外开放以及日益频繁的国际交往，来华访问、学习的外国人也在不断增加。因此，他们在中国发生交通事故的概率也进一步提升。　　\n　　从法律意义上说，外国人分为两类：享有外交特权与豁免权的外国人和不享有外交特权与豁免权的外国人，一般称之为“特殊身份外国人”和“普通身份外国人”。外交特权与豁免，是指外交代表机关及其人员根据国际法或有关协议在接受国所享有的特别权利和优惠待遇的总称。　　\n　　那么，对于同外国人的“私了”，我们需要注意一些什么呢？　　\n　　1、首先通过肇事车辆的号牌、驾驶证和外国人的护照等确认外国当事人的身份。　　\n　　2、如果对方是普通外国人，“私了”的方法完全等同于国人之间发生交通事故时“私了”的方法。　　\n　　3、如果对方是特殊外国人（有外交身份的外国人），“私了”的方法也等同于国人之间发生交通事故时“私了”的方法，但应注意以下事项：　　\n　　①如双方未就经济赔偿达成协议，应立即报警由警察进行调解，不得强行向外国当事人索要赔偿款；　　\n　　②由于语言不同和思维方式的差异，在实践中有可能出现外国当事人驾车驶离现场的情况，遇有这种情况要保持冷静，迅速报警并记下肇事车辆的车号，而不要强行拦截肇事车辆避免造成冲突，进而引发外交事件；　　\n　　③不得进入或损毁的外交肇事车辆；　　\n　　④不得扣留外交人员的车辆、驾驶证、外交官身份证和护照等证件；　　\n　　⑤外国当事人有饮酒嫌疑的，如其不配合警察进行酒精检测的，按照有关国际公约的规定，警察不得对其采取任何强制性措施，而要通过外交途径予以解决，这一点特别需要国内当事人给予理解，而不要认为警察袒护外国人。 　　\n\n　　总之，与外国人发生交通事故应做到礼貌待人，切忌感情用事，体现我国礼仪之邦的风范。同时，不要因为对方是外国人就“漫天要价”。</string>
+    <string name="siliao_c">　　此类事件在实际生活中数不胜数，经常会有当事人反映在“私了”事故时，会怀疑对方是故意“碰瓷”。　　\n　　其实许多碰瓷族都会有一些奇怪的特征，我们可以根据以下特征来进行判断 \n\n1、 人故意撞车侧部　　\n　　如果是故意撞车的碰瓷人，一般会在目标车辆车速很慢时撞上车辆，而碰撞部位往往都在车辆的侧面，同时躺倒在车辆的侧面，因为这样可以避免发生真正的人身危险。 \n\n2、 慢如蜗牛等待被追尾　　\n　　碰瓷车辆故意开在目标车辆前面，与目标车辆贴得很近，然后找机会紧急制动，造成目标车追尾。 \n\n3、 轻微剐蹭车辆严重受损　　\n　　碰瓷车辆紧跟目标车辆，在其变道时猛踩油门撞上去，与目标车轻轻剐蹭，但车上的零部件会出现严重断裂或破损，然后以此索取修理费。 \n\n4、 不报警要私了　　\n　　很多碰瓷车辆往往都是中高档的二手汽车。事故发生后，碰瓷车辆或碰瓷人通常会提出不要报警并且用钱“私了”的要求。　　　　\n\n　　如果怀疑对方有“碰瓷”的嫌疑，我们应该如何应对呢？　　\n　　第一，当你觉得交通事故有些蹊跷时，一定要保留现场，并立刻报警，同时要把车门锁好，并在车内等候警察出现场，同时最好叫上几个好朋友过来帮忙。　　\n　　第二，带对方看病，不能去他们指定的医院，一定要去三级甲等医院。　　\n　　第三，在看完病后，一定要把事故处理单要回来，在医院只花看病，开药的钱，其他的一概不要答应。　　\n　　第四，若对方索要误工费，其他赔偿费时，让他们准备连续3个月的完税证明。</string>
+    <string name="siliao_d">　　相关的交通法律法规虽然允许并鼓励当事人对事故进行“私了”，但是，事事都有一个界限和范围，并非每一场交通事故都可以进行“私了”，这也是相关法律法规中所明确规定的。如《交通事故处理程序规定》第十三条和《北京市道路交通事故简易程序处理规定》第七条就规定了七种情形的事故，应当保护现场并立即报警。这七种情形是：　　\n　　（1）机动车无号牌、无检验合格标志、无保险标志的；　　\n　　（2）驾驶人无有效机动车驾驶证的；　　\n　　（3）机动车驾驶人饮酒、服用国家管制的精神药品或者麻醉药品的；　　\n　　（4）对交通事故事实或者成因有争议的；　　\n　　（5）当事人不能自行移动车辆的；　　\n　　（6）碰撞建筑物、公共设施或者其他设施的；　　\n　　（7）车辆单方发生交通事故的。　　\n\n　　前三项情形当事人不得自行协商解决，是因为这几项行为都属于严重违法行为，尤其是（2）、（3）项所列行为对交通安全的潜在危害极大，必须予以严厉打击和惩处。如果允许当事人自行协商解决，实际上就是放纵行为人的违法行为，与交通事故处理的基本原则背道而驰。　　\n\n　　上述第（4）、（5）项情形当事人不得自行协商解决，这是由相关法律对“私了”适用范围所决定的。第（6）、（7）项情形当事人不得自行协商解决，主要是因为包括许多单方事故在内，车辆碰撞的固定物一般是交通设施及其他公共设施，往往造成了国家、集体财产的损失。为了保证国家、集体财产在受到侵害后能得到及时有效赔偿，《北京市道路交通事故简易程序处理规定》对此类事故不允许当事人自行协商解决。</string>
+    <string name="pay_biaozhun">标准</string>
+    <string name="pay_yiwu">　　赔偿义务人也叫事故赔偿责任主体，是指交通事故损害赔偿责任的承担者，通常为被告。只有确定了损害赔偿责任的主体，受害人被侵犯的权益才能得以维护。打官司中，“告谁”是一个很重要的问题。如果告的对象有误，不仅浪费了时间、人力、财力，还无法达到要求赔偿的目的。 \n\n交通事故赔偿责任主体的确定标准 \n1、机动车所有人为交通事故赔偿主体。 \n交通安全法第70条的内容：在公共道路上运行的机动车造成他人损害的，由机动车的保有者承担民事责任。机动车保有人就是车辆的所有权人，即对车辆享有占有、使用、收益和处分四项权能的人,而这四项权能又是可以分离的。 \n\n（1）所有人自主驾驶情形下责任主体的确定标准\n　　该种情形中，所有人既是运行支配者，又是运行利益的归属者，发生交通事故当然由其承担损害赔偿责任。 \n\n（2）受雇人驾驶情形下责任主体的确定标准　　\n　　受雇人在受所有人雇佣期间，因实施雇佣行为发生交通事故的，所有人既是运行支配者，又是运行利益的归属者，其应承担损害赔偿责任。　　\n　　受雇人在受雇期间非因实施雇佣行为而发生交通事故的，由谁承担损害赔偿责任？原则上仍然应由所有人承担赔偿责任，所有人承担赔偿责任后，可以根据其与受雇人的雇佣合同向受雇人追偿。 \n\n（3）擅自驾驶情形下的责任主体确定标准　　\n　　所谓擅自驾驶，是指未经所有人同意擅自驾驶他人车辆。擅自驾驶的情形有两种，一种是存在雇佣关系的擅自驾驶，另一种是不存在雇佣关系的其他人擅自驾驶他人车辆。　　\n　　我国学者认为，未经车辆所有人同意擅自使用他人所有的车辆，除主观恶意外，其客观表现应与盗车致交通事故适用同样的规则处理。机动车的所有人或保管人除非存在管理上的瑕疵，否则不承担赔偿责任。机动车的所有人或保管人如对车辆的保管未尽应有的注意义务，应由车辆所有人或保管人与擅自驾驶人连带承担赔偿责任。 \n\n（4）被盗窃、抢劫、抢夺车辆发生交通事故时责任主体的确定标准　　\n　　在机动车辆被他人盗窃、抢劫以及抢夺车辆后，如果发生交通事故，由肇事者承担赔偿责任。同时，不论车辆所有人对于车辆的管理有无不当或者瑕疵，车辆被盗、被抢后发生事故的，车辆所有人一律不承担损害赔偿责任。 \n\n（5）分期付款买卖情形下的责任主体的确定标准\n 所谓分期付款买卖，又称所有权保留买卖，是动产买卖中普遍采用的一种交易方式。　　\n　　在这种情况下，责任主体应是购买人，而不是保留所有权的出卖人。 \n\n（6）车辆买卖未过户情形下的责任主体的确定标准　　\n　　关于这个问题目前存在不同看法。一种观点认为，车辆买卖未过户而发生交通事故的，登记车主不承担赔偿责任。另一种观点认为，车辆买卖未过户发生交通事故致人损害的，登记车主应承担赔偿责任。 \n\n（7）出租、出借情形下的责任主体的确定标准\n　　在这种情况下，车辆所有人、承租人和借用人都是运行支配者，同时也是运行利益的归属者。因此，如发生交通事故，应由出租人、承租人承担损害赔偿责任，车辆所有人不承担赔偿责任。 \n\n（8）车辆承包发包情形下的责任主体的确定标准\n　　现实生活中，一些汽车运输公司、企业进行承包经营，将车辆发包给个人或企业，收取承包费。在此情形下，车辆所有权人仍然是车辆的运行支配者和运行利益的归属者，承包方发生交通事故，发包方自然要承担损害赔偿责任。 \n\n（9）挂靠情形下的责任主体的确定标准　　\n　　所谓挂靠，是指车辆为个人出资购买，但为了服从当地对车辆管理的要求，而将车辆挂靠于某个具有运输经营权的公司。挂靠又分自愿挂靠和强制挂靠。不管是哪一种挂靠，若被挂靠单位收取了管理费或得到了经济利益，被挂靠单位可被认为是运行利益的归属者，应对挂靠车辆发生的交通事故承担损害赔偿责任；若被挂靠单位未收取管理费或未取得其他经济利益，仅仅是地方政府基于管理的需要要求挂靠或强制挂靠，被挂靠单位既不是运行支配者，也不是运行利益的归属者，自然不应承担损害赔偿责任。 \n\n（10）车辆送交修理或保管期间的责任主体的确定标准　　\n　　机动车送交修理期间，依车辆所有人的意思，车辆已停止运行，并实际脱离车辆所有人的控制和支配。修理厂在试车或使用车辆过程中发生交通事故造成他人损害，修理厂应当承担赔偿责任。同样，在委托保管的情形下，车辆所有人失去了对车辆的运行支配权，保管人成为运行支配者，如果在车辆交付保管期间发生交通事故，自然应由保管人承担赔偿责任。 \n\n（11）车辆被质押情形下的责任主体的确定标准\n　　所谓质押，是指债务人或者第三人将其财产或权利凭证移交债权人占有。由于车辆被质押后，所有人丧失了对车辆的占有、支配，不再是运行支配者和运行利益的归属者，如果在此期间发生交通事故，所有人不应承担赔偿责任。 \n\n（12）好意同乘情形下的责任主体的确定标准\n　　好意同乘者，是指在车辆所有人或控制人好意并无偿地邀请或允许搭乘该车的人。好意同乘者因交通事故导致人身损害的，车辆所有人或控制人作为运行支配者和运行利益的归属者，应当承担损害赔偿责任。而若好意同乘者有过错的，可减轻车辆所有人或控制人的责任。 \n\n2、保险公司为赔偿义务人。　　\n　　依据《道路交通安全法》第76条规定：机动车发生交通事故造成人身伤亡、财产损失的，由保险公司在机动车第三者责任强制保险责任限额范围内予以赔偿。新的交通安全法不仅规定了机动车必须加入第三者责任险，而且规定了保险公司的直接赔付义务。发生保险事故后，保险公司应该按照保险合同的约定将赔偿金支付给事故的受害人。机动车事故受害人的直接请求权是法定请求权、独立请求权，在程序意义上，受害人在保险合同约定的赔偿范围内可以直接以原告的身份对保险公司提起赔偿诉讼，并且将保险公司直接列为被告有利于纠纷的及时解决。保险公司在第三者强制责任保险责任范围内承担无过错责任的归责原则。具体内容为：保险公司具有作为第一赔偿义务人的身份；保险公司赔偿数额应在第三者责任强制保险责任限额内予以赔偿；保险公司这种赔偿属于无过错责任形式，不考虑交通事故当事人有无过错及过错程度和的责任大小。 \n\n交通事故中的违约责任赔偿　　\n　　《合同法》第104条规定：“当事人不履行合同义务或者履行合同义务不符合约定的，应当承担继续履行、采取补救措施或者赔偿损失等违约责任。”交通事故当事人在维护自己权益时，经常会遇到侵权责任请求权与工伤保险请求权的竞合，侵权责任请求权与违约责任请求权的竞合，车辆维修、保管或借用期间的交通事故。 \n\n1、乘客事故。承运人应当对运输过程中旅客的伤亡承担损害赔偿责任，但伤亡是旅客自身健康原因造成的或者承运人证明伤亡是旅客故意、重大过失造成的除外。前款规定适用于按照规定免票、持优待票或者经承运人许可搭乘的无票旅客。乘客乘坐的客车与另一辆车相撞而发生交通事故，乘客人身、财产遭到损害的，可依客运合同关系要求承运人承担违约责任，给予赔偿；同时也可依侵权损害赔偿的法律规定要求对交通事故负有责任的车辆所有者或经营者承担侵权责任，赔偿损失，但只能择一行使权利。 \n\n2、交通工伤事故。如果劳动者遭受工伤，是由于交通事故第三人的侵权行为造成，第三人不能免除民事赔偿责任，即交通事故与工伤双赔偿。工伤保险与民事损害赔偿的关系从性质上看，工伤保险属于社会保险范畴，与私权救济性质的民事损害赔偿存在根本的差别。这就产生了工伤保险赔偿与民事损害赔偿的竞合。 \n\n3、车辆保管合同。保管合同合同中,保管人保管不善即相当于保管人有过错,应承担违约责任。如机动车送交修理的责任主体等。车辆修理期间所发生的交通事故，车辆修理人为民事赔偿责任主体保管期间所发生的．由保管人为民事赔偿责任主体。因为此时的机动车所有人已经丧失运行支配力，也丧失了运行利益。 \n\n4、代驾司机发生交通事故的损失赔偿。代驾司机是受代驾公司指派的，其代驾行为是职务行为。公司和酒后顾客之间存在委托合同关系。酒后顾客找代驾公司的目的就是为了防止发生交通事故，找代驾公司后出现交通事故，合同目的没有实现。如由于代驾司机的责任造成的，则存在违约问题。代驾司机发生交通事故，所造成的损失应先由保险公司赔偿，超额部分由代驾公司承担。 \n\n交通事故赔偿归责原则　　\n　　关于交通事故赔偿归责原则，主要分为三种情况： \n1、机动车伤害行人与非机动车情形，适用无过错责任原则。　　\n　　机动车是一种高速运行的交通工具，根据民法通则第一百二十三条的规定，高速工具造成他人损害的，应当承担民事责任，惟一的免责事由是能够证明损害是由受害人故意造成的，故交通事故责任是无过错责任。交通事故中机动车与行人而言，行人处于绝对的弱势地位，机动车处于强势地位，立法对此予以倾斜。此类交通事故采无过错责任原则并不排除过失相抵原则的适用，行人和非机动车如存在重大过失的，可根据过失相抵原则，减轻机动车保有者的赔偿责任，但必须明确的是减轻，而不是免除。 \n\n2、机动车之间发生的交通事故，实行严格的过错责任原则，有过错的一方承担责任，如果双方都有过错，则实行过错比较，按照过失相抵原则确定双方的责任，同时依照各自过错的比例承担责任。机动车发生碰撞，确定责任大小，除考虑过错大小外，还应考虑“优者危险负担”原则的适用。所谓“优者危险负担”原则，是指在受害人有过失的情况下，考虑到双方对道路交通注意义务的轻重，按机动车辆危险性的大小以及危险回避能力的优劣，分配交通事故的损害后果。 \n\n除此之外，还有一些值得注意的 \n1、在确立无过错责任为归责原则的前提下，考虑过失相抵原则、优者危险负担原则，合理界定损害赔偿民事责任。 \n\n2、公平责任原则，又称衡平原则，是指当事双方在对造成损害均无过错的情况下，由人民法院根据公平的观念，在考虑当事人的财产状况及其他情况的基础上，责令加害人对受害人的财产损失给予适当的补偿。</string>
+    <string name="pay_quanli">赔偿权利人 \n　　赔偿权利人，是指因侵权行为或者其他致害原因直接遭受人身损害的受害人、依法由受害人承担扶养义务的被扶养人以及死亡受害人的近亲属。主要分为直接受害人、间接受害人以及死者近亲属。 \n\n直接受害人　　\n　　直接受害人，就是健康权、生命权、身体权受到侵害的受害人，这种受害人是最多的。这种赔偿权利主体，就是直接受害人。 被害人没有死亡，但因伤不能参加诉讼，委托其近亲属或者其他人参加诉讼的，被害人仍是原告人，是赔偿权利人。受委托的人不能成为原告人，其身分是委托代理人。另外，被害人没有死亡，近亲属替被害人支付医疗费等其他费用的，近亲属不能以此为由，作为原告人提起诉讼。近亲属支付的医疗费等，只能由被害人自己以原告人的身份向被告人追偿。被害人抚养近亲属的费用，是从其收入中支出，因重伤、残疾收入减少、失去，无法支付抚养费的，应由被害人作为原告人以正常收入的损失为由向被告人追偿。 \n\n间接受害人　　\n　　间接受害人是指交通事故中致人死亡或致残使其劳动能力丧失，造成受害人生前或丧失劳动能力以前的扶养人扶养来源的丧失，依法应向其赔偿必要的扶养生活费的侵权赔偿制度。最高法院在贯彻《民法通则》的司法解释当中又增加了一个间接受害人，就是造成身体残废的人，他在受伤以前所扶养的人也可以请求抚养损害赔偿，这个也是间接受害人。是赔偿权利主体。　　\n　　侵权行为人直接的侵权行为侵害了她的丈夫，造成了人身损害，但是这个侵权行为又使得她的丈夫丧失了性功能，造成了对方配偶性利益的损害，丈夫是直接受害人，妻子是一个间接受害人，这是一个间接损害。 \n\n死者近亲属 \n　　死者近亲属，指的就是侵害生命权，侵权行为的直接受害者已经死亡了，这个死者近亲属他有权利请求赔偿，他也是赔偿权利人。在死者近亲属作为赔偿权利人中，实际存在两种类型，也就是包括侵害生命权造成死亡的受害人的近亲属，以及死者人格利益受到侵害作为死者人格利益保护人的死者的近亲属。被害人死亡后，其父母、子女、兄弟姐妹作为近亲属都可以提起民事诉讼，并且可以选定一个代表人参加诉讼，或者由法院按照继承的程序，直接指定一个第一程序继承人参加诉讼。 \n\n死者近亲属的范围 \n　　关于死者近亲属的范围，《工伤保险条例》是这样规定的：因工死亡职工供养亲属，是指该职工的配偶、子女、父母、祖父母、外祖父母、孙子女、外孙子女、兄弟姐妹。　　 \n　　本规定所称子女，包括婚生子女、非婚生子女、养子女和有抚养关系的继子女，其中，婚生子女、非婚生子女包括遗腹子女；　　 \n　　本规定所称父母，包括生父母、养父母和有抚养关系的继父母；　　 \n　　本规定所称兄弟姐妹，包括同父母的兄弟姐妹、同父异母或者同母异父的兄弟姐妹、养兄弟姐妹、有抚养关系的继兄弟姐妹。 \n\n未出世的胎儿 \n　　若是胎儿利益受到损害，那么谁才享有赔偿的请求权呢？根据扬立新教授所提出的人格权延伸保护理论，胎儿的这种损害赔偿请求权，在胎儿还没有出生之前，是一种潜在的权利，还没有享有这种权利的权利能力。因此，这种损害赔偿请求权应待其出生后，依法行使。这时，胎儿已是一个具有民事权利能力的主体，行使损害赔偿请求权就不再存在任何障碍。 由于初生儿具有民事权利能力而不具备民事行为能力，因而在行使侵权损害赔偿请求权的时候，应当由其监护人作为法定代理人，代为行使。 \n　　如果胎儿出生时为死体，无论是侵权行为致死，还是其他原因所致，胎儿都不能产生损害赔偿请求权，而由受害人即怀孕的母亲享有损害赔偿请求权。这是因为，胎儿是母体的组成部分，伤害胎儿，就是伤害母亲的身体健康，其母亲产生损害赔偿请求权。</string>
+    <string name="jd1">　　为了更好地理解以及划分事故伤残鉴定，我们有必要了解与之相关的一些专业术语。 \n\n1.道路交通事故受伤人员　the injured in road traffic accident \n　　在道路交通事故中遭受各种暴力致伤的人员 \n\n2. 伤残　impairment 　　\n　　因道路交通事故损伤所致的人体残废。　　\n　　包括：精神的、生理功能的和解剖结构的异常及其导致的生活、工作和社会活动能力不同程度丧失。 \n\n3. 评定　 assessment 　　\n　　在客观检验的基础上，评价确定道路交通事故受伤人员伤残等级的过程。 \n\n4. 评定人　assessor 　　\n　　办案机关依法指派或聘请符合评定人条件，承担道路交通事故受伤人员伤残评定的人员。 \n\n5. 评定结论　assessment conclusion 　　\n　　评定人根据检验结果，按照伤残评定标准，运用专门知识进行分析所得出的综合性判断。 \n\n6. 评定书　assessment report 　　\n　　评定人将检验结果、分析意见和评定结论所形成的书面文书。 \n\n7. 治疗终结 treatment finality 　　\n　　临床医学一般原则所承认的临床效果稳定。</string>
+    <string name="jd2">依照交通事故伤残鉴定标准，根据受伤人员的伤残状况，将受伤人员伤残程度共划分为10级，包括1级伤残至10级伤残，伤害程度由重至轻。 　　\n　　划分标准如下： \n\n一级伤残划分依据 \na. 日常生活完全不能自理，全靠别人帮助或采用专门设施，否则生命无法维持； \nb. 意识消失； \nc. 各种活动均受到限制而卧床； vd. 社会交往完全丧失。 \n\n二级伤残划分依据 \na. 日常生活需要随时有人帮助； \nb. 各种活动受限，仅限于床上或椅上的活动； \nc. 不能工作； \nd. 社会交往极度困难。 \n\n三级伤残划分依据 \na. 不能完全独立生活，需经常有人监护； \nb. 各种活动受限，仅限于室内的活动； \nc. 明显职业受限； \nd. 社会交往困难。 \n\n四级伤残划分依据 \na. 日常生活能力严重受限，间或需要帮助； \nb. 各种活动受限，仅限于居住范围内的活动； \nc. 职业种类受限； \nd. 社会交往严重受限。 \n\n五级伤残划分依据 \na. 日常生活能力部分受限，偶尔需要监护； \nb. 各种活动受限，仅限于就近的活动； \nc. 需要明显减轻工作； \nd. 社会交往贫乏。 \n\n六级伤残划分依据 \na. 日常生活能力部分受限，但能部分代偿，条件性需要帮助； \nb. 各种活动降低； \nc. 不能胜任原工作； \nd. 社会交往狭窄。 \n\n七级伤残划分依据 \na. 日常生活有关的活动能力严重受限； \nb. 短暂活动不受限，长时间活动受限； \nc. 工作时间需要明显缩短； \nd. 社会交往降低。 \n\n八级伤残划分依据 \na. 日常生活有关的活动能力部分受限； \nb. 远距离流动受限； \nc. 断续工作； \nd. 社会交往受约束。 \n\n九级伤残划分依据 \na. 日常活动能力大部分受限； \nb. 工作和学习能力下降； \nc. 社会交往能力大部分受限； \n\n十级伤残划分依据 \na. 日常活动能力部分受限； \nb. 工作和学习能力有所下降； \nc. 社会交往能力部分受限。</string>
+    <string name="jd3">　　1、伤残评定应以人体伤后治疗效果为依据。对于以原发性损伤及其并发症作为评定依据的，评定时应以损伤当时伤情为主，结合损伤的后果或者结局为辅，综合评定。 　　\n\n　　2、认真分析残疾与事故、损伤之间的关系。 　　\n\n　　3、实事求是地评定。遵循实事求是的原则，坚持以致伤因素对人体直接造成的原发性损伤及由损伤引起的并发症或者后遗症为依据，全面分析，综合评定。</string>
+    <string name="jd4">　　评定时机应以事故直接所致的损伤或确因损伤所致的并发症治疗终结为准。 对治疗终结意见不一致时，可由办案机关组织有关专业人员进行鉴定，确定其是否治疗终结。当事人因交通事故致残的，在治疗终结（临床医学一般原则所承认的临床效果稳定）后，应当由具有资格的伤残鉴定机构评定伤残等级。对治疗终结意见不一致时，可由办案机关组织有关专业人员进行鉴定，确定其是否治疗终结。办案机关依法指派或聘请符合评定人条件，承担道路交通事故受伤人员伤残评定的人员。具备资格的检验、鉴定、评估机构应当向省级人民政府公安机关交通管理部门备案，公安机关交通管理部门可以向当事人介绍符合条件的检验、鉴定、评估机构，由当事人自行选择。</string>
+    <string name="jd5">　　1、检验、鉴定、评估机构、人员接受公安机关交通管理部门指派、委托或者当事人委托的，应当在规定期限内完成检验、鉴定、评估。检验、鉴定、评估结果确定后，应当出具书面结论，由检验、鉴定、评估人签名并加盖机构印章。 \n\n　　2、公安机关交通管理部门应当在接到检验、鉴定结果后二日内将检验、鉴定结论复印件交当事人。当事人对公安机关交通管理部门的检验、鉴定结论有异议的，可以在接到检验、鉴定结论复印件后三日内提出重新检验、鉴定的申请。经县级公安机关交通管理部门负责人批准后，应当另行指派或者委托专业技术人员、有资格的鉴定机构进行重新检验、鉴定。 \n\n　　3、 当事人对自行委托的检验、鉴定、评估结论有异议的，可以在接到检验、鉴定、评估结论后三日内另行委托检验、鉴定、评估，并告知公安机关交通管理部门，公安机关交通管理部门予以备案。 \n\n　　4、 申请重新检验、鉴定、评估以一次为限。重新检验、鉴定、评估的时限与检验、鉴定、评估的时限相同。 　　\n\n　　5、评定书。　评定人评定结束后，应制作评定书并签名。评定书包括一般情况、案情介绍、病历摘抄、检验结果记录、分析意见和结论等内容。 \n\n　　6、 不同的鉴定机构对同一鉴定对象出具多份鉴定结论，若各鉴定机构均具有法定鉴定资格时，应依据鉴定机构级别的高低，一般应采信高一级别鉴定机构作出的鉴定结论，排除那些级别较低鉴定机构作出的鉴定结论。</string>
+    <string name="jd6">1、评定人权利　　\n　　①有权了解与评定有关的案情和其他材料；　　\n　　②有权向当事人询问与评定有关的问题；　　\n　　③有权依照医学原则对道路交通事故受伤人员进行身体检查和要求进行必要的特殊仪器检查等；　　\n　　④有权因专门知识的限制或鉴定材料的不足而拒绝评定。 \n\n2、评定人义务　　\n　　①全面、细致、科学、客观地对道路交通事故受伤人员进行检验和记录；　　\n　　②正确及时地作出评定结论；　　\n　　③回答事故办案机关所提出的与评定有关的问题；　　\n　　④保守案件秘密；　　\n　　⑤严格遵守国家法律法规和有关回避原则的规定； \n　　⑥妥善保管提交评定的物品和材料。</string>
+    <string name="jd7">　　交通事故受伤人员伤残评定工作应当由法医进行；无法医的，由处理交通事故的办案人员进行；伤情复杂的，可以聘请有专门知识的人员或者委托其他专业伤残鉴定机构进行。 \n\n具体的程序为： \n　　交通事故当事人治疗终结后, 伤者必须在治疗终结后的 15 日内向原处理交通事故的公安交通管理机关，写出伤残评定申请书。若伤者 15天内不提出伤残评定申请的,视为自动放弃得到残疾者生活补助费和残疾用具费的权利。申请书应写明申请人的一般情况(姓名、性别、年龄、住址、电话等)伤残及治疗情况(伤情鉴定、病历摘要)申请请求事项，申请人、申请日期。 \n\n　　评定时应以事故直接所致的损伤或确因损伤所致的并发症治疗终结为准。 \n\n　　各方当事人接到伤残评定书后，如果不服评定结果，必须在接到评定书后15日内向上一级公安交通管理机关书面申请重新评定，经审查受理，才能进行重新评定。15天内不申请重新评定的，评定生效，其后提出重新评定申请的，为无效申请。</string>
+    <string name="lp1">1、“事故双方自行报案”处理程序以及相关手续：在道路上发生交通事故，未造成人身伤亡，当事人双方对事实及成因无争议的，按照以下步骤处理：　　\n　　（1）撤出事故现场，迅速恢复交通；　　\n　　（2）由责任方通知保险公司进行定损；　　\n　　（3）双方写明事故经过；　　\n　　（4）事故双方带上驾驶证、行驶证、保险公司定损单及其复印件，共同前往交警分局事故大队处理；　　\n　　（5）交警部门对事故进行核实后，由事故责任方赔偿损失。 \n\n2、交警快速处理交通事故的程序以及相关手续：在道路上发生交通事故，当事人对交通事故事实及成因有争议的，按照以下步骤处理：　　\n　　（1）迅速报警，交警进行现场勘查后，当场做出事故认定，撤出事故现场，恢复交通；　　\n　　（2）由责任方通知保险公司做出车辆损失鉴定；　　\n　　（3）双方共同前往交警分局事故大队，并提供驾驶证、行驶证、定损单的原件及其复印件，写出事故经过；　　\n　　（4）由责任方赔偿损失，无责方将事故维修费用发票交给责任方；　　\n　　（5）无责方离去，交警部门依据《道路交通安全法》对责任方造成事故的违法事实做出处罚；　　\n　　（6）交警部门对责任方出具有效凭证，责任方依据该凭证找保险公司理赔。</string>
+    <string name="lp2">　　投保机动车辆保险无疑是转移事故风险最可行的办法，因此机动车辆驾驶者、所有人应合理搭配险种，在尽量节省保险费的前提下，最大限度的转移事故风险。给自己爱车选择一份适合的保险，既能把损失降到最低、又不多掏冤枉钱。车险要想买得省钱,首先要了解各险种,才知自己的车需要买什么,不需要买什么。</string>
+    <string name="lp3">　　机动车辆保险一般包括基本险和附加险两部分。基本险分为车辆损失保险和第三者责任保险。附加险包括全车盗抢险（盗抢险）、车上人员责任险（司机责任险和乘客责任险）、玻璃单独破碎险等。在此对机动车辆的险种略作分析: \n\n（1）交强险（法定强制性保险）：是《机动车交通事故责任强制保险条例》规定的法定强制性保险，由保险公司对被保险机动车发生道路交通事故造成本车人员、被保险人以外的受害人的人身伤亡、财产损失，在责任限额内予以赔偿的强制性责任保险。对未参加机动车交通事故责任强制保险的机动车，机动车管理部门不得予以登记，机动车安全技术检验机构不得予以检验。 \n\n（2）第三者责任险（主险）：指合格驾驶员在使用被保险车辆过程中发生意外事故而造成第三者的财产直接损失与人员伤亡的，依法应当由被保险人承担的经济赔偿责任，保险人负责赔偿。以现在的赔付标准,建议最少买10万,最好买20万, 因5万、10万、20万的三者险价钱相差不大,总之这个险种买大的自己安心。 \n\n（3）车辆损失险（主险）：指保险车辆遭受保险责任范围内的自然灾害(不包括地震)或意外事故等，造成保险车辆本身损失，保险人依据保险合同的规定给予赔偿。这个险种与第三者刚好相反，因为三者险是保险他人的，而车损险是保自己的,记得车损险应该买。 \n\n（4）盗抢险（主险）：如果你的车在日常使用过程中一直都在比较安全的停车场中停放，上下班路途中也没有什么特别僻静的路段，就可以考虑不保盗抢险（对于所住地区治安不佳、没有固定停车场的车，或者你的车属于很常见的、丢失率比较高的车型，那一定要保盗抢险）。 　　 \n\n（5）车上人员责任险（附加险）： 车上人员责任险并不建议买，因为该险种费率较高，保障范围还比较窄。建议单独考虑人寿保险的产品，保障范围和保险费一般都更低更好!如果你的车经常有家人、朋友坐或者是营运车辆，那你也可以考虑买一点，不过不用买太多，保障额度在1万-2万元/座就够了。 \n\n（6）玻璃单独碎险（附加险）：指使用过程中发生本车玻璃单独破碎。注意"单独"两字,如是其它事故引起的,车损险里有赔,如系国产车,玻璃不贵,想省保费可不买，想要进口的玻璃一定要特别说明。 \n\n（7）自燃险 （附加险,有的条款包含在车损险中）：车辆在行驶过程中,因本车电器、线路、供油系统发生故障及载运货物自燃原因起火燃烧,造成车辆损失以及施救所支付的合理费用。知名品牌且新车建议不买，三年以上的车建议考虑, 也有的保险公司赠送自燃险或者包含在车损险里面。 \n\n（8）划痕险（附加险）： 在使用过程中,被他人刮划（无明显碰撞痕迹）需要修复的费用。一般新手开新车就应该买。 \n\n（9）不计免赔（附加险）：车辆发生车辆损失险或第三者责任险的保险事故造成赔偿，对应由被保险人承担的免赔金额，由保险公司负责赔偿。不计免赔率/ 额险几乎是个必保的好险种，建议加上！特别是新手，加上了会有用的，尤其在你碰到大事故时，这个险种可以大大减少你的损失。</string>
+    <string name="lp4">　　鉴于上述各险种的分析, 根据车龄、驾驶员驾龄的不同，把各类险种进行合理搭配后，提供几种车险组合方式供大家选择: \n\n（1）基本型保障方案：单买交强险，最省保险费，适用于车辆使用较长时间、驾驶技术娴熟、不跑长途、愿意自己承担大部分风险、减少保费支出的车主。 \n\n（2）经济型保障方案1：交强险+第三者10万+车损+不计免赔率/额（既省钱又对己对人有保障，适合有安全保障的停车位、司机有一定驾龄、愿意自己承担部分风险的车主。） \n\n（3）经济型保障方案2：交强险+第三者20万+车损+盗抢+不计免赔率/ 额+玻璃+划痕+车上人员责任险（适合新车、新手） \n\n（4）全面保障方案：交强险＋商业三责险(50万元)＋车损险＋车上人员责任险＋盗抢险＋玻璃单独破碎险＋不计免赔特约＋车身划痕损失险＋其他个性化附加险。适用于新车新手、高档车及需要全面保障的车主。 　　\n\n　　最后一个重要问题是车价,它是计算保费的基数,车价的高低决定保费的多少,大家不要以为你报价高,就会多赔,其实车价无论报多少, 都是按现时该车购买购置的价格标准按年份折旧赔偿的,所以报高了白多交保费,报低了会赔偿不足, 这点很重要。 　　\n\n　　小贴示：车辆保险不宜“一女二嫁”，交强险、三者险最好选用同一家保险公司。否则一旦发生交通事故，索赔时会很麻烦。</string>
+    <string name="lp5">（1）报案要及时。出现交通事故后，首先就要保护现场、抢救人员并及时电话报案。 \n\n（2）报案后应当提供以下证明或单据：在有效期内的保单正本；被保险人身份证；经过年检合格的被保险车辆行驶证；发生事故时驾驶人的驾驶证，此驾驶证必须经过年审合格并确定在准驾车型范围内；属于道路交通事故的，应提供交管部门出具的事故证明；属于非道路交通事故的，应提供相应的事故证明；因事故而产生的损失清单以及有关的费用单据。 \n\n（3）保险公司定损的金额并不是肇事者赔偿的依据，由物价局价格鉴定中心做出的鉴定结论公信力更高。 \n\n（4）10日内需提交索赔单证 　\n\n　　以上手续备齐后，就可以到被保险人的承保公司或有定损资格的汽车专修厂进行拍照、定损、理赔。</string>
+    <string name="lp6">　　大多数车主都以为买了保险就万事大吉，今后有什么问题都能找保险公司索赔。然而事实并非如此简单，有些情况保险公司是不予理赔的。 \n\n（1） 未年检 　　\n　　保险只对合格车辆生效，对于未年检的车辆只能视为不合格车辆，在这种情况下，即使买了保险也无济于事。 \n\n（2） 未年审 　　\n　　驾驶员没有年审，所开车辆属于不合格车辆，保险公司可以根据保险合同拒绝任何理赔。无牌照车辆在出险时，保险车辆理赔必须具备两个条件：一是保险车辆须有公安交通管理部门核发的行驶证或号牌；二是在规定期间内经公安交通管理部门检验合格。异地购车在提车途中出险得不到赔偿就是这个原因。 \n\n（3） 无过错 　　\n　　《保险法》规定："必须有责任认定"，保险公司才能赔付。即使被保险人有一定过错，也必须先向第三方索赔，才有可能获得保险公司的赔偿。一旦放弃了向第三方追偿的权利，也就放弃了向保险公司要求赔偿的权利。 \n\n（4） 自家人 　　\n　　第三者责任险中的第三者通俗地讲，就是排除4种人：即保险人、被保险人、本车发生事故时的驾驶员及其家庭成员、被保险人的家庭成员。 \n\n（5） 收费停车场 　　\n　　按照保险公司的规定，凡是车辆在收费停车场被盗，保险公司一概不负责赔偿。因为上述场所对车辆有保管的责任，在保管期间，因保管人保管不善造成车辆损毁、丢失的，保管人应承担责任。保险公司不负责赔偿。因此，无论是车丢了，还是被划了，保险公司一概不管。 \n\n（6） 维修期间　　\n　　营业性修理厂中，无论是维修试车造成车辆损毁，还是车辆丢失，都应由修理厂承担责任，保险公司不负责赔偿。</string>
+    <string name="lp7">　　对于许多的交通事故，若是我们能适当变通，那么就可以避免许多不必要的麻烦与支出，墨守成规，一味的较真也许只会给自己增添麻烦，正所谓该“私了”时就“私了”。 \n\n1、己方全责时　　\n　　比如并线时没有避让直行车辆造成事故，此时你应负全责。这时找交警开责任认定书，有可能被扣分罚款，所以300元以下的小剐小碰强烈建议私了。如果你实在不想再掏钱修车，可以按照单方事故索赔。当然如果事故比较严重，那就只能请交警同志，走正常通道了。 \n\n2、对方全责时　　\n　　例如正常行驶突然被从胡同中拐出来的车撞到，对方又自认全责，第一选择是和肇事方私了，由对方现场掏修车钱然后一拍两散，以后抽个时间自己把车修好，这也是最理想的解决途径。有些人拿了修车钱后还去保险公司走单方事故，反而利用事故赚了钱，当然这种做法我们不提倡。 \n\n3、责任对等或“肇事方”逃逸　　\n　　对等责任是最好解决的一类事故，请交警同志过来开事故单，然后各自报案索赔。如果交通事故发生后“肇事方”逃逸，那麻烦就比较大了。尤其在损失很大的情况下，无法走单方事故，只能请交警同志过来勘验现场立案侦查，然后由保险公司代为追偿。</string>
+    <string name="network_show_connectionless">无网络连接！</string>
+    <string name="network_show_msg">是否对网络进行设置？</string>
+    <string name="network_show_title">没有可用网络</string>
+    <string name="network_show_setting">设置</string>
+    <string name="network_show_error">网络异常！</string>
+    <string name="modify">修改</string>
+    <string name="find_car">找车位</string>
+    <string name="find_park">找停车场</string>
+    <string name="readagree">\n一、总则\n
+\n1.1 	无忧停车的所有权和运营权归北京百会易泊科技有限公司所有（以下简称“本公司”）。
+\n1.2 	用户在使用本公司的服务之前，应当仔细阅读本协议，并同意遵守本协议及所有网站规则后方可成为公司用户，一旦用户注册成功，则用户与本公司之间自动形成协议关系，用户应当受本协议及所有网站规则的约束。用户在使用特殊的服务或产品时，应当同意接受相关协议后方能使用。
+\n1.3 	本协议、网站规则可由本公司随时更新，用户在使用时应当及时关注，用户同意本公司不承担通知义务。本公司的通知、公告、声明或其它类似内容是本协议及网站规则的一部分。
+\n
+\n二、服务内容\n
+\n2.1 	通过无忧停车手机客户端可以在线实时查找空余停车位、停车语音导航指引、手机支付停车费、对提供的服务发表意见等。。
+\n2.2 	本公司仅提供相关的网络服务，除此之外与相关网络服务有关的设备(如个人电脑、手机、及其他与接入互联网或移动网有关的装置)及所需的费用(如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费)均应由用户自行负担。
+\n
+\n三、用户帐号\n
+\n3.1 	经本公司注册系统完成注册程序并通过身份认证的用户即为本公司的正式用户，认证后即获得本公司规定用户所应享有的一切权限。
+\n3.2 	用户帐号的所有权归本公司，用户仅享有使用权，如用户注册的帐号在任何连续360日内未实际使用，本公司保留收回的权利。。
+\n3.3 	用户有义务保证密码和帐号的安全，用户利用该密码和帐号所进行的一切活动引起的任何损失或损害，由用户自行承担全部责任，本公司不承担任何责任。如用户发现帐号遭到未授权的使用或发生其他任何安全问题，应立即修改帐号密码并妥善保管，如有必要，请通知本公司。因黑客行为或用户的保管疏忽导致帐号非法使用，本公司不承担任何责任。
+\n
+\n四、使用规则\n
+\n4.1 	遵守中华人民共和国相关法律法规，包括但不限于《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》、《最高人民法院关于审理涉及计算机网络著作权纠纷案件适用法律若干问题的解释(法释[2004]1号)》、《全国人大常委会关于维护互联网安全的决定》、《互联网电子公告服务管理规定》、《互联网新闻信息服务管理规定》、《互联网著作权行政保护办法》和《信息网络传播权保护条例》等有关计算机互联网规定和知识产权的法律和法规、实施办法。
+\n4.2 	用户在申请使用无忧停车移动APP网络服务时，必须向无忧停车移动APP提供准确的个人资料，如个人资料有任何变动，必须在三个工作日内更新。
+\n4.3    用户注册成功后，视为允许无忧停车移动APP通过电子邮件或其他方式向用户发送相关优惠服务信息。
+\n4.4 	您在使用无忧停车网络服务过程中，必须遵循以下规则：
+\n\t(1)不得为任何非法目的而使用网络服务系统；
+\n\t(2)遵守所有与网络服务有关的网络协议、规定和程序；
+\n\t(3)不得利用本公司服务进行任何可能对互联网的正常运转造成不利影响的行为；
+\n\t(4)不得利用本公司服务进行任何不利于本公司的行为。
+\n4.5 	如用户在使用网络服务时违反上述任何规定，本论坛有权要求用户改正或直接采取一切必要的措施(包括但不限于删除用户张贴的内容、暂停或终止用户使用网络服务的权利)以减轻用户不当行为而造成的影响。
+\n
+\n五、隐私保护\n
+\n5.1 	本公司不对外公开或向第三方提供单个用户的注册资料及用户在使用网络服务时存储在本公司的非公开内容，但下列情况除外：
+\n\t(1)事先获得用户的明确授权；
+\n\t(2)根据有关的法律法规要求；
+\n\t(3)按照相关政府主管部门的要求；
+\n\t(4)为维护社会公众的利益。
+\n5.2 	本公司可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与本公司同等的保护用户隐私的责任，则本公司有权将用户的注册资料等提供给该第三方。
+\n5.3 	在不透露单个用户隐私资料的前提下，本公司有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。
+\n
+\n六、版权声明\n
+\n6.1 	本公司的文字、图片、音频、视频等版权均归本公司享有或本公司与作者共同享有，未经本公司许可，不得任意转载。
+\n6.2 	本公司特有的标识、版面设计、编排方式等版权均属本公司享有，未经本公司许可，不得任意复制或转载。
+\n6.3 	使用本公司的任何内容均应注明“来源于无忧停车”及署上作者姓名，按法律规定需要支付稿酬的，应当通知本公司及作者及支付稿酬，并独立承担一切法律责任。
+\n6.4 	恶意转载本公司任何内容的，本公司保留将其诉诸法律的权利。
+\n
+\n七、责任声明\n
+\n7.1 	用户明确同意其使用本公司网络服务所存在的风险及一切后果将完全由用户本人承担，本公司对此不承担任何责任。
+\n7.2 	本公司无法保证网络服务一定能满足用户的要求，也不保证网络服务的及时性、安全性、准确性。
+\n7.3 	本公司不保证为方便用户而设置的外部链接的准确性和完整性，同时，对于该等外部链接指向的不由本公司实际控制的任何网页上的内容，本公司不承担任何责任。
+\n7.4 	对于因不可抗力或本公司不能控制的原因造成的网络服务中断或其它缺陷，本公司不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。
+\n7.5 	对于本公司向用户提供的下列产品或者服务的质量缺陷本身及其引发的任何损失，本公司无需承担任何责任：
+\n\t(1)本公司向用户免费提供的各项网络服务；
+\n\t(2)本公司向用户赠送的任何产品或者服务；
+\n\t(3)本公司向收费网络服务用户附赠的各种产品或者服务。
+\n7.6 	本公司有权于任何时间暂时或永久修改或终止本服务(或其任何部分)，而无论其通知与否，本公司对用户和任何第三人均无需承担任何责任。
+\n
+\n八、附则\n
+\n8.1 	本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。
+\n8.2 	如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。
+\n8.3 	本协议解释权及修订权归无忧停车所有。</string>
+
+    <!-- 有贝先付 -->
+    <string-array name="cash_type">
+        <item name="cash_type_uubee">有贝现金红包</item>
+        <item name="cash_type_third">商铺红包</item>
+        <item name="cash_type_repay">还款红包</item>
+    </string-array>
+
+    <string name="cash_ticker_num">可用红包<ns1:g id="value">%d</ns1:g>个</string>
+    <string name="cash_valid_util_text">有效期至： <ns1:g id="value">%s</ns1:g></string>
+
+    <string-array name="repay_day_of_week">
+        <item name="every_sunday">每周日</item>
+        <item name="every_monday">每周一</item>
+        <item name="every_tuesday">每周二</item>
+        <item name="every_wednesday">每周三</item>
+        <item name="every_thursday">每周四</item>
+        <item name="every_friday">每周五</item>
+        <item name="every_saturday">每周六</item>
+    </string-array>
+
+    <string name="active_cancel_text">取消激活</string>
+    <string name="active_confirm_text">确认激活</string>
+    <string name="agreement_declare">同意《有贝先付服务协议》</string>
+    <string name="attention_prepay">已知晓关注【有贝先付】微信公众号还款</string>
+    <string name="cash_invalid_yet">该红包已失效，请重新选择可用红包。</string>
+    <string name="cash_ticker_not_use">不使用优惠券</string>
+    <string name="cash_ticker_select_tip">选择红包:</string>
+    <string name="cash_ticker_third">商铺红包</string>
+    <string name="cash_ticker_tip">选择红包</string>
+    <string name="cash_ticker_use">使用红包</string>
+    <string name="cash_ticker_uubee">有贝现金红包</string>
+    <string name="cash_unit">元</string>
+    <string name="cash_used_yet">该红包已消费，请重新选择可用红包。</string>
+    <string name="commit_loading_tip">提交中,请稍后…</string>
+    <string name="credit_account">信用账号:</string>
+    <string name="credit_account_no">信用账号:\n本机号码</string>
+    <string name="credit_apply_name">信用申请人：</string>
+    <string name="credit_money_remain">可用信用余额(元)</string>
+    <string name="day">日</string>
+    <string name="get_msg_verify_code">获取验证码</string>
+    <string name="identity_card_no">身份证：</string>
+    <string name="info_commit">确认提交</string>
+    <string name="info_confirm_title">请核实您的信息！</string>
+    <string name="info_input_real_id">身份证号</string>
+    <string name="info_input_real_name">真实姓名</string>
+    <string name="info_make_sure_reality">请确保身份信息真实性</string>
+    <string name="info_supply_title">请补充您的信息</string>
+    <string name="input_msg_verify_tip">请输入短信验证码</string>
+    <string name="input_pay_password_tip">请输入支付密码</string>
+    <string name="month">月</string>
+    <string name="pay_button_text">立即付款</string>
+    <string name="pay_money_title">付款金额</string>
+    <string name="pay_money_unit_text">¥</string>
+    <string name="pay_no_pass_tip_text">亲，您已开启有贝小额免密支付功能！</string>
+    <string name="pay_success">支付成功！</string>
+    <string name="payee_company">收款商户</string>
+    <string name="personal_info_invalid">请输入正确的姓名和身份证！</string>
+    <string name="product_name">商品名称</string>
+    <string name="repay_date">还款日：</string>
+    <string name="repeat_pay_button_text">立即支付</string>
+    <string name="repeat_pay_title">您正在使用“有贝先付”付款</string>
+    <string name="return_back">返  回</string>
+    <string name="tip_pay_supply">小贝温馨提示：\n信用支付服务由“有贝”提供！</string>
+    <string name="transaction_id">交  易  号</string>
+    <string name="uubee_credit_account">信用账号 %1$s</string>
+    <string name="uubee_dialog_slogan">开启【先付后还】信用生活</string>
+    <string name="uubee_dialog_subtitle_verify_code">请珍惜有贝信用 按时还款</string>
+    <string name="uubee_dialog_title_verify_code">输入验证码完成付款</string>
+    <string name="uubee_dialog_title_verify_name">有贝【先付后还】实名认证</string>
+    <string name="uubee_dialog_title_verify_phone">有贝信用账号</string>
+    <string name="uubee_get_again">重新获取</string>
+    <string name="uubee_hint_id_card">请填写正确的身份证号</string>
+    <string name="uubee_hint_name">请填写身份证上的姓名</string>
+    <string name="uubee_hint_phone">手机号码</string>
+    <string name="uubee_next">下一步</string>
+    <string name="uubee_bill_date">账单日：每周%1$s</string>
+    <string name="uubee_repay_date">还款日：每周%1$s</string>
+    <string name="uubee_tip_input_verify_code">输入尾号(%1$s)接收的验证码</string>
+    <string name="uubee_tip_repay">还款请关注“有贝先付”公众号</string>
+    <string name="uubee_tip_verify_name">请填写真实的身份查看额度 立享14天免息</string>
+    <string name="uubee_to_pay">去付款</string>
+    <string name="verify_msg_invalid">请输入正确的短信验证码！</string>
+    <string name="word_contact_us">客服咨询：请关注"有贝先付"微信公众号</string>
+    <string name="year">年</string>
+
+</resources>

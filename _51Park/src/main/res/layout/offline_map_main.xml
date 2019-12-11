@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_content_bg"
+    android:orientation="vertical" >
+    <View style="@style/View_W_Black_Style" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <cn.com.unispark.fragment.mine.setting.offlinemap.view.PinnedHeaderListView2
+            android:id="@+id/citylist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/gray_line"
+            android:paddingRight="@dimen/px10"
+            android:dividerHeight="@dimen/px1"
+            android:fadingEdge="none" />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <cn.com.unispark.fragment.mine.setting.offlinemap.view.sort.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- 首页轮播图 -->
+
+    <cn.com.unispark.define.CycleViewPager
+        android:id="@id/viewpager"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_51park"
+        android:clickable="true" />
+
+    <!-- 放置轮播图页数点 -->
+
+    <LinearLayout
+        android:id="@+id/point_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/transparent"
+        android:paddingBottom="@dimen/padding_drawable"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</FrameLayout>

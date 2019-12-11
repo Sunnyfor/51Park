@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_White_Style" >
+
+    <!-- 存放订单状态的容器 -->
+
+    <HorizontalScrollView
+        android:id="@+id/order_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@id/order_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- 订单状态栏与订单布局之间的分割线 -->
+
+    <ImageView
+        android:id="@id/line_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_scrollView"
+        android:background="@drawable/bg_order_arrow"
+        android:contentDescription="@string/image" />
+
+    <!-- 存放订单列表的容器 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/order_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_iv" />
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_White_Style" >
+
+    <!-- 【账户余额】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_typename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出账金额"
+            android:textColor="@color/gray_font" />
+
+        <LinearLayout
+            android:id="@+id/top_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/tv_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="@color/red_font" />
+
+            <TextView
+                android:id="@+id/tv_jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/red_font"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/View_W_Black_Style" />
+
+    <LinearLayout
+        android:id="@+id/first_ll"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_order_type_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/lei_xing"
+            android:textColor="@color/gray_font" />
+
+        <TextView
+            android:id="@+id/tv_order_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black_font" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order_pay_type"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_order_pay_type_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/zhi_fu_fang_shi"
+            android:textColor="@color/gray_font" />
+
+        <TextView
+            android:id="@+id/tv_order_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black_font" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three_ll"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_order_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/zhi_fu_shi_jian"
+            android:textColor="@color/gray_font" />
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black_font" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/four_ll"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_order_num_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/ding_dan_bian_hao"
+            android:textColor="@color/gray_font" />
+
+        <TextView
+            android:id="@+id/tv_order_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black_font" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/five_ll"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_order_detail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/bei_zhu"
+            android:textColor="@color/gray_font" />
+
+        <TextView
+            android:id="@+id/tv_order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black_font" />
+    </LinearLayout>
+
+</LinearLayout>

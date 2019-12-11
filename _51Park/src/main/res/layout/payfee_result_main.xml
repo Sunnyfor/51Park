@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【停车费支付结果】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <LinearLayout
+        android:id="@id/test0_ll"
+        style="@style/Layout_Match_Vertical_Style"
+        android:visibility="gone" >
+
+        <!-- 停车交费成功 -->
+
+        <TextView
+            android:id="@id/prompt_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/px56"
+            android:drawableTop="@drawable/icon_pay_success"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black_font" />
+
+        <!-- 感谢您的支持，欢迎下次光临 -->
+
+        <TextView
+            android:id="@id/test1_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/gan_xie_nin_de_zhi_chi"
+            android:textColor="@color/gray_font" />
+
+        <!-- 补交停车费时提示语 -->
+
+        <TextView
+            android:id="@id/leave_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/shi_shi_wu_fen_qian"
+            android:textColor="@color/gray_font"
+            android:visibility="gone" />
+
+        <!-- 返回按钮 -->
+
+        <Button
+            android:id="@id/back_btn"
+            style="@style/Common_Button_Red_Margin_Style"
+            android:text="@string/wan_cheng" />
+
+        <!-- 查看订单信息 -->
+
+        <TextView
+            android:id="@+id/see_order_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/cha_kan_ding_dan_xin_xi"
+            android:textColor="@color/gray_font"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

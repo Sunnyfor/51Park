@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【订单详情】界面 -->
+
+    <include
+        android:id="@id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <!-- 交易状态 -->
+
+    <RelativeLayout
+        android:id="@id/test0_rl"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/icon_pay_ok"
+            android:gravity="center"
+            android:textColor="@color/green_font" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/View_W_Black_Style"
+        android:layout_above="@id/test0_rl" />
+
+    <ScrollView
+        android:id="@id/scrollview"
+        style="@style/Layout_Wrap_Vertical_Style"
+        android:layout_above="@id/bottom_line"
+        android:layout_below="@id/line_view"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout style="@style/Layout_Match_Vertical_Style" >
+
+            <!-- 实付金额 -->
+
+            <View style="@style/View_W_Top_Style" />
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/shi_jiao_jin_e" />
+
+                <TextView
+                    android:id="@id/actual_pay_tv"
+                    style="@style/TextView_Order_Details_Right_Style"
+                    android:text="@string/ling_dian_ling_ling"
+                    android:textColor="@color/orange_font" />
+            </LinearLayout>
+
+            <View style="@style/View_W_Left_Style" />
+
+            <!-- 订单编号 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/ding_dan_bian_hao" />
+
+                <TextView
+                    android:id="@id/order_num_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 停车场名称 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/parkname" />
+
+                <TextView
+                    android:id="@id/name_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 车牌号码 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/che_pai_hao_ma" />
+
+                <TextView
+                    android:id="@id/plate_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 停车时间 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/ting_che_shi_jian" />
+
+                <TextView
+                    android:id="@id/time_tv"
+                    style="@style/TextView_Order_Details_Right_Style"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <!-- 停车时长 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/ting_che_shi_chang" />
+
+                <TextView
+                    android:id="@id/long_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 应交金额 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/ying_jiao_jin_e" />
+
+                <TextView
+                    android:id="@id/should_pay_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 优惠 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/you_hui" />
+
+                <TextView
+                    android:id="@id/coupons_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 余额支付 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/yu_e_zhi_fu" />
+
+                <TextView
+                    android:id="@id/remain_pay_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 支付时间 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/zhi_fu_shi_jian" />
+
+                <TextView
+                    android:id="@id/pay_time_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+
+            <!-- 支付方式 -->
+
+            <LinearLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+                <TextView
+                    style="@style/TextView_Order_Details_Left_Style"
+                    android:text="@string/zhi_fu_fang_shi" />
+
+                <TextView
+                    android:id="@+id/pay_way_tv"
+                    style="@style/TextView_Order_Details_Right_Style" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

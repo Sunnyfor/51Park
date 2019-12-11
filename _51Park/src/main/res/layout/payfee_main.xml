@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Horizontal_White_Style" >
+
+    <!-- 交停车费界面 -->
+
+    <RelativeLayout
+        android:id="@+id/relayout_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 包月用户出场提示语 -->
+
+        <TextView
+            android:id="@+id/month_user_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px56"
+            android:background="@color/red_font"
+            android:drawableLeft="@drawable/icon_prompt_white"
+            android:drawablePadding="@dimen/px20"
+            android:drawableRight="@drawable/icon_close_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_left_right"
+            android:paddingRight="@dimen/margin_left_right"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px22" />
+
+        <!-- 【交停车费】界面 -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@id/scrollview"
+            style="@style/Layout_Match_Vertical_Alpha_Style"
+            android:layout_below="@id/month_user_tv"
+            android:overScrollMode="never"
+            ptr:ptrAnimationStyle="rotate" >
+
+            <LinearLayout style="@style/Layout_Wrap_Vertical_Alpha_Style" >
+
+                <!-- 停车费用和停车时间展示 (呼吸灯) -->
+
+               <!--  <include
+                    android:id="@+id/payfee_time_ic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/payfee_time" /> -->
+
+                <!-- 灰色分割块 -->
+
+                <View style="@style/View_W_Style" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/gray_bg" />
+
+                <View style="@style/View_W_Style" />
+
+                <!-- 车辆在场动画布局 -->
+
+                <include
+                    android:id="@+id/payfee_car_ic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/payfee_car"
+                    android:visibility="gone" />
+
+                <!-- 停车费账单布局 -->
+
+                <include
+                    android:id="@+id/payfee_bill_ic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/payfee_bill"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </RelativeLayout>
+
+    <include
+        android:id="@id/title_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_title"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+</RelativeLayout>

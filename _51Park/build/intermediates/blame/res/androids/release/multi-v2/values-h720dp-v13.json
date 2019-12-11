@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/incremental/mergeAndroidsReleaseResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/aa/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/d01adfb0d7f868c54f021980985d3e17/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_bill_rl"
+    android:background="@drawable/bg_park_state"
+    style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+	 <!-- 情况二：账单详情  （废弃）--> 
+
+	<!-- 修改为统一样式 -->
+
+	<!-- 停车中、已交费、固定车标签 -->
+	<ImageView 
+	    android:id="@+id/iv_status"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:src="@drawable/label_order_parking"/>
+	
+	
+    <!-- 停车场名称 -->
+
+    <TextView
+        android:id="@id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/line_view"
+        android:drawableLeft="@drawable/icon_bill_park_name"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/bai_hui_yi_bo_ting_che"
+        android:textColor="@color/black_font_bill" />
+
+    <!-- 车牌号 -->
+
+    <TextView
+        android:id="@id/plate_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name_tv"
+        android:layout_below="@id/name_tv"
+        android:layout_toLeftOf="@id/line_view"
+        android:drawableLeft="@drawable/icon_bill_car_plate"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/jing_b_yi_er_san_si_wu"
+        android:textColor="@color/black_font_bill" />
+
+    <!-- 停车时长 -->
+
+    <TextView
+        android:id="@id/long_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name_tv"
+        android:layout_below="@id/plate_tv"
+        android:layout_toLeftOf="@id/line_view"
+        android:drawableLeft="@drawable/icon_bill_park_time"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/ling_shi_ling_fen"
+        android:textColor="@color/black_font_bill" />
+
+     <!-- 订单状态栏显示更多的按钮 -->
+
+    <ImageView
+        android:id="@id/more_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_more"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image" />
+    
+    <!-- 停车费用 -->
+
+    <TextView
+        android:id="@id/park_fee_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/more_iv"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/icon_home_park_fee"
+        android:gravity="center"
+        android:text="@string/ling_dian_ling_ling"
+        android:textColor="@color/red_font" />
+
+    <!-- 分割线 -->
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_H_Style"
+        android:layout_alignTop="@id/plate_tv"
+        android:layout_toLeftOf="@id/park_fee_tv" />
+
+</RelativeLayout>

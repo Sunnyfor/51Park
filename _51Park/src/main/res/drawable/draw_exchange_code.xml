@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <!-- shape是用来定义形状的 -->
+        <shape>
+            <!-- solid用来定义不同的边框颜色 -->
+            <solid android:color="@color/transparent" />
+            <!-- gradient定义该形状里面为渐变色填充 -->
+            <gradient
+                android:angle="270"
+                android:endColor="#ffffff"
+                android:startColor="#ffffff" />
+            <!-- corners是用来定义圆角的 -->
+            <corners
+                android:bottomLeftRadius="1dip"
+                android:bottomRightRadius="1dip"
+                android:topLeftRadius="1dip"
+                android:topRightRadius="1dip" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape>
+            <stroke
+                android:dashGap="0dp"
+                android:dashWidth="1dp"
+                android:width="1dp"
+                android:color="#B9B9C3" />
+            <corners android:radius="1dp" />
+            <solid android:color="#ffffff" />
+            <!-- 边框的宽度 -->
+            <padding
+                android:bottom="0.5dp"
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:top="0.5dp" />
+        </shape>
+    </item>
+
+</layer-list>

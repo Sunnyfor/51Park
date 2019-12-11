@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app背景色，公用标题颜色 -->
+    <color name="gray_bg">#f4f4f4</color>
+
+    <!-- 线条颜色 -->
+    <color name="gray_line">#e5e5e5</color>
+
+    <!-- 标题颜色 -->
+    <color name="gray_title_bg">#fafafa</color>
+
+    <!-- ListView背景色 -->
+    <color name="list_bg">#f8f8f8</color>
+
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    
+    <!-- 透明 -->
+    <color name="gray_press">#e7e7e7</color>
+
+    <!-- 百分之二十透明 -->
+    <color name="transparent20">#51000000</color>
+    
+    <!-- 租赁城市列表子条目选中的颜色 -->
+    <color name="gray_item_bg">#f2f2f2</color>
+    
+    <!--  -->
+    <color name="gray_click">#EDEDED</color>
+    <color name="item_background">#D0D0D0</color>
+    <color name="selector_background">#DAA520</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+    <color name="child_item_bg">#E5E5E5</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="list_item_text_pressed_bg">#FF822E</color>
+    <color name="tab_text_color">#787878</color>
+    <color name="tab_text_pressed_color">#CD0000</color>
+    <color name="city_choose_yes">#ec4f39</color>
+    <color name="city_choose_no">#888888</color>
+    <!-- 日历 -->
+    <color name="calendar_blue_font">#36B4C1</color>
+    <color name="calendar_gray_font">#C6C6C6</color>
+    <color name="calendar_orange_font">#FB912F</color>
+
+    <!-- 按钮背景选中与未选中 -->
+    <color name="red_noselect">#EDA197</color>
+    <color name="red_selected">#EC4F38</color>
+
+    <!-- 字体颜色 -->
+    <color name="red_font">#ec4f39</color>
+    <color name="black_font">#313131</color>
+    <color name="black_font47">#474747</color>
+    <color name="black_font20">#202020</color>
+    <color name="black_font55">#555555</color>
+    <color name="black_font66">#666666</color>
+    <color name="black_font99">#999999</color>
+    <color name="black_fontb2">#b2b2b2</color>
+    <color name="black_font_bill">#555961</color>
+    <color name="gray_font">#888888</color>
+    <color name="gray_font80">#808080</color>
+    <color name="gray_fontbb">#bbbbbb</color>
+    <color name="gray_credit">#d5d6d8</color>
+    <color name="orange_font">#ff8930</color>
+
+    <!--  -->
+    <color name="green_font">#43BC17</color>
+    <color name="black_title_font">#222222</color>
+    <color name="o">#ddeeee</color>
+    <color name="o1">#ffffdd</color>
+    <color name="gray">#d5d4d4</color>
+    <color name="blue">#0000ff</color>
+    <color name="datecolor">#808080</color>
+    <color name="white_state">#FFFFFF</color>
+    <color name="black_state">#000000</color>
+    <color name="black">#000000</color>
+    <color name="gray_little_font">#C0C0C0</color>
+    <color name="gray_yhq_font">#B9B9B9</color>
+    <color name="gray_view_black">#D8D8D8</color>
+    <color name="gray_black">#B7B7B7</color>
+    <color name="gray_youhuiquan_black">#555555</color>
+    <color name="gray_title">#F9F9F9</color>
+    <color name="gray_title_line">#CCCCCC</color>
+    <color name="green_youhui_font">#0EB416</color>
+    <color name="blue_font">#089DDF</color>
+    <color name="blue_order_font">#317CE1</color>
+    <color name="yellow_park_price_font">#FF6600</color>
+    <color name="blue_parkcard_font"> #307BE1</color>
+    <color name="blue_radiobtn">#1487F9</color>
+
+    <!-- 周边 -->
+    <color name="orange_near">#FD9441</color>
+    <color name="green_near">#87D16B</color>
+    <color name="red_near">#F46360</color>
+    <color name="purple_near">#AB87EA</color>
+
+    <!-- 【预测时间块的颜色】 -->
+    <color name="red_park">#FC513B</color>
+    <color name="green_park">#60C209</color>
+    <color name="yellow_park">#FEBD21</color>
+    <color name="gray_park">#D7D7D7</color>
+    <color name="background_light">#fffafafa</color>
+    <color name="lightgray">#F7F7F7</color>
+    <color name="lightblack">#696969</color>
+    <color name="blend_item_pressed_color_transparent">#19000000</color>
+    <color name="blend_item_theme_color">#ff005092</color>
+    <color name="blend_item_divider_color">#ffededed</color>
+    <color name="blend_item_theme_color_black">#ff393d43</color>
+    <!-- login start -->
+    <color name="list_press">#555b96da</color>
+    <color name="login_content_bg">#F8F8F8</color>
+    <color name="login_title_bg">#2C94CF</color>
+    <color name="login_back_press">#278AC8</color>
+    <color name="parkinfo_back_press">#F1F1F1</color>
+    <color name="parkinfo_back_normal">#F9F9FA</color>
+    <!-- 文本框提示字的颜色 -->
+    <color name="login_edit_color">#B1B1B1</color>
+    <color name="login_btn_normal">#FF8500</color>
+    <color name="login_btn_press">#FF9400</color>
+    <!-- 支付宝按钮单击的颜色 -->
+    <color name="alipay_recharge_btn_selected">#EF4834</color>
+    <color name="alipay_recharge_btn_normal">#EB3C2B  </color>
+    <!-- login end -->
+    <drawable name="park_title_bgcolor">#ff303030</drawable>
+
+    <color name="park_bgcolor">#ffffffff</color>
+    <color name="btn_back_textcolor">#ff000000</color>
+    <color name="park_name_textcolor">#c6e3e5</color>
+    <color name="gray_textcolor">#666666</color>
+    <color name="park_textcolor">#ff464646</color>
+    <color name="poilistdef">#fff1f1f1</color>
+
+    <drawable name="bkcolor">#20ff00ff</drawable>
+
+    <color name="orange">#FF6600</color>
+    <color name="bgColor">#000000</color>
+    <color name="bantouColor">#a0000000</color>
+    <color name="more_btn_pressed">#FFFFFF</color>
+    <color name="tab_normal">#000000</color>
+    <color name="tab_pressed">#0086ce</color>
+    <color name="btn_xunche_timer_normal">#90e6ee</color>
+    <color name="btn_xunche_timer_pressed">#0086ce</color>
+    <color name="btn_pressed">#59B1DE</color>
+    <color name="main_menu_bg">#ff333332</color>
+    <color name="main_menu_text_color">#ffffffff</color>
+    <color name="main_menu_left_bg">#50888e</color>
+    <color name="main_menu_left_button_bg_color">#50888e</color>
+    <color name="main_menu_left_button_bg_color_press">#ff000000</color>
+    <color name="main_menu_right_bg">#202020</color>
+    <color name="main_menu_right_button_bg_color">#202020</color>
+    <color name="main_menu_right_button_bg_color_press">#99ffffff</color>
+    <color name="list_text_second">#99c6e3e5</color>
+    <!-- <color name="TextColor">#FFFFFF</color> -->
+    <color name="text_color">#c6e3e5</color>
+    <color name="settings_text_color">#c6e3e5</color>
+    <color name="text_colorss">#000000</color>
+    <color name="settings_text_colorss">#000000</color>
+    <color name="settings_text_co">#888888</color>
+    <color name="btn_dialog_ok_color">#a4c9cc</color>
+    <color name="main_more_popup_bg">#cc50888e</color>
+    <!-- 预定单击的颜色 -->
+    <color name="book_default">#FF9913</color>
+    <color name="book_pressed">#FF730B</color>
+    <color name="booked">#BBBBBB</color>
+    <color name="order_null">#BBBBBB</color>
+
+    <!-- 有贝先付 -->
+    <color name="black_333333">#333333</color>
+    <color name="black_555555">#555555</color>
+    <color name="black_666666">#666666</color>
+    <color name="blue_44CAC6">#44CAC6</color>
+    <color name="gray_939393">#939393</color>
+    <color name="gray_ccc">#cccccc</color>
+    <color name="gray_dedee3">#dedee3</color>
+    <color name="gray_light_text">#949494</color>
+    <color name="high_light_text">#00a3ae</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="uubee_blue_light">#48d3dc</color>
+    <color name="uubee_btn_gift_disable">#eeeeee</color>
+    <color name="uubee_btn_gift_pressed">#eeeeee</color>
+    <color name="uubee_btn_normal">#48d3dc</color>
+    <color name="uubee_btn_pressed">#27d3de</color>
+    <color name="uubee_btn_unactivated">#DDDDDD</color>
+    <color name="uubee_cyan">#e0f0ee</color>
+    <color name="uubee_divider_activate">#b7b7b7</color>
+    <color name="uubee_divider_color">#C8C8D0</color>
+    <color name="uubee_gray_dark">#EBEBF4</color>
+    <color name="uubee_gray_light">#F5F5F9</color>
+    <color name="uubee_red">#fd6c46</color>
+    <color name="uubee_toolbar_bg">#48d3dc</color>
+    <color name="white_bluish">#eef6f5</color>
+    <color name="white_ivory">#f9fffe</color>
+    <color name="yellow_ffface">#ffface</color>
+
+</resources>

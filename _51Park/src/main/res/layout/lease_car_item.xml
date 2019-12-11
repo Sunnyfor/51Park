@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_Style" >
+
+    <!-- 【车位租赁】子条目页面 -->
+
+    <RelativeLayout
+        android:id="@id/test0_rl"
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        android:layout_marginTop="@dimen/px20"
+        android:paddingRight="@dimen/px20" >
+
+        <!-- 是否已购买 -->
+
+        <ImageView
+            android:id="@+id/already_buy_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/label_already_buy"
+            android:visibility="gone" />
+
+        <!-- 停车场图片 -->
+
+        <ImageView
+            android:id="@id/desc_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_default_park"
+            android:contentDescription="@string/image" />
+
+        <!-- 停车场名称 -->
+
+        <TextView
+            android:id="@id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/desc_iv"
+            android:singleLine="true"
+            android:text="@string/bai_hui_yi_bo_ting_che"
+            android:textColor="@color/black_font" />
+
+        <!-- 月卡日卡 -->
+
+        <LinearLayout
+            android:id="@id/test0_ll"
+            style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+            android:layout_below="@id/name_tv"
+            android:layout_toRightOf="@id/desc_iv" >
+
+            <TextView
+                android:id="@id/month_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px20"
+                android:drawableLeft="@drawable/icon_lease_month"
+                android:drawablePadding="@dimen/padding_drawable"
+                android:textColor="@color/black_font" />
+
+            <TextView
+                android:id="@id/meter_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_lease_meter"
+                android:drawablePadding="@dimen/padding_drawable"
+                android:textColor="@color/black_font" />
+        </LinearLayout>
+
+        <!-- 停车场地址 -->
+
+        <TextView
+            android:id="@id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test0_ll"
+            android:layout_toRightOf="@id/desc_iv"
+            android:drawableLeft="@drawable/icon_location_red"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:singleLine="true"
+            android:text="@string/yi_hai_da_sha_xue_yuan_lu"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+</LinearLayout>

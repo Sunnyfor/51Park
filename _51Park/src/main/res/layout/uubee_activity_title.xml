@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/uubee_toolbar_bg">
+    <ImageView
+        android:id="@+id/actionbar_backButton"
+        android:layout_width="@dimen/small_button_width"
+        android:layout_height="@dimen/small_button_width"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/uubee_ic_back"/>
+    <ImageView
+        android:id="@+id/actionbar_helpButton"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/uubee_ic_help"/>
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+</RelativeLayout>
+<!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/layout/uubee_activity_title.xml -->

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/gray_bg" >
+
+    <include
+        android:id="@id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/line_view"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:background="@color/gray_bg"
+        android:divider="#00000000"
+        android:dividerHeight="@dimen/px20"
+        android:drawSelectorOnTop="true"
+        android:listSelector="#00000000" />
+
+    <TextView
+        android:id="@id/data_null_tv"
+        style="@style/Common_TextView_Style" />
+
+</RelativeLayout>

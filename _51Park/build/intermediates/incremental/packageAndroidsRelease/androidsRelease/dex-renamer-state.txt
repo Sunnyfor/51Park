@@ -1,0 +1,7 @@
+#Fri Dec 01 10:16:27 CST 2017
+base.0=/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/release/0
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/release/0

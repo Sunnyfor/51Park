@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/src/main/shaders"/></dataSet><dataSet config="androids"><source path="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/src/androids/shaders"/></dataSet><dataSet config="release"><source path="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/src/release/shaders"/></dataSet><dataSet config="androidsRelease"><source path="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/src/androidsRelease/shaders"/></dataSet></merger>

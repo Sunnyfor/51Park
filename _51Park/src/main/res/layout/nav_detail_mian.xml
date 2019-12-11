@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_White_Style" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 竖线 -->
+            <View
+                android:id="@id/line_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_line" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_rl"
+    style="@style/Layout_Wrap_Horizontal_Style"
+    android:layout_height="match_parent"
+    android:background="@color/transparent20"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/px540"
+        android:layout_height="@dimen/px480"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/layerlist_bg_coupon_dialog"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px20"
+            android:text="行驶证示例图"
+            android:background="@color/white"
+            android:textColor="@color/booked"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/title_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px12"
+            android:src="@drawable/line_dash"
+            android:textColor="@color/booked" />
+
+        <ImageView
+            android:id="@+id/iv_plate_back"
+            android:layout_width="@dimen/px480"
+            android:layout_height="@dimen/px400"
+            android:layout_below="@id/title_line"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/px36"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_plate_one" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/px22"
+            
+            android:background="@color/transparent"
+            android:src="@drawable/btn_close_gray" />
+    </RelativeLayout>
+
+</RelativeLayout>

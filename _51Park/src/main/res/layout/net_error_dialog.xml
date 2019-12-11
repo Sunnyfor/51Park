@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Alpha_Style"
+    android:layout_width="wrap_content" >
+
+    <!-- 网络状态差时展示的对话框 -->
+
+    <ImageView
+        android:id="@id/clear_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/image"
+        android:src="@drawable/bg_net_error" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_content_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- fadingEdge属性用来设置拉滚动条时 ，边框渐变的放向。
+        		none（边框颜色不变），
+        		horizontal（水平方向颜色变淡），
+        		vertical（垂直方向颜色变淡）。
+				fadingEdgeLength用来设置边框渐变的长度。 -->
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+            
+        </WebView>
+
+        <include layout="@layout/common_loading" />
+    </FrameLayout>
+
+</LinearLayout>

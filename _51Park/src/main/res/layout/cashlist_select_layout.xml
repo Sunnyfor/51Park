@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uubee_gray_light"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uubee_activity_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_shadow_height"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:background="@color/uubee_divider_color" />
+
+    <FrameLayout
+        android:id="@+id/no_choose_layout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="@string/cash_ticker_not_use"
+            android:textColor="@color/black_333333"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/cash_no_choose_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="25dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/uubee_gray_circle_bitmap" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:background="@color/uubee_divider_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_shadow_height"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/white" />
+
+    <ListView
+        android:id="@+id/lv_cash_gift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:divider="@color/uubee_gray_light"
+        android:dividerHeight="12dp"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+</LinearLayout><!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/layout/cashlist_select_layout.xml -->

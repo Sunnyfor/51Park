@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/gray_bg" >
+
+    <include
+        android:id="@id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <TextView
+        android:id="@+id/tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_view"
+        android:background="@color/gray_bg"
+        android:drawableLeft="@drawable/icon_prompt_red"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="请上传真实相关相片，进行找回认证。"
+        android:textColor="@color/black_font" />
+
+    <RelativeLayout
+        android:id="@+id/content_rl"
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        android:layout_below="@id/tishi"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_plate_card"
+            android:gravity="center"
+            android:text="京A 12345"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/plate_photo_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_plate" >
+
+            <TextView
+                android:id="@+id/plate_photo_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/icon_plate_photo_add"
+                android:gravity="bottom|center_horizontal"
+                android:text="点击上传"
+                android:textColor="@color/black_font" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="bottom|center_horizontal" />
+
+            <TextView
+                android:id="@+id/plate_photo_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_plate"
+                android:layout_weight="1"
+                android:background="@drawable/icon_plate_photo_add"
+                android:gravity="bottom|center_horizontal"
+                android:text="点击上传"
+                android:textColor="@color/black_font" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plate_photo_linearLayout"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/left_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="      行驶证照片"
+                    android:textColor="@color/black_font" />
+
+                <TextView
+                    android:id="@+id/right_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="车辆正面照(含车牌)"
+                    android:textColor="@color/black_font" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/table2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/table"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_left_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="查看示例"
+                    android:textColor="@color/booked" />
+
+                <TextView
+                    android:id="@+id/tv_right_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="查看示例"
+                    android:textColor="@color/booked" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_rl"
+        android:background="@color/gray_bg"
+        android:lineSpacingExtra="3dp"
+        android:text="1.照片仅供审核使用，我们将保护您的隐私；\n2.车牌找回为人工审核，请保证照片清晰；\n3.如有疑问请联系客服：400-709-5151\n   (工作日，10点至18点)；"
+        android:textColor="@color/gray_font" />
+
+    <LinearLayout
+        android:id="@+id/save_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_common_noselect"
+            android:text="提交审核"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

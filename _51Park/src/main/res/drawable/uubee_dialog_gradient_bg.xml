@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+       android:shape="rectangle">
+    <corners android:radius="5dp"/>
+    <gradient 
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:type="radial"
+        android:gradientRadius="270"
+        android:startColor="@color/white_ivory"
+        android:centerColor="@color/white_ivory"
+        android:endColor="@color/uubee_cyan"/>
+        
+</shape>
+<!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/drawable/dialog_gradient_bg.xml -->

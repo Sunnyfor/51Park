@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 停车记录界面 -->
+
+    <include
+        android:id="@id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/park_record_title" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sv_content"
+        style="@style/Layout_Match_Vertical_Alpha_Style"
+        android:layout_below="@id/title_ic"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="rotate" >
+
+        <RelativeLayout style="@style/Layout_Match_Vertical_Alpha_Style" >
+
+            <cn.com.unispark.fragment.mine.setting.offlinemap.view.PinnedHeaderListView
+                android:id="@id/listview"
+                style="@style/Layout_Match_Vertical_Alpha_Style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/login_content_bg"
+                android:divider="#00000000"
+                android:dividerHeight="10dp"
+                android:drawSelectorOnTop="true"
+                android:listSelector="#00000000"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_current_order"
+                style="@style/Layout_Match_Vertical_Alpha_Style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/login_content_bg"
+                android:divider="#00000000"
+                android:dividerHeight="10dp"
+                android:drawSelectorOnTop="true"
+                android:listSelector="#00000000"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <TextView
+        android:id="@id/data_null_tv"
+        style="@style/Common_TextView_Style" />
+
+</RelativeLayout>

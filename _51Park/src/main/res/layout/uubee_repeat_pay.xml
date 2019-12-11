@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uubee_dialog_gradient_bg" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/uubee_ic_fly" />
+
+    <ImageView
+        android:id="@+id/repeat_close_img"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:scaleType="center"
+        android:src="@drawable/uubee_ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="23dp" >
+
+        <TextView
+            android:id="@+id/tv_marketing_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="6dp"
+            android:singleLine="true"
+            android:text="@string/repeat_pay_title"
+            android:textColor="@color/black_333333"
+            android:textSize="@dimen/text_title_size" />
+
+        <TextView
+            android:id="@+id/tv_dialog_top"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/yellow_ffface"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/pay_no_pass_tip_text"
+            android:textColor="@color/black_666666"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/msg_verify_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/uubee_msg_verify" />
+
+        <RelativeLayout
+            android:id="@+id/cash_select_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/uubee_gift_button"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/cash_ticker_tip_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/cash_ticker_select_tip"
+                android:textColor="@drawable/uubee_gift_button_text"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/cash_ticker_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/cash_ticker_tip_view"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/uubee_arrow_right"
+                android:gravity="right"
+                android:textColor="@drawable/uubee_gift_button_text"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/attention_prepay_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/uubee_ico_check"
+            android:drawablePadding="5dp"
+            android:text="@string/attention_prepay"
+            android:textColor="@color/black_666666"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/uubee_btn_activate"
+            android:singleLine="true"
+            android:text="@string/repeat_pay_button_text"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/customer_service_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="14dp"
+            android:singleLine="true"
+            android:textColor="@color/gray_light_text"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/first_pay_loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        layout="@layout/uubee_loading_progress"
+        android:visibility="gone" >
+    </include>
+
+</FrameLayout> <!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/layout/activity_repeat_pay.xml -->

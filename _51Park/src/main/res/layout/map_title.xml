@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style" >
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Horizontal_Style"
+        android:layout_height="@dimen/item_h"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/backLLayout"
+            style="@style/Layout_Match_Horizontal_Alpha_Style"
+            android:layout_weight="3"
+            android:gravity="center|left" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/back_btn"
+                android:src="@drawable/btn_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px20"
+            android:singleLine="true"
+            android:text="@string/sou_suo_di_dian"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px26" />
+
+        <LinearLayout
+            android:id="@+id/moreLLayout"
+            style="@style/Layout_Match_Horizontal_Alpha_Style"
+            android:layout_weight="3"
+            android:gravity="right|center_vertical" >
+
+            <ImageView
+                android:id="@+id/moreImgView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image"
+                android:src="@drawable/btn_see_list" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <!--  <RadioGroup
+        android:id="@id/radiogroup"
+        style="@style/Layout_Wrap_Horizontal_Style"
+        android:layout_height="wrap_content">
+
+        全部
+
+        <RadioButton
+            android:id="@+id/all_rbtn"
+            style="@style/RadioButton_Map_Title_Style"
+            android:checked="true"
+            android:text="@string/quan_bu" />
+
+        免费
+
+        <RadioButton
+            android:id="@+id/free_rbtn"
+            style="@style/RadioButton_Map_Title_Style"
+            android:text="@string/mian_fei" />
+
+        无忧
+
+        <RadioButton
+            android:id="@+id/park_rbtn"
+            style="@style/RadioButton_Map_Title_Style"
+            android:text="@string/wu_you" />
+
+        包月
+
+        <RadioButton
+            android:id="@+id/month_rbtn"
+            style="@style/RadioButton_Map_Title_Style"
+            android:text="@string/bao_zu" />
+    </RadioGroup> -->
+
+    <View style="@style/View_W_Style" />
+
+</LinearLayout>

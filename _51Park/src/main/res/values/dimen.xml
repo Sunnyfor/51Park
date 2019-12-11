@@ -1,0 +1,237 @@
+<resources>
+
+    <dimen name="key_height">50.0dip</dimen>
+    <!-- 1 -->
+    <dimen name="px1">1px</dimen>
+    <dimen name="px10">10px</dimen>
+    <dimen name="px12">12px</dimen>
+    <dimen name="px14">14px</dimen>
+    <dimen name="px16">16px</dimen>
+    <dimen name="px18">18px</dimen>
+    <dimen name="px100">100px</dimen>
+    <dimen name="px108">108px</dimen>
+    <dimen name="px110">110px</dimen>
+    <dimen name="px114">114px</dimen>
+    <dimen name="px120">120px</dimen>
+    <dimen name="px124">124px</dimen>
+    <dimen name="px128">128px</dimen>
+    <dimen name="px140">140px</dimen>
+    <dimen name="px143">143px</dimen>
+    <dimen name="px135">135px</dimen>
+    <dimen name="px156">156px</dimen>
+    <dimen name="px168">168px</dimen>
+    <dimen name="px178">178px</dimen>
+    <dimen name="px184">184px</dimen>
+    <dimen name="px190">190px</dimen>
+    <dimen name="px19">19px</dimen>
+    <!-- 2 -->
+    <dimen name="px2">2px</dimen>
+    <dimen name="px20">20px</dimen>
+    <dimen name="px22">22px</dimen>
+    <dimen name="px24">24px</dimen>
+    <dimen name="px25">25px</dimen>
+    
+    <dimen name="px250">250px</dimen>
+    <dimen name="px26">26px</dimen>
+    <dimen name="px27">27px</dimen>
+    <dimen name="px28">28px</dimen>
+    <dimen name="px208">208px</dimen>
+    <dimen name="px226">226px</dimen>
+    <dimen name="px230">230px</dimen>
+    
+    <dimen name="px236">236px</dimen>
+    <dimen name="px282">282px</dimen>
+    <dimen name="px296">296px</dimen>
+    <!-- 3 -->
+    <dimen name="px30">30px</dimen>
+    <dimen name="px375">375px</dimen>
+    <dimen name="px32">32px</dimen>
+    <dimen name="px34">34px</dimen>
+    <dimen name="px36">36px</dimen>
+    
+    <dimen name="px38">38px</dimen>
+    <dimen name="px300">300px</dimen>
+    <dimen name="px340">340px</dimen>
+    
+    <dimen name="px350">350px</dimen>
+    <!-- 4 -->
+    <dimen name="px40">40px</dimen>
+    <dimen name="px42">42px</dimen>
+    <dimen name="px49">49px</dimen>
+    <dimen name="px452">452px</dimen>
+    <dimen name="px400">400px</dimen>
+    <dimen name="px480">480px</dimen>
+    <!-- 5 -->
+    <dimen name="px5">5px</dimen>
+    <dimen name="px50">50px</dimen>
+    <dimen name="px52">52px</dimen>
+    <dimen name="px56">56px</dimen>
+    <dimen name="px526">526px</dimen>
+     <dimen name="px540">540px</dimen>
+    <dimen name="px560">560px</dimen>
+    
+    <dimen name="px580">580px</dimen>
+    <dimen name="px582">582px</dimen>
+    <!-- 6 -->
+    <dimen name="px60">60px</dimen>
+    <dimen name="px64">64px</dimen>
+    <dimen name="px65">65px</dimen>
+    <dimen name="px600">600px</dimen>
+    <!-- 7 -->
+    <dimen name="px70">70px</dimen>
+    <dimen name="px72">72px</dimen>
+    <dimen name="px74">74px</dimen>
+    <dimen name="px760">760px</dimen>
+    <!-- 8 -->
+    <dimen name="px80">80px</dimen>
+    <dimen name="px82">82px</dimen>
+    <dimen name="px88">88px</dimen>
+    <!-- 9 -->
+    <dimen name="px92">92px</dimen>
+    <dimen name="px94">94px</dimen>
+    <dimen name="px98">98px</dimen>
+
+    <!-- **************************************【边距组件大小】************************************* -->
+
+
+    <!-- 【左右】边距 -->
+    <dimen name="margin_left_right">20px</dimen>
+
+    <!-- 【标题栏】高度 -->
+    <dimen name="height_title">88px</dimen>
+
+    <!-- 【线条】高度 -->
+    <dimen name="height_line">1px</dimen>
+
+    <!-- ***************************【宽度】***************************** -->
+
+
+    <!-- 【增大点击面积 】宽度 -->
+    <dimen name="width_click">100px</dimen>
+
+    <!-- 【无忧图片】宽度 -->
+    <dimen name="width_image">135px</dimen>
+
+    <!-- ***************************【高度】***************************** -->
+
+
+    <!-- ***************************【边距】***************************** -->
+
+
+    <!-- 【90px】边距 -->
+    <dimen name="margin_left_90">90px</dimen>
+
+    <!-- **************************************【字体大小】************************************* -->
+
+
+    <!-- 【一级界面】文字 -->
+    <dimen name="font_comm">30px</dimen>
+
+    <!-- 【二级】文字 -->
+    <dimen name="font_more">26px</dimen>
+
+    <!-- **************************************【字体大小】************************************* -->
+
+
+    <!-- 【子条目】高度 -->
+    <dimen name="item_h">60dp</dimen>
+
+    <!-- 【ListView子条目的高度】 -->
+    <dimen name="list_h">40dp</dimen>
+
+    <!-- 【子条目】字体 -->
+    <dimen name="item_font">20sp</dimen>
+
+    <!-- 【文本】字体 -->
+    <dimen name="text_font">18sp</dimen>
+
+    <!-- 【图片和文字】间隔 -->
+    <dimen name="padding_drawable">5dp</dimen>
+
+    <!-- *************************************************************************** -->
+    <!-- 【viewpager间距】 -->
+    <dimen name="badgeview_dp">10dp</dimen>
+    <dimen name="ui_5_dip">5dp</dimen>
+    <dimen name="ui_f5_dip">-35dp</dimen>
+
+    <!-- 【进度条的高度】 -->
+    <dimen name="progress_dialog_h">55dp</dimen>
+
+    <!-- 【标题栏返回按钮宽高 】 -->
+    <dimen name="back_btn_w_h">25dp</dimen>
+
+    <!-- 【字体】 -->
+    <dimen name="font18sp">18sp</dimen>
+    <dimen name="font20sp">20sp</dimen>
+    <dimen name="font25sp">25sp</dimen>
+    <dimen name="font_btn">22sp</dimen>
+
+    <!-- 【边距】 -->
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="margin15dp">15dp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="margin25dp">25dp</dimen>
+    <dimen name="margin30dp">30dp</dimen>
+    <dimen name="margin40dp">40dp</dimen>
+    <dimen name="margin50dp">50dp</dimen>
+    <dimen name="left_margin_small">5dp</dimen>
+    <dimen name="left_margin">20px</dimen>
+    <dimen name="left_margin_little">10dp</dimen>
+    <dimen name="left_margin_more">25dp</dimen>
+
+    <!-- 【填充】 -->
+    <dimen name="left_padding">8dp</dimen>
+
+    <!-- 【按钮字体大小】 -->
+
+
+    <!-- 原先 -->
+    <dimen name="titlebar_default_height">48dp</dimen>
+    <dimen name="titlebar_text_size">18dp</dimen>
+    <dimen name="main_ad_offset">46dp</dimen>
+    <dimen name="main_btn_width">120dp</dimen>
+    <dimen name="main_btn_height">156dp</dimen>
+    <dimen name="slidingmenu_offset_behind">240dp</dimen>
+    <dimen name="slidingmenu_offset_above">180dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="slidingmenu_behind_width">115dp</dimen>
+    <dimen name="slidingmenu_shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="btn_height">48dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 登录界面 -->
+    <!-- 边框圆角角度大小 -->
+    <dimen name="activity_login_corner_size">5dp</dimen>
+
+    <!-- 容器高度 -->
+    <dimen name="activity_login_container_height">55dp</dimen>
+    <!-- 包裹容器对内部padding -->
+    <dimen name="activity_login_container_padding">8dp</dimen>
+    <!-- 容器界面的字体大小 -->
+    <dimen name="activity_login_font_size">22sp</dimen>
+    <!-- 容器界面的字体大小 -->
+    <dimen name="activity_forgetpwd_font_size">19sp</dimen>
+    <!-- 登录end -->
+
+
+    <!-- 有贝先付 -->
+    <dimen name="divider_line_height">1px</dimen>
+    <dimen name="divider_line_shadow_height">1px</dimen>
+    <dimen name="active_view_margin">20dp</dimen>
+    <dimen name="down_up_view_range">10dp</dimen>
+    <dimen name="pay_detail_view_height">70dp</dimen>
+    <dimen name="pay_top_tip_height">30dp</dimen>
+    <dimen name="small_button_width">50dp</dimen>
+    <dimen name="status_high">100dp</dimen>
+    <dimen name="text_line_high_20">20dp</dimen>
+    <dimen name="text_title_size">15sp</dimen>
+    <dimen name="uubee_activity_horizontal_margin">16dp</dimen>
+    <dimen name="uubee_activity_vertical_margin">16dp</dimen>
+
+    <integer name="slide_anim_duration">400</integer>
+
+</resources>

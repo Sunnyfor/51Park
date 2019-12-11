@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【首页】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sv_content"
+        style="@style/Layout_Match_Vertical_Alpha_Style"
+        android:scrollbars="none"
+       	fillViewPort="true"
+        ptr:ptrAnimationStyle="rotate" >
+
+        <LinearLayout style="@style/Layout_Match_Vertical_White_Style" >
+
+            <!-- 【第一部分】活动页,轮播图 -->
+
+            <include
+                android:id="@+id/viewpager_ic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px340"
+                layout="@layout/home_adpager_list" />
+
+            <!-- 【第二部分】找车位和记录车位选项卡 -->
+
+            <LinearLayout
+                android:id="@+id/center_ll"
+                style="@style/Layout_Wrap_Horizontal_White_Style"
+                android:baselineAligned="false" >
+
+                <!-- 找车位 -->
+
+                <RelativeLayout
+                    android:id="@+id/find_car_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_home_option" >
+
+                    <ImageView
+                        android:id="@+id/find_car_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_home_findcar" />
+
+                    <TextView
+                        android:id="@+id/find_car_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/find_car_iv"
+                        android:text="@string/zhao_che_wei"
+                        android:textColor="#97acf3" />
+
+                    <TextView
+                        android:id="@id/count_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/find_car_tv"
+                        android:layout_toRightOf="@id/find_car_iv"
+                        android:gravity="bottom"
+                        android:text="@string/fu_jin_you_ting_che_chang"
+                        android:textColor="#97acf3" />
+                </RelativeLayout>
+
+                <!-- 记录车位 -->
+
+                <RelativeLayout
+                    android:id="@+id/record_car_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_home_option" >
+
+                    <ImageView
+                        android:id="@+id/record_car_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_home_recordcar" />
+
+                    <TextView
+                        android:id="@+id/record_car_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/record_car_iv"
+                        android:text="@string/ji_lu_che_wei"
+                        android:textColor="#fab653" />
+                </RelativeLayout>
+            </LinearLayout>
+
+          <!--   <View style="@style/View_W_Style" />-->
+            <!-- 【第四部分】车辆在场状态：无订单，待支付，待出场，停车中。。 -->
+
+
+            <!-- 情况一：无订单 -->
+
+            <ImageView
+                android:id="@+id/order_no_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image"
+                android:src="@drawable/bg_no_order" />
+
+            
+             <!-- 存放订单列表的容器:停车中、已交费、固定车 -->
+
+    		<android.support.v4.view.ViewPager
+       	 		android:id="@+id/order_viewPager"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:background="@color/white"
+        		android:visibility="gone"/>
+    
+            <!-- 情况二：账单详情 和 情况三：支付成功 -->
+
+
+           <!--  <include
+                android:id="@+id/order_state_ic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/home_order"
+                android:visibility="gone" /> -->
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

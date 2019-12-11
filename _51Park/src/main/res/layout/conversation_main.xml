@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="#f0f1f3" >
+
+    <!-- 【意见反馈】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <!-- 意见输入框 -->
+
+    <EditText
+        android:id="@+id/suggest_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px296"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@drawable/layerlist_bg_feedback"
+        android:gravity="top"
+        android:hint="@string/qing_shu_ru_chan_ping_yi_jian"
+        android:padding="@dimen/px20"
+        android:textColorHint="@color/gray_fontbb"
+        android:textSize="@dimen/px30" >
+    </EditText>
+
+    <!-- 手机号邮箱 -->
+
+    <EditText
+        android:id="@+id/phone_email_et"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px88"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@drawable/layerlist_bg_feedback"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/qing_shu_ru_nin_de_shou_ji_hao"
+        android:inputType="phone|textEmailAddress"
+        android:padding="@dimen/px20"
+        android:textColorHint="@color/gray_fontbb"
+        android:textSize="@dimen/px30" >
+    </EditText>
+
+</LinearLayout>

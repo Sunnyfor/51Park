@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【租赁详情】页面 -->
+
+    <include
+        android:id="@id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/common_switch_title" />
+
+   <!--  <View
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" /> -->
+
+    <ScrollView
+        android:id="@id/scrollview"
+        style="@style/Layout_Match_Vertical_Style"
+        android:layout_below="@id/title_ic"
+        android:visibility="visible" >
+
+        <LinearLayout style="@style/Layout_Match_Vertical_Style" >
+
+            <!-- 【头部】 -->
+
+            <View style="@style/View_W_Top_Style" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/park_info_top" />
+
+            <View style="@style/View_W_Bottom_Style" />
+            <!-- **********************包月切换查看详情********************** -->
+
+            <LinearLayout
+                android:id="@+id/month_ll"
+                style="@style/Layout_Wrap_Vertical_Style" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <!-- 租期 -->
+
+                    <TextView
+                        android:id="@+id/lease_date_tv"
+                        style="@style/Common_Item_Text_Style"
+                        android:layout_width="wrap_content"
+                        android:drawableRight="@null"
+                        android:text="@string/zu_qi"
+                        android:textColor="@color/gray_font" />
+
+                    <View style="@style/View_W_Style" />
+
+                    <LinearLayout
+                        android:id="@+id/lease_date_ll"
+                        style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/View_W_Top_Style" />
+
+            <LinearLayout style="@style/Layout_Match_Vertical_Style" >
+
+                <!-- 选择支付方式购买 -->
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/payfee_way" />
+
+                <LinearLayout
+                    android:id="@+id/isread_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/isread_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/draw_checkbox" />
+
+                    <TextView
+                        android:id="@+id/left_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我已阅读并同意"
+                        android:textColor="@color/gray_fontbb" />
+
+                    <TextView
+                        android:id="@+id/right_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="《购买须知》"
+                        android:textColor="@color/red_font" />
+                </LinearLayout>
+                <!-- 购买按钮 -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/carlease_buy_layout" />
+
+    <View
+        style="@style/View_W_Style"
+        android:layout_above="@id/bottom" />
+
+</RelativeLayout>

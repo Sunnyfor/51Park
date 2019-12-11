@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_Alpha_Style" >
+
+    <!-- 智能推荐停车场的悬浮窗 -->
+
+    <LinearLayout
+        android:id="@+id/tuijian_ll"
+        style="@style/Layout_Wrap_Vertical_Style"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/layer_bg_tuijian"
+        tools:ignore="UselessParent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- 停车场状态：最近、最空 -->
+
+            <ImageView
+                android:id="@id/state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/image" />
+
+            <!-- 停车场名称 -->
+
+            <TextView
+                android:id="@id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:text="@string/bai_hui_yi_bo_ting_che"
+                android:textColor="@color/black_font"
+                android:textStyle="bold" />
+
+            <!-- 距离 -->
+
+            <TextView
+                android:id="@id/distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/name_tv"
+                android:drawableLeft="@drawable/icon_location_gray"
+                android:drawablePadding="@dimen/padding_drawable"
+                android:gravity="center_vertical"
+                android:text="@string/ling_mi"
+                android:textColor="@color/gray_font" />
+
+            <!-- 停车场地址 -->
+
+            <TextView
+                android:id="@id/address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/name_tv"
+                android:layout_below="@id/name_tv"
+                android:layout_toLeftOf="@id/distance_tv"
+                android:singleLine="true"
+                android:text="@string/yi_hai_da_sha_xue_yuan_lu"
+                android:textColor="@color/gray_font" />
+
+            <!-- 总车位 -->
+
+            <TextView
+                android:id="@id/count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/name_tv"
+                android:layout_below="@id/address_tv"
+                android:textColor="@color/black_font" />
+
+            <!-- 空车位 -->
+
+            <TextView
+                android:id="@id/empty_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/count_tv"
+                android:layout_below="@id/address_tv"
+                android:layout_toRightOf="@id/count_tv"
+                android:textColor="@color/black_font" />
+
+            <!-- 停车场类型：包月 /计次-->
+
+            <ImageView
+                android:id="@id/month_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/count_tv"
+                android:layout_toRightOf="@id/empty_count_tv"
+                android:contentDescription="@string/image"
+                android:src="@drawable/icon_map_lease"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View style="@style/View_W_Black_Style" />
+
+        <LinearLayout style="@style/Layout_Wrap_Horizontal_Alpha_Style" >
+
+            <!-- 路线 -->
+
+            <LinearLayout
+                android:id="@id/route_ll"
+                style="@style/Layout_Match_Horizontal_Alpha_Style"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@id/route_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_route"
+                    android:drawablePadding="@dimen/padding_drawable"
+                    android:text="@string/lu_xian"
+                    android:textColor="@color/black_font" />
+            </LinearLayout>
+
+            <View style="@style/View_H_Style" />
+
+            <!-- 详情 -->
+
+            <LinearLayout
+                android:id="@id/detail_ll"
+                style="@style/Layout_Match_Horizontal_Alpha_Style"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@id/detail_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_prompt_red"
+                    android:drawablePadding="@dimen/padding_drawable"
+                    android:text="@string/xiang_qing"
+                    android:textColor="@color/black_font" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

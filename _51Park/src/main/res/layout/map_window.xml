@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_Alpha_Style" >
+
+    <!-- 停车场详情悬浮窗 -->
+
+    <RelativeLayout
+        android:id="@id/detail_rl"
+        style="@style/Layout_Wrap_Vertical_White_Style" >
+
+        <!-- 车位状态图标 -->
+
+        <ImageView
+            android:id="@id/state_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_park_gray"
+            android:contentDescription="@string/image" />
+
+        <!-- 停车场名称 -->
+
+        <TextView
+            android:id="@id/name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/nav_rl"
+            android:singleLine="true"
+            android:text="@string/bai_hui_yi_bo_ting_che"
+            android:textColor="@color/black_font" />
+
+        <!-- 总车位（文字）（数量） -->
+
+        <TextView
+            android:id="@id/total_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name_tv"
+            android:layout_below="@id/name_tv"
+            android:textColor="@color/black_font" />
+
+        <!-- 空车位（数量） -->
+
+        <TextView
+            android:id="@id/empty_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/total_count_tv"
+            android:layout_toRightOf="@id/total_count_tv"
+            android:paddingLeft="@dimen/left_margin_small"
+            android:textColor="@color/black_font" />
+
+        <!-- 更多箭头 -->
+
+        <ImageView
+            android:id="@id/more_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/btn_more_red" />
+
+        <!-- 距离 -->
+
+        <TextView
+            android:id="@id/distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/total_count_tv"
+            android:layout_toLeftOf="@id/more_iv"
+            android:layout_toRightOf="@id/empty_count_tv"
+            android:drawableLeft="@drawable/icon_location_gray"
+            android:gravity="bottom"
+            android:text="@string/ling_mi"
+            android:textColor="@color/gray_font" />
+
+        <!-- 停车场价格 -->
+
+        <TextView
+            android:id="@id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/name_tv"
+            android:layout_below="@id/total_count_tv"
+            android:text="@string/jia_ge_mao_hao"
+            android:textColor="@color/black_font" />
+
+        <!-- 包租车位图标 -->
+
+        <ImageView
+            android:id="@id/lease_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/price_tv"
+            android:layout_toRightOf="@id/price_tv"
+            android:contentDescription="@string/image"
+            android:src="@drawable/icon_map_lease"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 到这去图标 -->
+
+    <ImageView
+        android:id="@id/nav_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_come_hear"
+        android:contentDescription="@string/image" />
+
+</RelativeLayout>

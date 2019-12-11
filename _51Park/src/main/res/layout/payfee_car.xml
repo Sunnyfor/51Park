@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Horizontal_White_Style" >
+
+    <!-- 交费界面 之小车在场动画   @ 停车场名称和车牌号 -->
+
+    <RelativeLayout
+        android:id="@+id/relayout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- 已进场 -->
+
+        <TextView
+            android:id="@+id/textView_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yi_jin_chang" />
+
+        <!-- 停车中 -->
+
+        <TextView
+            android:id="@+id/textView_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ting_che_zhong" />
+
+        <!-- 待支付 -->
+
+        <TextView
+            android:id="@+id/textView_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/dai_zhi_fu"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayout_text"
+        android:layout_centerHorizontal="true" >
+
+        <!-- 开始点 -->
+
+        <ImageView
+            android:id="@+id/imageView_startPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_circle_green"
+            android:contentDescription="@string/image" />
+
+        <!-- 开始线条 -->
+
+        <ImageView
+            android:id="@+id/imageView_startline"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageView_startPoint"
+            android:background="#65cc35"
+            android:contentDescription="@string/image" />
+
+        <!-- 中间点 -->
+
+        <ImageView
+            android:id="@+id/imageView_middlePoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView_startline"
+            android:background="@drawable/icon_circle_green"
+            android:contentDescription="@string/image" />
+
+        <!-- 结束线条 -->
+
+        <ImageView
+            android:id="@+id/imageView_endline"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageView_middlePoint"
+            android:background="#e4e4e4"
+            android:contentDescription="@string/image" />
+
+        <!-- 结束点 -->
+
+        <ImageView
+            android:id="@+id/imageView_endPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageView_endline"
+            android:background="@drawable/icon_circle_gray"
+            android:contentDescription="@string/image" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relayout_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayout_point"
+        android:gravity="center_vertical" >
+
+        <!-- 进场时间 -->
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08-10 08:10AM"
+            tools:ignore="HardcodedText" />
+
+        <!-- 小车 -->
+
+        <ImageView
+            android:id="@+id/imageView_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_circle_car"
+            android:contentDescription="@string/image" />
+    </RelativeLayout>
+
+    <!-- 停车场名称 -->
+
+
+    <!-- android:drawableRight="@drawable/icon_prompt_red" -->
+
+    <TextView
+        android:id="@id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayout_car"
+        android:singleLine="true"
+        android:text="@string/ting_che_chang_mao_hao"
+        android:textColor="@color/black_font" />
+
+    <!-- 车牌号 -->
+
+    <TextView
+        android:id="@id/plate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:text="@string/che_pai_hao_mao_hao"
+        android:textColor="@color/black_font" />
+    
+    <!-- 停车时长 -->
+
+    <TextView
+        android:id="@+id/tv_park_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plate_tv"
+        android:text="@string/park_long_colon"
+        android:textColor="@color/black_font" />
+
+</RelativeLayout>

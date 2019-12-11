@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【车位列表】页面 -->
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/listview"
+        style="@style/Common_ListView_Style"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_view" />
+
+    <TextView
+        android:id="@id/data_null_tv"
+        style="@style/Common_TextView_Style" />
+
+    <!-- 当前位置 -->
+
+    <TextView
+        android:id="@id/location_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:drawableRight="@drawable/icon_flush"
+        android:gravity="center"
+        android:text="@string/dang_qian_wei_zhi"
+        android:textColor="@color/black_font66" />
+
+    <View
+        style="@style/View_W_Black_Style"
+        android:layout_above="@id/location_tv" />
+
+</RelativeLayout>

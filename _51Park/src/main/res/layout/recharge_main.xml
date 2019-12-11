@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_White_Style" >
+
+    <!-- 【充值】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <LinearLayout
+        android:id="@+id/recharge_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 请选择充值金额 -->
+
+        <TextView
+            android:id="@+id/tv_rechage_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/qing_xuan_ze_chong_zhi"
+            android:textColor="@color/black_font66" />
+
+        <!-- 存放金额的容器 -->
+
+        <RelativeLayout
+            android:id="@+id/regist_mid"
+            style="@style/Layout_Wrap_Horizontal_Style"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <View style="@style/View_W_Style" />
+
+    <!-- 选择支付方式购买 -->
+
+    <LinearLayout
+        android:id="@+id/recharge_type_ll"
+        style="@style/Common_Item_Text_Style"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp" >
+
+        <View
+            android:id="@+id/red_line"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/red_font"
+            android:src="@drawable/line_red" />
+
+        <TextView
+            android:id="@+id/recharge_type_tv"
+            style="@style/Common_Item_Text_Style"
+            android:background="@color/gray_bg"
+            android:drawableRight="@null"
+            android:text="@string/xuan_ze_zhi_fu_fang_shi"
+            android:textColor="@color/black_font99" />
+    </LinearLayout>
+
+    <View style="@style/View_W_Style" />
+
+    <!-- 微信或支付宝充值 -->
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        style="@style/Layout_Wrap_Vertical_Style" >
+
+        <RadioButton
+            android:id="@+id/wechat_rbtn"
+            style="@style/RadioButton_PayWay_Item_Style"
+            android:checked="true"
+            android:drawableLeft="@drawable/icon_wechat"
+            android:text="@string/wei_xin"
+            android:textColor="@color/black" />
+
+        <View style="@style/View_W_Left_Style" />
+
+        <RadioButton
+            android:id="@+id/alipay_rbtn"
+            style="@style/RadioButton_PayWay_Item_Style"
+            android:drawableLeft="@drawable/icon_alipay"
+            android:text="@string/zhi_fu_bao"
+            android:textColor="@color/black" />
+
+        <View style="@style/View_W_Style" />
+    </RadioGroup>
+
+    <!-- 温馨提示 -->
+
+    <TextView
+        android:id="@+id/tishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_prompt_red"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:gravity="center_vertical"
+        android:text="@string/wen_xin_ti_shi_chong_zhi"
+        android:textColor="@color/gray_fontbb" />
+
+    <!-- 立即充值按钮 -->
+
+    <Button
+        android:id="@id/finish_btn"
+        style="@style/Common_Button_Red_Margin_Style"
+        android:text="@string/li_ji_chong_zhi" />
+
+</LinearLayout>

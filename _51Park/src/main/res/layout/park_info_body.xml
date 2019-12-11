@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【停车场详情】之中部：收费价格、车位租赁、车位预测 -->
+
+    <View style="@style/View_W_Style" />
+
+    <!-- *******************收费详情************************************** -->
+
+
+    <!-- 暂无收费信息 -->
+
+    <TextView
+        android:id="@id/price_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/icon_park_price"
+        android:gravity="center_vertical"
+        android:text="@string/zan_wu_shou_fei_xin_xi"
+        android:textColor="@color/black_font"
+        android:visibility="gone" />
+
+    <!-- 有收费信息 -->
+
+    <RelativeLayout
+        android:id="@id/price_rl"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:visibility="gone" >
+
+        <!-- 价格图标 -->
+
+        <ImageView
+            android:id="@id/price_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/icon_park_price" />
+
+        <!-- 更多按钮 -->
+
+        <ImageView
+            android:id="@id/more_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/btn_more"
+            android:visibility="invisible" />
+
+        <!-- 白天收费价格 -->
+
+        <TextView
+            android:id="@id/test1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/price_iv"
+            android:gravity="center_vertical"
+            android:text="@string/bai_tian_mao_hao"
+            android:textColor="@color/black_font" />
+
+        <TextView
+            android:id="@id/today_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_drawable"
+            android:layout_toLeftOf="@id/more_iv"
+            android:layout_toRightOf="@id/test1_tv"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/er_bai_wu_shi_yuan_time"
+            android:textColor="@color/gray_font" />
+
+        <!-- 分割线 -->
+
+        <View
+            android:id="@id/line_view"
+            style="@style/View_W_Style"
+            android:layout_below="@id/test1_tv"
+            android:layout_toLeftOf="@id/more_iv"
+            android:layout_toRightOf="@id/price_iv" />
+
+        <!-- 【夜晚收费】 -->
+
+        <TextView
+            android:id="@id/test2_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_view"
+            android:layout_toRightOf="@id/price_iv"
+            android:gravity="center_vertical"
+            android:text="@string/ye_wan_mao_hao"
+            android:textColor="@color/black_font" />
+
+        <TextView
+            android:id="@id/night_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_view"
+            android:layout_marginLeft="@dimen/padding_drawable"
+            android:layout_toLeftOf="@id/more_iv"
+            android:layout_toRightOf="@id/test2_tv"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/er_bai_wu_shi_yuan_time"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+    <View style="@style/View_W_Style" />
+
+    <!-- *******************车位租赁 ************************************** -->
+
+    <View
+        android:id="@id/line0_view"
+        style="@style/View_W_Top_Style" />
+
+    <!--
+    <RelativeLayout
+        android:id="@id/lease_rl"
+        style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/icon_baby_car_lease"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:gravity="center_vertical"
+            android:text="@string/che_wei_zu_lin"
+            android:textColor="@color/black_font" />
+
+        更多按钮
+
+        <ImageView
+            android:id="@id/more_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/btn_more" />
+
+        租赁类型 :包月/计次
+
+        <ImageView
+            android:id="@id/lease_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/more_iv"
+            android:contentDescription="@string/image"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:drawableRight="@drawable/btn_more"
+            android:src="@drawable/icon_map_lease"
+            android:visibility="gone" />
+    </RelativeLayout>
+    -->
+
+    <View
+        android:id="@id/line1_view"
+        style="@style/View_W_Style" />
+
+    <!-- *******************未来5小时车位预测************************************** -->
+
+    <LinearLayout
+        android:id="@id/detail_ll"
+        style="@style/Layout_Wrap_Vertical_Style"
+        android:visibility="gone" >
+
+        <View style="@style/View_W_Top_Style" />
+
+        <RelativeLayout style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="74px"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:gravity="center_vertical"
+                android:text="@string/che_wei_qing_kuang_yu_ce"
+                android:textColor="@color/black_font"
+                android:textSize="24px" />
+
+            <!-- 紧缺 -->
+
+            <TextView
+                android:id="@+id/test_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/icon_park_circle_red"
+                android:drawablePadding="@dimen/padding_drawable"
+                android:text="@string/jin_que"
+                android:textColor="@color/gray_font"
+                android:textSize="22px" />
+
+            <!-- 较少 -->
+
+            <TextView
+                android:id="@+id/test0_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/test_tv"
+                android:drawableLeft="@drawable/icon_park_circle_yellow"
+                android:drawablePadding="@dimen/padding_drawable"
+                android:text="@string/jiao_shao"
+                android:textColor="@color/gray_font"
+                android:textSize="22px" />
+
+            <!-- 充足 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/test0_tv"
+                android:drawableLeft="@drawable/icon_park_circle_green"
+                android:drawablePadding="@dimen/padding_drawable"
+                android:text="@string/chong_zu"
+                android:textColor="@color/gray_font"
+                android:textSize="22px" />
+        </RelativeLayout>
+
+        <!-- 第三部分【停车时间表】 -->
+
+        <View style="@style/View_W_Left_Style" />
+
+        <RelativeLayout style="@style/Layout_Match_Horizontal_Style" >
+
+            <!-- 【停车时间】 -->
+
+            <LinearLayout
+                style="@style/Layout_Wrap_Horizontal_White_Style"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:baselineAligned="false"
+                android:paddingLeft="248px" >
+
+                <!-- 【15小时】 -->
+
+                <RelativeLayout
+                    style="@style/Layout_Wrap_Vertical_Alpha_Style"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/one_hour_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_park_state_green" />
+
+                    <TextView
+                        android:id="@+id/one_hour_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/one_hour_iv"
+                        android:gravity="left"
+                        android:text="12时" />
+                </RelativeLayout>
+
+                <!-- 【16小时】 -->
+
+                <RelativeLayout
+                    style="@style/Layout_Wrap_Vertical_Alpha_Style"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/two_hour_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/icon_park_state_green" />
+
+                    <TextView
+                        android:id="@+id/two_hour_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/two_hour_iv"
+                        android:gravity="left" />
+                </RelativeLayout>
+
+                <!-- 【17小时】 -->
+
+                <RelativeLayout
+                    style="@style/Layout_Wrap_Vertical_Alpha_Style"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/three_hour_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image" />
+
+                    <TextView
+                        android:id="@+id/three_hour_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/three_hour_iv"
+                        android:gravity="left" />
+                </RelativeLayout>
+
+                <!-- 【18小时】 -->
+
+                <RelativeLayout
+                    style="@style/Layout_Wrap_Vertical_Alpha_Style"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/four_hour_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image" />
+
+                    <TextView
+                        android:id="@+id/four_hour_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/four_hour_iv"
+                        android:gravity="left" />
+                </RelativeLayout>
+
+                <!-- 【19小时】 -->
+
+                <RelativeLayout
+                    android:id="@+id/five_hour_RelativeLayout"
+                    style="@style/Layout_Wrap_Vertical_Alpha_Style"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/five_hour_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/image" />
+
+                    <TextView
+                        android:id="@+id/five_hour_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/five_hour_iv"
+                        android:gravity="left" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View style="@style/View_W_Style" />
+    </LinearLayout>
+
+    <!-- *******************未来5小时车位预测*end************************************* -->
+  
+
+</LinearLayout>

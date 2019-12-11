@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Alpha_Style" >
+
+    <!-- 租赁详情提示的对话框 -->
+
+
+    <!-- 关闭按钮 -->
+
+    <ImageView
+        android:id="@id/clear_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:contentDescription="@string/image"
+        android:src="@drawable/btn_close_line" />
+
+    <LinearLayout
+        android:id="@+id/dialog_ll"
+        style="@style/Layout_Wrap_Vertical_Alpha_Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/layer_dialog_circle_gray" >
+
+        <!-- 购买须知 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:gravity="center"
+            android:text="@string/fu_wu_xu_zhi"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px36" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/image"
+            android:src="@drawable/line_dash" />
+
+        <!-- 包月 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_h"
+            android:drawableLeft="@drawable/line_red"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:gravity="center_vertical"
+            android:text="@string/bao_yue"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px28" />
+
+        <TextView
+            android:id="@+id/month_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/gui_ze_ti_xing"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+
+        <!-- 计次 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_h"
+            android:layout_marginTop="@dimen/margin_left_right"
+            android:drawableLeft="@drawable/line_red"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:gravity="center_vertical"
+            android:text="@string/ji_ci"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px28" />
+
+        <TextView
+            android:id="@+id/meter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/gui_ze_ti_xing"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+    </LinearLayout>
+
+</LinearLayout>

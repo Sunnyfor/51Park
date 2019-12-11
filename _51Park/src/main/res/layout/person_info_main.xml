@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【个人资料】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <!-- 姓名 -->
+
+    <View style="@style/View_W_Top_Style" />
+
+    <LinearLayout style="@style/Common_Item_Layout_Style" >
+
+        <TextView
+            android:id="@id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/xing_ming"
+            android:textColor="@color/black_font" />
+
+        <cn.com.unispark.define.ClearEditText
+            android:id="@id/name_et"
+            style="@style/Common_Item_Text_Style"
+            android:drawableRight="@null"
+            android:hint="@string/qing_shu_ru_xing_ming"
+            android:maxLength="11"
+            android:textColor="@color/black_font"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <View style="@style/View_W_Style" />
+
+    <!-- 姓名选择 -->
+
+    <LinearLayout style="@style/Common_Item_Layout_Style" >
+
+        <TextView
+            android:id="@id/sex_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/xing_bie"
+            android:textColor="@color/black_font" />
+
+        <RadioGroup
+            android:id="@id/radiogroup"
+            style="@style/Layout_Match_Horizontal_White_Style" >
+
+            <!-- 先生 -->
+
+            <RadioButton
+                android:id="@+id/male_rbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/draw_rbtn_sex"
+                android:drawablePadding="@dimen/px10"
+                android:text="@string/xian_sheng"
+                android:textColor="@color/black_font" />
+
+            <!-- 女士 -->
+
+            <RadioButton
+                android:id="@+id/female_rbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:button="@null"
+                android:drawableLeft="@drawable/draw_rbtn_sex"
+                android:drawablePadding="@dimen/px10"
+                android:text="@string/nv_shi"
+                android:textColor="@color/black_font" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/View_W_Top_Style" />
+
+    <!-- 手机号 -->
+
+    <LinearLayout style="@style/Common_Item_Layout_Style" >
+
+        <TextView
+            android:id="@id/phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/shou_ji_hao"
+            android:textColor="@color/black_font" />
+
+        <cn.com.unispark.define.ClearEditText
+            android:id="@id/phone_et"
+            style="@style/Common_Item_Text_Style"
+            android:drawableRight="@null"
+            android:maxLength="11"
+            android:textColor="@color/black_font"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <View style="@style/View_W_Style" />
+
+</LinearLayout>

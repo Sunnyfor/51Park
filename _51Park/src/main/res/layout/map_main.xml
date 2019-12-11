@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_Alpha_Style" >
+
+    <!-- 【首页】地图页 -->
+
+    <RelativeLayout
+        style="@style/Layout_Match_Horizontal_Style"
+        tools:ignore="UselessParent" >
+
+        <!-- 地图 -->
+
+        <com.amap.api.maps2d.MapView
+            android:id="@id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:clickable="true" />
+
+        <View
+            android:id="@+id/line_view2"
+            style="@style/View_W_Black_Style"
+            android:layout_below="@id/title_ic" />
+
+        <!-- 【搜索图标】 -->
+
+        <ProgressBar
+            android:id="@+id/search_pb"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@id/line_view2"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <!-- 路况 -->
+
+        <CheckBox
+            android:id="@+id/lukuang_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/search_pb"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_map_lukuang"
+            android:button="@null"
+            android:contentDescription="@string/image" />
+
+          <!-- 车位价格切换按钮 -->
+
+        <CheckBox
+            android:id="@+id/cbox_park"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lukuang_cb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/draw_map_park"
+            android:button="@null"
+            android:contentDescription="@string/image" />
+        
+        <!-- 当前位置 -->
+
+        <TextView
+            android:id="@id/location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/dang_qian_wei_zhi"
+            android:textColor="@color/black_font66" />
+
+        <View
+            android:id="@id/line_view"
+            style="@style/View_W_Black_Style"
+            android:layout_above="@id/location_tv" />
+
+        <!-- 悬浮窗 -->
+
+        <include
+            android:id="@+id/map_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/map_window"
+            android:visibility="invisible" />
+
+        <!-- 定位图标 -->
+
+        <ImageButton
+            android:id="@+id/location_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/line_view"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_current_location"
+            android:contentDescription="@string/image" />
+
+        <!-- 地图中心点 -->
+
+        <cn.com.unispark.define.MapMarkLayout
+            android:id="@+id/markLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <!-- 地图缩放加减号 -->
+
+        <LinearLayout
+            android:id="@+id/add_cut_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/location_tv"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_add_cut"
+            android:orientation="vertical" >
+
+            <!-- 【放大图标】 -->
+
+            <ImageButton
+                android:id="@+id/zoom_up_ibtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_zoom_up"
+                android:contentDescription="@null" />
+            <!-- 【缩小图标】 -->
+
+            <ImageButton
+                android:id="@+id/zoom_down_ibtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_zoom_down"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

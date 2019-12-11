@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Horizontal_White_Style" >
+
+    <!-- 【停车场详情页】之头部：停车场图片、名称、地址等 -->
+
+
+    <!-- 停车场描述图片 -->
+
+    <ImageView
+        android:id="@id/desc_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_default_park"
+        android:contentDescription="@string/image" />
+
+    <!-- 无忧角标 -->
+
+    <ImageView
+        android:id="@id/isjoin_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/label_join_corner"
+        android:contentDescription="@string/image" />
+
+    <!-- 停车场名称 -->
+
+    <TextView
+        android:id="@id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/desc_iv"
+        android:layout_toRightOf="@id/desc_iv"
+        android:text="@string/bai_hui_yi_bo_ting_che"
+        android:textColor="@color/black_font" />
+
+    <!-- 停车场地址 -->
+
+    <TextView
+        android:id="@id/address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_toRightOf="@id/desc_iv"
+        android:text="@string/yi_hai_da_sha_xue_yuan_lu"
+        android:textColor="@color/gray_font" />
+
+    <!-- 总车位 -->
+
+    <TextView
+        android:id="@id/count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_tv"
+        android:layout_toRightOf="@id/desc_iv"
+        android:drawableLeft="@drawable/icon_park_count"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:gravity="center_vertical"
+        android:text="@string/zong_che_wei_mao_hao"
+        android:textColor="@color/black_font" />
+
+    <!-- 空车位 -->
+
+    <TextView
+        android:id="@id/empty_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/count_tv"
+        android:layout_below="@id/address_tv"
+        android:layout_toRightOf="@id/count_tv"
+        android:drawableLeft="@drawable/icon_park_empty"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:gravity="center_vertical"
+        android:text="@string/kong_che_wei_mao_hao"
+        android:textColor="@color/black_font" />
+
+</RelativeLayout>

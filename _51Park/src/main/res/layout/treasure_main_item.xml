@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Common_Item_Layout_Style" >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:src="@drawable/icon_baby_car_lease" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_title"
+        android:layout_toRightOf="@id/iv"
+        android:drawableLeft="@null"
+        android:paddingLeft="@dimen/margin_left_right"
+        android:gravity="center_vertical"
+        android:text="@string/che_wei_zu_lin"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/font_comm" />
+
+    <TextView
+        android:id="@+id/detail"
+        style="@style/Common_Item_Right_Style"
+        android:text="@string/geng_pian_yi_geng_you_hui"
+        android:textColor="@color/orange_font" />
+
+</RelativeLayout>

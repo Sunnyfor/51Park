@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【主页】 -->
+
+
+    <!-- 底部导航栏 -->
+
+    <RadioGroup
+        android:id="@id/radiogroup"
+        style="@style/Layout_Match_Horizontal_Style"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa" >
+
+        <!-- 【首页】 -->
+
+        <RadioButton
+            android:id="@+id/home_rbtn"
+            style="@style/RadioButton_Main_Nav_Style"
+            android:checked="true"
+            android:drawableTop="@drawable/draw_nav_home"
+            android:text="@string/shou_ye" />
+
+        <!-- 【百宝箱】改为【服务】 -->
+
+        <RadioButton
+            android:id="@+id/baby_rbtn"
+            style="@style/RadioButton_Main_Nav_Style"
+            android:drawableTop="@drawable/draw_nav_baby"
+            android:text="@string/bai_bao_xiang" />
+
+        <!-- 【我的】 -->
+
+        <RadioButton
+            android:id="@+id/mine_rbtn"
+            style="@style/RadioButton_Main_Nav_Style"
+            android:drawableTop="@drawable/draw_nav_mine"
+            android:text="@string/wo_de" />
+    </RadioGroup>
+
+    <!-- 导航栏分割线 -->
+
+    <View
+        style="@style/View_W_Black_Style"
+        android:layout_alignTop="@id/radiogroup"
+        android:background="#e6e5e1" />
+
+    <!-- 主体容器 -->
+
+    <cn.com.unispark.define.MainViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/radiogroup"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

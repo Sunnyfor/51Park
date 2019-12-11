@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_remain_item" >
+
+    <ImageView
+        android:id="@+id/is_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/record_timer"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/dingdanhao_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/order"
+            android:textColor="@color/black_font"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dingdanhaoma_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/dingdanhao_record"
+            android:gravity="center_vertical"
+            android:text="@string/order_num"
+            android:textColor="@color/black_font"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/consumer_linear_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/money_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金   额："
+            android:textColor="@color/black_font"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/money_num_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ling_dian_ling_ling"
+            android:textColor="@color/red_font"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/time"
+        android:textColor="#9E9E9E"
+        android:textSize="15sp" />
+
+</RelativeLayout>

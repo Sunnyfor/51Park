@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- 历史记录的子条目 -->
+    <!-- 字母 -->
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        style="@style/Layout_Wrap_Vertical_Style"
+        android:background="#ffe4e4e4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Aaaaaaa"
+            android:textColor="@color/black_font" />
+
+        <TextView
+            android:id="@+id/title_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:text="Aaaaaaaaaaaaaaaaaaa"
+            android:textColor="@color/black_font" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/recode_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_header"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_park_record" >
+
+        <TextView
+            android:id="@+id/tv_platecard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_car_plate"
+            android:gravity="center"
+            android:text="京A12345"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_ispay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/label_finish" />
+
+        <ImageView
+            android:id="@+id/record_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_more" />
+
+        <TextView
+            android:id="@+id/tv_parkname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="清华科技园地下停车场"
+            android:textColor="@color/black_font" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/record_timer"
+            android:gravity="center"
+            android:text="14"
+            android:textColor="@color/orange_font"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/tv_price"
+            android:text="￥"
+            android:textColor="@color/orange_font"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/time_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_parkname"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/tv_in_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_enter"
+                android:drawablePadding="@dimen/px5"
+                android:gravity="center_vertical"
+                android:text="2014-06-04 13:44:30"
+                android:textColor="@color/gray_font" />
+
+            <TextView
+                android:id="@+id/tv_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_exit"
+                android:drawablePadding="@dimen/px5"
+                android:gravity="center_vertical"
+                android:text="2014-06-04 13:44:30"
+                android:textColor="@color/gray_font" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

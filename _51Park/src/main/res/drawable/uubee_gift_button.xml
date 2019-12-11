@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/uubee_btn_gift_disable"/>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/uubee_btn_gift_pressed"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="5dp"/>
+            <solid android:color="@color/uubee_btn_unactivated"/>
+        </shape>
+    </item>
+</selector><!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/drawable/selector_gift_button.xml -->

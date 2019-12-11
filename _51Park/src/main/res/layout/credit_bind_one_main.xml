@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 信用卡绑定第一步 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <View
+        android:id="@+id/bindview1"
+        style="@style/View_W_Style"
+        android:layout_marginTop="@dimen/px40"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_is_noband"
+        style="@style/Common_Item_Layout_Style"
+        android:layout_height="@dimen/px88"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_cn"
+            style="@style/Common_Item_Text_Style"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:drawableRight="@null"
+            android:paddingLeft="@dimen/px20"
+            android:text="信用卡号" />
+
+        <LinearLayout
+            android:id="@+id/iv_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px88"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/icon_question" />
+        </LinearLayout>
+
+        <cn.com.unispark.define.ClearEditText
+            android:id="@+id/et_cardno"
+            style="@style/Common_Item_Text_Style"
+            android:layout_toLeftOf="@id/iv_credit"
+            android:layout_toRightOf="@id/tv_cn"
+            android:background="@color/white"
+            android:drawableRight="@null"
+            android:hint="请输入信用卡号"
+            android:inputType="number"
+            android:maxLength="19"
+            android:paddingLeft="@dimen/px24"
+            android:textColor="@color/black_font"
+            android:textColorHint="@color/gray_fontbb"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bindview2"
+        style="@style/View_W_Style"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/px50"
+        android:background="@drawable/btn_common_noselect"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tishi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/px30"
+        android:text="1.完成信用卡绑定后，可享受无忧停车自动交费服务。"
+        android:textColor="@color/gray_font"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tishi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:text="信用卡号"
+        android:textColor="@color/gray_font"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_isbind"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_credit_bind"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_credit_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/credit_bank_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_default_credit" />
+
+            <TextView
+                android:id="@+id/tv_bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/credit_bank_iv"
+                android:text="招商银行"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/xin_pian_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ll_credit_bank"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bg_credit_xinpian" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/xin_pian_iv"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_credit_number" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bg_credit_number" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/bg_credit_number" />
+
+            <TextView
+                android:id="@+id/tv_credit_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="7637"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/card_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="53dp"
+            android:text="信用卡"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_prompt_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="@dimen/px5"
+            android:text="绑定信用卡之后，可在无忧停车享受先离场，后付费（自动扣费）等VIP服务。"
+            android:textColor="@color/gray_font"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

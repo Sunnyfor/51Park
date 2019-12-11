@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Horizontal_Style" >
+
+    <!-- 【余额消费】【充值记录】Fragment -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_balancerecode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_content_bg"
+        android:divider="@null"
+        android:listSelector="#00000000"/>
+    <!-- 数据为空时展示 -->
+    <TextView
+        android:id="@id/data_null_tv"
+        style="@style/Common_TextView_Style" />
+</RelativeLayout>

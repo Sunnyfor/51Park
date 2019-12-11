@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style" >
+
+    <RelativeLayout
+        style="@style/Layout_Wrap_Horizontal_Style"
+        android:layout_height="@dimen/px88"
+        android:background="@color/gray_title_bg" >
+
+        <!-- 【返回按钮】 -->
+
+        <LinearLayout
+            android:id="@+id/backLLayout"
+            style="@style/Layout_Match_Horizontal_Alpha_Style"
+            android:layout_width="@dimen/width_click"
+            android:gravity="center|left" >
+
+            <ImageView
+                android:id="@+id/backImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:contentDescription="@string/back_btn"
+                android:src="@drawable/btn_back" />
+        </LinearLayout>
+
+        <!-- 【标题文字】 -->
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/order_rgrp"
+        style="@style/Layout_Wrap_Horizontal_Style"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center" >
+
+        <!-- 当前订单 -->
+
+        <RadioButton
+            android:id="@+id/current_rbtn"
+            style="@style/RadioButton_Lease_Font_Style"
+            android:background="@drawable/draw_rbtn_left_bg"
+            android:text="@string/current_order" />
+
+        <!-- 历史订单 -->
+
+        <RadioButton
+            android:id="@+id/history_rbtn"
+            style="@style/RadioButton_Lease_Font_Style"
+            android:background="@drawable/draw_rbtn_right_bg"
+            android:text="@string/history_order" />
+    </RadioGroup>
+
+    <View style="@style/View_W_Style" />
+
+</LinearLayout>

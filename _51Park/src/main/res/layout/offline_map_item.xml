@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 离线地图子条目 -->
+
+
+    <!-- 字母 -->
+
+    <TextView
+        android:id="@id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_font" />
+
+    <View style="@style/View_W_Style" />
+
+    <RelativeLayout
+        android:id="@+id/city_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <!-- 城市 -->
+
+        <TextView
+            android:id="@id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/bei_jing_shi"
+            android:textColor="@color/black_font" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content_tv"
+            android:gravity="center_vertical"
+            android:text="@string/ling_zhao"
+            android:textColor="@color/gray_font" />
+
+        <!-- 让子控件获取焦点,父item就获取不到焦点 android:textIsSelectable="true" -->
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="@string/xia_zai"
+            android:textColor="@color/black_font" />
+    </RelativeLayout>
+
+</LinearLayout>

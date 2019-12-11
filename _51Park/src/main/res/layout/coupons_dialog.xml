@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/test0_ll"
+    style="@style/Layout_Wrap_Vertical_Style"
+    android:background="@drawable/layer_dialog_circle_white"
+    android:gravity="center_horizontal" >
+
+    <!-- 兑换码对话框 -->
+
+
+    <!-- 关闭按钮 -->
+
+    <LinearLayout style="@style/Layout_Wrap_Vertical_Alpha_Style" >
+
+        <ImageView
+            android:id="@id/clear_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:contentDescription="@string/image"
+            android:src="@drawable/btn_close_gray" />
+    </LinearLayout>
+
+    <!-- 兑换码（文字） -->
+
+    <TextView
+        android:id="@id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dui_huan_ma"
+        android:textColor="@color/black" />
+
+    <!-- 输入框 -->
+
+    <cn.com.unispark.define.ClearEditText
+        android:id="@+id/code_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/draw_exchange_code"
+        android:drawableLeft="@drawable/icon_edit_conpons"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:hint="@string/qing_shu_ru_dui_huan_ma"
+        android:textColor="@color/gray_font" />
+
+    <!-- 兑换按钮 -->
+    <Button
+        android:id="@id/finish_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/draw_exchange_code"
+        android:text="@string/dui_huan"
+        android:textColor="@color/red_font" />
+
+</LinearLayout>

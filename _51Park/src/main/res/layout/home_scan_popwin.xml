@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Horizontal_Alpha_Style"
+    android:background="#51000000" >
+
+    <!-- 首页二维码扫描PopupWindow -->
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Vertical_Alpha_Style"
+        android:layout_width="@dimen/px282"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/px108"
+        android:background="@drawable/bg_scan_popwin" >
+
+        <!-- 【PopupWindow】弹框 -->
+
+        <TextView
+            android:id="@+id/pop_scan_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginTop="@dimen/px18"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_home_scan"
+            android:drawablePadding="@dimen/px25"
+            android:gravity="left|center_vertical"
+            android:text="@string/sao_yi_sao"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px30" />
+
+        <View style="@style/View_W_Style" />
+
+        <TextView
+            android:id="@+id/pop_qrcode_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_home_myqrcode"
+            android:drawablePadding="@dimen/px25"
+            android:gravity="left|center_vertical"
+            android:text="@string/wo_de_er_wei_ma"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px30" />
+    </LinearLayout>
+
+</RelativeLayout>

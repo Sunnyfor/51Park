@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【我的停车位】页面 -->
+
+    <include
+        android:id="@+id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <!-- 数据为空展示 -->
+
+    <LinearLayout
+        android:id="@+id/data_null_ll"
+        style="@style/Layout_Match_Vertical_Style"
+        android:layout_below="@id/line_view"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/icon_data_null"
+            android:contentDescription="@string/image" />
+
+        <LinearLayout
+            style="@style/Layout_Wrap_Horizontal_Style"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您还没有租赁车位，"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@id/data_null_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去租赁"
+                android:textColor="@color/red_font"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 数据列表 -->
+
+    <ScrollView
+        android:id="@id/scrollview"
+        style="@style/Layout_Match_Vertical_Style"
+        android:layout_below="@id/line_view" >
+
+        <LinearLayout style="@style/Layout_Match_Vertical_Style" >
+
+            <!-- 未过期的列表 -->
+
+            <cn.com.unispark.define.DisplayFullListView
+                android:id="@id/listview"
+                style="@style/Common_ListView_Style" />
+
+            <!-- 查看过期车位 -->
+
+            <TextView
+                android:id="@+id/see_park_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:background="@drawable/line_dash_margin"
+                android:gravity="center"
+                android:textColor="@color/black_font"
+                android:text="@string/cha_kan_guo_qi_lie_biao"
+                android:visibility="gone" />
+
+            <!-- 已过期的列表 -->
+
+            <cn.com.unispark.define.DisplayFullListView
+                android:id="@id/listview0"
+                style="@style/Common_ListView_Style" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+# Referenced at /Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/manifests/full/androids/release/AndroidManifest.xml:102
+-keep class cn.com.unispark.application.ParkApplication { <init>(...); }
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Horizontal_Style" >
+
+    <!-- 【优惠券查看】和【支付时选择优惠券】界面 -->
+
+    <include
+        android:id="@+id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/login_content_bg"
+        android:divider="#00000000"
+        android:dividerHeight="15dp"
+        android:listSelector="#00000000" />
+
+    <TextView
+        android:id="@id/data_null_tv"
+        style="@style/Common_TextView_Style"
+        android:text="您还没有优惠券"
+        tools:ignore="HardcodedText" />
+
+    <!-- 不选择优惠券 -->
+
+    <Button
+        android:id="@+id/noselect_coupons_btn"
+        style="@style/Common_Button_White_Style"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bu_xuan_ze_you_hui_quan"
+        android:visibility="gone" />
+
+    <View
+        style="@style/View_W_Style"
+        android:layout_above="@id/noselect_coupons_btn" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【添加车牌号】界面 -->
+
+    <include
+        android:id="@+id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <!-- 车牌号 -->
+
+    <View
+        android:id="@id/line0_view"
+        style="@style/View_W_Top_Style"
+        android:layout_below="@id/line_view" />
+
+    <LinearLayout
+        android:id="@id/plate_ll"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:layout_below="@id/line0_view"
+        android:gravity="center_vertical" >
+
+        <!-- 车牌号文字 -->
+
+        <TextView
+            android:id="@id/test0_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/che_pai_hao"
+            android:textColor="@color/black_font" />
+
+        <!-- 省份 -->
+
+        <EditText
+            android:id="@+id/province_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_car_province"
+            android:gravity="center_vertical"
+            android:text="京A"
+            android:cursorVisible="false"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <!-- 车牌号输入框 -->
+
+        <cn.com.unispark.define.ClearEditText
+            android:id="@+id/plate_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layerlist_bg_plate_et"
+            android:gravity="center_vertical"
+            android:hint="@string/please_input_carcode"
+            android:maxLength="6"
+            android:textColor="@color/black_font"
+            android:textColorHint="@color/gray_fontbb"
+            android:textCursorDrawable="@null" />
+    </LinearLayout>
+
+    <!-- 保存按钮 -->
+
+    <Button
+        android:id="@id/finish_btn"
+        style="@style/Common_Button_Red_Margin_Style"
+        android:layout_below="@id/plate_ll"
+        android:layout_marginTop="@dimen/px80"
+        android:text="@string/bao_cun" />
+    <!-- 存放键盘的容器 -->
+
+    <LinearLayout
+        android:id="@+id/keyboard_ll"
+        style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+        android:layout_alignParentBottom="true" >
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_bg"
+            android:focusable="true"
+            android:labelTextSize="20sp" 
+            android:keyTextSize="20sp" 
+            android:layerType="none"
+            android:shadowRadius="0.0"
+            android:shadowColor="@color/white"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@color/white"
+            android:keyTextColor="@color/black_font"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

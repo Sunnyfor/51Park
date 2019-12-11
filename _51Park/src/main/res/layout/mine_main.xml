@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【我的】 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <ScrollView
+        android:id="@id/scrollview"
+        style="@style/Layout_Wrap_Vertical_Alpha_Style"
+        android:scrollbars="none" >
+
+        <LinearLayout style="@style/Layout_Match_Vertical_Style" >
+
+            <!-- 【头部标题栏】 -->
+
+            <RelativeLayout
+                style="@style/Layout_Wrap_Vertical_Style"
+                android:background="@drawable/bg_mine_login" >
+
+                <!-- 登录按钮 -->
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_mine_login"
+                    android:text="@string/qing_deng_lu"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px30"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/personinfo_ll"
+                    style="@style/Layout_Wrap_Vertical_Alpha_Style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px26"
+                    android:layout_marginTop="@dimen/margin40dp" >
+
+                    <!-- 姓名 -->
+
+                    <TextView
+                        android:id="@+id/nameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px30" />
+
+                    <!-- 手机号 -->
+
+                    <TextView
+                        android:id="@+id/phoneText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin5dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px30" />
+                </LinearLayout>
+
+                <!-- 更多按钮 -->
+
+                <ImageView
+                    android:id="@+id/iv_nav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px30"
+                    android:layout_marginRight="@dimen/px20"
+                    android:contentDescription="@string/image"
+                    android:src="@drawable/btn_more_white" />
+
+                <!-- 二维码 -->
+
+               <!--  <Button
+                    android:id="@+id/btn_qrcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_toLeftOf="@id/iv_nav"
+                    android:background="@drawable/btn_mine_scan" /> -->
+            </RelativeLayout>
+
+            <!-- 【我的钱包】 -->
+<!-- 
+            <View style="@style/View_W_Top_Style" />
+
+            <RelativeLayout
+                android:id="@+id/rl_my_wallet"
+                style="@style/Common_Item_Layout_Style" >
+
+                <TextView
+                    style="@style/Common_Item_Left_Style"
+                    android:drawableLeft="@drawable/icon_mine_my_wallet"
+                    android:text="@string/my_wallet" />
+
+                <TextView
+                    style="@style/Common_Item_Right_Style"
+                    android:text="@string/mywalletstring" />
+            </RelativeLayout> -->
+
+            <!-- 【账户余额】【停车券】 -->
+
+            <View style="@style/View_W_Top_Style" />
+
+            <LinearLayout
+                style="@style/Common_Item_Layout_Style"
+                android:layout_height="@dimen/px110" >
+
+                <RelativeLayout
+                    android:id="@+id/remain_ll"
+                    style="@style/Layout_Match_Vertical_Alpha_Style"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <!-- 账户余额 -->
+                    <ImageView
+   					 	android:id="@+id/iv_money"
+   					 	android:contentDescription="@string/image"
+   						android:layout_width="wrap_content"
+   						android:layout_marginRight="@dimen/px10"
+    					android:layout_height="wrap_content"
+    					android:src="@drawable/icon_mine_balance" />
+				
+				
+                    <TextView
+                        android:id="@+id/moneyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_money"
+                        android:layout_marginLeft="@dimen/px14"
+                        android:text="@string/ling_dian_ling_ling"
+                        android:textColor="@color/black_font"
+                        android:textSize="@dimen/px28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/iv_money"
+                        android:layout_below="@id/moneyText"
+                        android:text="@string/zhang_hu_yu_e"
+                        android:textColor="@color/black_font66"
+                        android:textSize="@dimen/px26" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/View_H_Style"
+                    android:layout_height="@dimen/height_title"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:background="@color/gray_view_black" />
+
+                <RelativeLayout
+                    android:id="@+id/coupons_ll"
+                    style="@style/Layout_Match_Vertical_Alpha_Style"
+                    android:layout_weight="1" 
+                    android:gravity="center">
+
+                    <!-- 停车券 -->
+                      <ImageView
+   					 	android:id="@+id/iv_count"
+   					 	android:contentDescription="@string/image"
+   						android:layout_width="wrap_content"
+    					android:layout_height="wrap_content"
+    				    android:layout_marginTop="@dimen/px20"
+    				    android:layout_marginRight="@dimen/px10"
+    					android:src="@drawable/icon_mine_coupons" />
+				
+                         
+                        <TextView
+                            android:id="@id/count_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ling"
+                             android:layout_marginLeft="@dimen/px24"
+                            android:layout_toRightOf="@id/iv_count"
+                            android:textColor="@color/black_font"
+                            android:textSize="@dimen/px28" />
+
+                        <ImageView
+                            android:id="@+id/iv_red"
+                            android:contentDescription="@string/image"
+                            android:visibility="visible"
+                            android:layout_marginLeft="@dimen/px5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/count_tv"
+                            android:src="@drawable/icon_red_point" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ting_che_quan"
+                        android:layout_toRightOf="@id/iv_count"
+                        android:layout_below="@id/count_tv"
+                        android:textColor="@color/black_font66"
+                        android:textSize="@dimen/px26" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/View_W_Style" />
+
+            <!-- 【车牌管理】 -->
+
+            <View style="@style/View_W_Top_Style" />
+
+            <TextView
+                android:id="@+id/plateManagerText"
+                style="@style/Common_Item_Text_Style"
+                android:drawableLeft="@drawable/icon_mine_car_plate"
+                android:text="@string/plate_manager" />
+
+            <View style="@style/View_W_Style" />
+
+            <!-- 【停车记录】 -->
+
+            <View style="@style/View_W_Top_Style" />
+
+            <TextView
+                android:id="@+id/parkRecordText"
+                style="@style/Common_Item_Text_Style"
+                android:drawableLeft="@drawable/icon_mine_park_record"
+                android:text="@string/park_record" />
+
+            <!-- 【我的停车位】 -->
+
+            <View style="@style/View_W_Left_Style" />
+
+            <TextView
+                android:id="@+id/tv_lease_mine"
+                style="@style/Common_Item_Text_Style"
+                android:drawableLeft="@drawable/icon_mine_my_park"
+                android:text="@string/my_park" />
+
+            <View style="@style/View_W_Style" />
+
+            <!-- 【意见反馈】 -->
+
+            <View style="@style/View_W_Top_Style" />
+
+            <RelativeLayout
+                android:id="@+id/feedback_rl"
+                style="@style/Common_Item_Layout_Style" >
+
+                <TextView
+                    style="@style/Common_Item_Left_Style"
+                    android:drawableLeft="@drawable/icon_mine_feedback"
+                    android:text="@string/yi_jian_fan_kui" />
+
+                <TextView
+                    style="@style/Common_Item_Right_Style"
+                    android:text="@string/feedbackstr" />
+            </RelativeLayout>
+
+            <View style="@style/View_W_Bottom_Style" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

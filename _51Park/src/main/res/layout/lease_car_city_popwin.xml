@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/transparent20" >
+
+    <!-- 城市选择 -->
+
+    <LinearLayout
+        android:id="@+id/lease_city_ll"
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        tools:ignore="UselessParent" >
+
+        <ListView
+            android:id="@id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray_item_bg"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/gray_line"
+            android:dividerHeight="@dimen/px1"
+            android:scrollbars="none" />
+
+        <View style="@style/View_H_Match_Style" />
+
+        <!-- 区域选择 -->
+
+        <ListView
+            android:id="@id/listview0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray_item_bg"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/gray_line"
+            android:dividerHeight="@dimen/px1"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

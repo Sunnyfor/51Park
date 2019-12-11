@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【我的二维码】界面 -->
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <!-- 个人名片 -->
+
+    <LinearLayout
+        android:id="@+id/person_info_ll"
+        android:background="@drawable/layer_dialog_circle_gray"
+        style="@style/Layout_Wrap_Vertical_Style">
+
+        <!-- 名字 -->
+
+        <TextView
+            android:id="@id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ge_ren_ming_pian"
+            android:textColor="@color/black_font47" />
+
+        <!-- 手机号 -->
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yi_wu_ba_xing"
+            android:textColor="@color/gray_font80" />
+
+        <!-- 二维码图片 -->
+
+        <ImageView
+            android:id="@id/qrcode_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/image"
+            android:src="@drawable/app_51park" />
+
+        <!-- 给收费员扫一扫完成停车缴费 -->
+
+        <TextView
+            android:id="@id/prompt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/gei_shou_fei_yuan_sao_yi_sao"
+            android:textColor="@color/gray_font80" />
+    </LinearLayout>
+
+</LinearLayout>

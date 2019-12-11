@@ -1,0 +1,140 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From 51Park:
+* .DS_Store
+* .classpath.bak
+* .idea\
+* .idea\51Park.iml
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* build.xml
+* file_jar_introduce
+* file_shared_introduce
+* proguard-project.txt
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+From Android-PullToRefresh-library:
+* LICENSE
+* build.gradle
+* pom.xml
+From ViewPageIndicator_library:
+* build.gradle
+* pom.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+gson-2.3.1.jar => com.google.code.gson:gson:2.3.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In Android-PullToRefresh-library:
+* AndroidManifest.xml => androidPullToRefreshlibrary\src\main\AndroidManifest.xml
+* assets\ => androidPullToRefreshlibrary\src\main\assets
+* res\ => androidPullToRefreshlibrary\src\main\res\
+* src\ => androidPullToRefreshlibrary\src\main\java\
+In ViewPageIndicator_library:
+* AndroidManifest.xml => viewPageIndicator_library\src\main\AndroidManifest.xml
+* assets\ => viewPageIndicator_library\src\main\assets
+* res\ => viewPageIndicator_library\src\main\res\
+* src\ => viewPageIndicator_library\src\main\java\
+In 51Park:
+* AndroidManifest.xml => _51Park\src\main\AndroidManifest.xml
+* assets\ => _51Park\src\main\assets\
+* libs\alipaySDK-20150818.jar => _51Park\libs\alipaySDK-20150818.jar
+* libs\Amap_2DMap_V2.9.2_20161026.jar => _51Park\libs\Amap_2DMap_V2.9.2_20161026.jar
+* libs\AMap_Android_3DMapSDK_V3.1.0_20151124.jar => _51Park\libs\AMap_Android_3DMapSDK_V3.1.0_20151124.jar
+* libs\AMap_Services_V2.4.0.jar => _51Park\libs\AMap_Services_V2.4.0.jar
+* libs\Android_Location_V1.3.2.jar => _51Park\libs\Android_Location_V1.3.2.jar
+* libs\Android_Navi_V1.1.2.jar => _51Park\libs\Android_Navi_V1.1.2.jar
+* libs\armeabi\libbspatch.so => _51Park\src\main\jniLibs\armeabi\libbspatch.so
+* libs\armeabi\libCNPackage.so => _51Park\src\main\jniLibs\armeabi\libCNPackage.so
+* libs\armeabi\libejTTS.so => _51Park\src\main\jniLibs\armeabi\libejTTS.so
+* libs\armeabi\libgdamapv4sdk751.so => _51Park\src\main\jniLibs\armeabi\libgdamapv4sdk751.so
+* libs\armeabi\libgdamapv4sdk751ex.so => _51Park\src\main\jniLibs\armeabi\libgdamapv4sdk751ex.so
+* libs\armeabi\libjpush170.so => _51Park\src\main\jniLibs\armeabi\libjpush170.so
+* libs\armeabi\liblocnaviSDK.so => _51Park\src\main\jniLibs\armeabi\liblocnaviSDK.so
+* libs\armeabi\libmsc.so => _51Park\src\main\jniLibs\armeabi\libmsc.so
+* libs\armeabi\libtbt.so => _51Park\src\main\jniLibs\armeabi\libtbt.so
+* libs\armeabi\libwtbt.so => _51Park\src\main\jniLibs\armeabi\libwtbt.so
+* libs\armeabi\libzbar.so => _51Park\src\main\jniLibs\armeabi\libzbar.so
+* libs\badgeview.jar => _51Park\libs\badgeview.jar
+* libs\bcprov-jdk15-143.jar => _51Park\libs\bcprov-jdk15-143.jar
+* libs\com.umeng.fb.v5.1.0.jar => _51Park\libs\com.umeng.fb.v5.1.0.jar
+* libs\core.jar => _51Park\libs\core.jar
+* libs\fastjson-1.1.45.android.jar => _51Park\libs\fastjson-1.1.45.android.jar
+* libs\fraudmetrix-2.0.4.jar => _51Park\libs\fraudmetrix-2.0.4.jar
+* libs\glide-3.6.1.jar => _51Park\libs\glide-3.6.1.jar
+* libs\httpclient-4.3.5.jar => _51Park\libs\httpclient-4.3.5.jar
+* libs\httpcore-4.3.2.jar => _51Park\libs\httpcore-4.3.2.jar
+* libs\httpmime-4.3.5.jar => _51Park\libs\httpmime-4.3.5.jar
+* libs\jpush-sdk-release1.7.0.jar => _51Park\libs\jpush-sdk-release1.7.0.jar
+* libs\MapApi.jar => _51Park\libs\MapApi.jar
+* libs\Msc.jar => _51Park\libs\Msc.jar
+* libs\nineoldandroids-2.4.0.jar => _51Park\libs\nineoldandroids-2.4.0.jar
+* libs\securepay-lib.jar => _51Park\libs\securepay-lib.jar
+* libs\SocialSDK_WeiXin_1.jar => _51Park\libs\SocialSDK_WeiXin_1.jar
+* libs\SocialSDK_WeiXin_2.jar => _51Park\libs\SocialSDK_WeiXin_2.jar
+* libs\umeng-analytics-v5.6.3.jar => _51Park\libs\umeng-analytics-v5.6.3.jar
+* libs\umeng-onlineconfig_v1.0.0.jar => _51Park\libs\umeng-onlineconfig_v1.0.0.jar
+* libs\umeng-update-v2.6.0.1.jar => _51Park\libs\umeng-update-v2.6.0.1.jar
+* libs\umeng_social_sdk.jar => _51Park\libs\umeng_social_sdk.jar
+* libs\volley.jar => _51Park\libs\volley.jar
+* res\ => _51Park\src\main\res\
+* src\ => _51Park\src\main\java\
+* src\.DS_Store => _51Park\src\main\resources\.DS_Store
+* src\cn\.DS_Store => _51Park\src\main\resources\cn\.DS_Store
+* src\cn\com\.DS_Store => _51Park\src\main\resources\cn\com\.DS_Store
+* src\cn\com\unispark\.DS_Store => _51Park\src\main\resources\cn\com\unispark\.DS_Store
+* src\cn\com\unispark\login\.DS_Store => _51Park\src\main\resources\cn\com\unispark\login\.DS_Store
+* show_head_toast_bg.9.PNG => show_head_toast_bg.9.png
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

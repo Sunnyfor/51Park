@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.com.unispark" >
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <!-- ***********************************【权限】***************************************** -->
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据。 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 获取用户设备的MAC地址，在平板设备上，无法通过IMEI标示设备，我们会将MAC地址作为用户的唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 检测联网方式，区分用户设备使用的是2G、3G或是WiFi -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 获取用户设备的IMEI，通过IMEI和MAC来唯一的标识用户(IMEI国际移动设备身份码的缩写) -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="cn.com.unispark.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+     <!-- ==================================================================== -->
+     
+    <!-- ==================================================================== -->
+    
+    <!-- 【有贝先付】同盾SDK所需权限声明 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <permission
+        android:name="cn.com.unispark.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- 【应用可以指定它所支持的硬件型号】 -->
+
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <!-- **************************************【四大组件配置】********************************* -->
+    <application
+        android:name="cn.com.unispark.application.ParkApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_51park"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+
+        <!-- 【高德key值】 -->
+        <!-- 公司key：android:value="eaff6897c5d1bf09974dbe78e2cfb1b0" -->
+        <!-- 左郁key：android:value="a1cb28656bd16ad76797b59bfc5bbfc8" -->
+        <!-- 左郁key：android:value="81b83e52e8a5730e4a0bb25adbc3d469" -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="eaff6897c5d1bf09974dbe78e2cfb1b0" />
+
+        <!-- 【友盟key值】 -->
+        <!-- 公司key：android:value="51923bfe56240b0648002883" -->
+        <!-- 左郁key：android:value="56691fb2e0f55a80dc000387" -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="51923bfe56240b0648002883" />
+
+        <!-- 【极光key值】 -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="487b54ee9b93577111a7e526" />
+
+        <!-- 【屏幕自适应】注明设计稿的尺寸 -->
+        <meta-data
+            android:name="design_width"
+            android:value="640" />
+        <meta-data
+            android:name="design_height"
+            android:value="1136" />
+
+        <!-- ******************************【打包渠道号】 ********************************* -->
+        <!-- 【h5界面】 -->
+        <meta-data android:name="UMENG_CHANNEL" android:value="h5.com" />
+        <!-- 【官网】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="51park.com" /> -->
+        <!-- 1.【360手机助手】 -->
+        <!-- <meta-data  android:name="UMENG_CHANNEL"  android:value="360.cn" /> -->
+        <!-- 2.【百度】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="baidu.com" /> -->
+        <!-- 3.【豌豆荚】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="wandoujia.com" /> -->
+        <!-- 4.【腾讯应用宝】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="qq.com" /> -->
+        <!-- 5.【安智】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="anzhi.com" /> -->
+        <!-- 6.【小米市场】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="xiaomi.com" /> -->
+        <!-- 7.【华为智汇云】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="hicloud.com" /> -->
+        <!-- 8.【OPPO市场】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL"  android:value="oppo.com" /> -->
+		<!-- 9.【安卓市场】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="hiapk.com" /> -->
+        <!-- 10.【91手机助手】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="91.com" /> -->
+
+        <!-- ************************************暂停发布******************************************** -->
+
+
+        
+        <!-- 4.【应用汇】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="appchina.com" /> -->
+        <!-- 5.【机锋】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="gfan.com" /> -->
+        <!-- 10.【优亿市场】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="eoemarket.com" /> -->
+        <!-- 11.【木蚂蚁】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="mumayi.com" /> -->
+        <!-- 13.【联想乐商店】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="lenovo.com" /> -->
+        <!-- 15.【中兴市场】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="ztems.com" /> -->
+        <!-- 16.【三星应用市场】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="samsung.com" /> -->
+        <!-- 18.【魅族市场】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL"  android:value="meizu.com" /> -->
+        <!-- 19.【移动MM】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="10086.cn" /> -->
+        <!-- 20.【联通沃商店】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="wo.com.cn" /> -->
+        <!-- 21.【电信天翼空间】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="189store.com" /> -->
+        <!-- 22.【应用宝应用宝CPD】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="yingyongbao-CPD-20150401" /> -->
+        <!-- 23.【今日头条CPC0401】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="jinritoutiao-CPC-20150401" /> -->
+        <!-- 24.【百度手机助手CPD】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="baiduzhushou-CPD-20150401" /> -->
+        <!-- 25.【安卓市场CPD】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="anzhuoshichang-CPD-20150401" /> -->
+        <!-- 26.【91手机助手CPD】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="91zhushou-CPD-20150401" /> -->
+        <!-- 27.【艾德思奇CPA】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="adsq-CPA-20150401" /> -->
+        <!-- 28.【移创联盟CPA】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="yichuanglianmeng-CPA-20150401" /> -->
+        <!-- 29.【扫码下载】 -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="saomaxiazai-20150401" /> -->
+
+
+        <!-- test -->
+        <!-- <meta-data android:name="com.baidu.lbsapi.API_KEY"  android:value="i5rMfYAHlHxm1FmZ1ctufspe" /> -->
+        <!-- <meta-data android:name="UMENG_APPKEY"  android:value="518275d856240b159102f6cb" /> -->
+        <!-- <meta-data android:name="UMENG_CHANNEL"  android:value="test.com" /> -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="51park.cn" /> -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="qrcode.51park.cn" /> -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="alipay.online" /> -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="alipay.offline" /> -->
+        <!-- <meta-data android:name="UMENG_CHANNEL"  android:value="alipay.offline2online" /> -->
+        <!-- <meta-data android:name="UMENG_CHANNEL" android:value="bbs" /> -->
+
+
+        <!-- 【启动页】 -->
+        <activity
+            android:name="cn.com.unispark.login.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【测试】 -->
+        <activity android:name="cn.com.unispark.TestActivity" />
+
+        <!-- 【首页】地图,找车位 -->
+        <activity
+            android:name="cn.com.unispark.fragment.home.map.MapActivity"
+            android:launchMode="singleTop" />
+
+        <!-- 【智能推荐停车场】 -->
+        <activity
+            android:name="cn.com.unispark.fragment.home.map.TuiJianActivity"
+            android:launchMode="singleTop" />
+
+        <!-- 【登录】 -->
+        <activity
+            android:name=".login.LoginActivity"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <!-- 【登录】阅读协议 -->
+        <activity android:name=".login.ReadAgreeActivity" />
+
+        <!-- 【主页】 -->
+        <activity android:name=".MainActivity" />
+
+        <!-- 【百宝箱】车位租赁 -->
+        <activity android:name="cn.com.unispark.fragment.treasure.lease.LeaseCarActivity" />
+
+        <!-- 【跳转到某活动界面】 -->
+        <activity android:name=".fragment.home.viewpager.WebActiveActivity" />
+
+        <!-- 【百宝箱】【活动中心】 -->
+        <activity android:name=".fragment.treasure.activity.ActiveActivity" />
+
+        <!-- 【首页】【地图】车位列表 -->
+
+        <!-- 【首页】【找车位】高德语音导航 -->
+        <activity
+            android:name="cn.com.unispark.fragment.home.map.navigation.NavVoiceActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 【首页】【找车位】高德语音导航 -->
+        <activity
+            android:name="cn.com.unispark.fragment.home.map.navigation.NavDetailActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 【首页】【地图】搜索 -->
+        <activity android:name=".fragment.home.map.SearchActivity" />
+
+        <!-- 【首页】记录车位 -->
+        <activity
+            android:name=".fragment.home.recordcar.RecordCarActivity"
+            android:launchMode="singleTask" />
+
+        <!-- 【首页】交停车费 -->
+        <activity android:name=".fragment.home.pay.PayFeeActivity" />
+
+        <!-- 【首页】【交停车费】交费结果 -->
+        <activity android:name="cn.com.unispark.fragment.home.pay.PayResultActivity" />
+
+        <!-- 【首页】【交停车费】交费详情 -->
+        <activity android:name=".fragment.home.pay.OrderDetailsActivity" />
+
+        <!-- 【交停车费】选择优惠券 -->
+        <activity android:name=".fragment.home.pay.PayCouponsActivity" />
+        <!-- 自定义相机 -->
+        <activity
+            android:name="cn.com.unispark.fragment.mine.vipcard.PhotoActivity"
+            android:launchMode="singleTask" />
+        <!-- 【我的】优惠券 -->
+        <activity
+            android:name=".fragment.mine.coupons.CouponsActivity"
+            android:theme="@style/StyledIndicators" />
+        <!-- 车主百宝箱 -->
+        <!-- 个人资料 -->
+        <activity android:name="cn.com.unispark.fragment.mine.personinfo.PersonInfoActivity" />
+        <!-- 我的钱包 -->
+        <activity android:name="cn.com.unispark.fragment.mine.wallet.WalletActivity" />
+        <!-- 车牌管理 -->
+        <activity android:name="cn.com.unispark.fragment.mine.plate.PlateManagerActivity" />
+        <!-- 车牌添加 -->
+        <activity android:name="cn.com.unispark.fragment.mine.plate.PlateAddActivity" />
+        <!-- 车牌找回 -->
+        <activity android:name="cn.com.unispark.fragment.mine.plate.PlateBackActivity" />
+        <!-- 车牌审核结果 -->
+        <activity android:name="cn.com.unispark.fragment.mine.plate.PlateResultActivity" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name="cn.com.unispark.fragment.mine.conversation.ConversationActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 我的租赁 -->
+        <activity android:name="cn.com.unispark.fragment.treasure.lease.LeaseMyActivity" />
+
+        <!-- 租赁详情 -->
+        <activity android:name="cn.com.unispark.fragment.treasure.lease.LeaseDetailActivity" />
+
+        <!-- 自定义日历 -->
+        <activity android:name="cn.com.unispark.fragment.treasure.lease.calendar.CalendarActivity" />
+
+        <!-- 信用卡绑定第一步 -->
+        <activity android:name="cn.com.unispark.fragment.mine.creditcard.CreditBindOneActivity" />
+
+        <!-- 信用卡绑定第二步 -->
+        <activity android:name="cn.com.unispark.fragment.mine.creditcard.CreditBindTwoActivity" />
+
+        <!-- 无密支付第一步 -->
+        <activity android:name="cn.com.unispark.fragment.mine.creditcard.CreditPayOneActivity" />
+
+        <!-- 无密支付第二步 -->
+        <activity android:name="cn.com.unispark.fragment.mine.creditcard.CreditPayTwoActivity" />
+
+        <!-- 【无忧用户二维码扫描】 -->
+        <activity
+            android:name=".fragment.mine.vipcard.QrScanActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+
+        <!-- 【无忧用户生成后的二维码】 -->
+        <activity android:name=".fragment.mine.vipcard.UserQrActivity" />
+
+        <!-- 无忧会员卡解、绑管理 -->
+        <activity android:name="cn.com.unispark.fragment.mine.vipcard.VipCardActivity" />
+
+        <!-- 【消息】 -->
+
+        <!-- 【设置】 -->
+        <activity android:name=".fragment.mine.setting.SettingActivity" />
+        <activity android:name="cn.com.unispark.fragment.mine.setting.offlinemap.DownLoadManagerActivity" />
+        <activity android:name="cn.com.unispark.fragment.mine.recharge.RecodeDetailActivity" />
+
+        <!-- 消息（无忧公告） -->
+        <activity android:name="cn.com.unispark.fragment.mine.msgpush.MsgActivity" />
+
+        <!-- 消息详情（无忧公告） -->
+        <activity android:name="cn.com.unispark.fragment.mine.msgpush.MsgDetailActivity" />
+
+        <!-- 停车记录 -->
+        <activity android:name="cn.com.unispark.fragment.mine.parkrecord.ParkRecordActivity" />
+
+        <!-- 余额充值 -->
+        <activity android:name="cn.com.unispark.fragment.mine.recharge.RechargeActivity" />
+
+        <!-- 余额 -->
+        <activity android:name="cn.com.unispark.fragment.mine.recharge.RemainActivity" />
+
+        <!-- 余额明细 -->
+        <activity
+            android:name="cn.com.unispark.fragment.mine.recharge.RemainDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+
+        <!-- 【服务须知】 -->
+        <activity android:name="cn.com.unispark.fragment.mine.setting.aboutinfo.ServiceAgreeActivity" />
+        <!-- 【关于我们】 -->
+        <activity android:name="cn.com.unispark.fragment.mine.setting.aboutinfo.AboutInfoActivity" />
+
+        <!-- 【离线地图】 -->
+
+        <!-- 【城市切换】 -->
+        <activity android:name=".fragment.mine.setting.citylist.CityListActivity" />
+        <!-- 【离线地图】 -->
+
+        <!-- 新手指南 -->
+
+        <!-- 【停车场详情】 -->
+        <activity android:name="cn.com.unispark.fragment.home.map.ParkInfoActivity" />
+
+        <!-- 周边检索 -->
+
+        <!-- 租赁购买结果 -->
+        <activity android:name="cn.com.unispark.fragment.treasure.lease.LeaseResultActivity" />
+
+        <!-- 有贝先付 -->
+
+        <!-- 微信支付结果处理 -->
+        <activity
+            android:name="cn.com.unispark.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+        <!-- 微信分享 -->
+        <activity
+            android:name="cn.com.unispark.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!-- 【LLYT SDK START】连连支付 -->
+        <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- 支付宝钱包支付 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <service
+            android:name="com.yintong.secure.service.PayService"
+            android:exported="false" >
+        </service>
+
+        <!-- 【友盟自动更新配置Service和Activity】 -->
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 友盟分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- android:theme="@style/Theme.UMDialog" -->
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+
+        <!-- 极光推送 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.com.unispark" />
+            </intent-filter>
+        </activity>
+
+        <!-- *******************************【Receiver广播】********************************* -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter android:priority="1000" >
+
+                <!-- since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- since 1.3.5 -->
+                <category android:name="cn.com.unispark" />
+                <!-- since 1.3.5 -->
+            </intent-filter>
+            <!-- since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- 【极光推送的接收器】 -->
+        <receiver
+            android:name="cn.com.unispark.fragment.mine.msgpush.util.MsgReceiver"
+            android:enabled="true"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- 【Required  用户注册SDK的intent】 -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- 【Required  用户接收SDK消息的intent】 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- 【Required  用户接收SDK通知栏信息的intent】 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 【Required  用户打开自定义通知栏的intent】 -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- 【Optional 用户接受Rich Push Javascript 回调函数的intent】 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 【接收网络变化 连接/断开 since 1.6.3】 -->
+                <category android:name="cn.com.unispark" />
+            </intent-filter>
+        </receiver>
+
+        <!-- *******************************【Service服务】********************************* -->
+
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- 【有贝先付】同盾SDK所需权限声明 -->
+        <activity
+            android:name="com.uubee.prepay.activity.FirstPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UubeeActionBarTheme" />
+        <activity
+            android:name="com.uubee.prepay.activity.FastPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UubeeDialogActivityTheme" />
+        <activity
+            android:name="com.uubee.prepay.activity.CashSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UubeeActionBarTheme" />
+        <activity
+            android:name="com.uubee.prepay.activity.PayResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UubeeActionBarTheme" />
+        <activity
+            android:name="com.uubee.prepay.activity.PersonalInfoSupplyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UubeeDialogActivityTheme" />
+        <activity
+            android:name="com.uubee.prepay.activity.HelpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UubeeActionBarTheme" />
+    </application>
+
+</manifest>

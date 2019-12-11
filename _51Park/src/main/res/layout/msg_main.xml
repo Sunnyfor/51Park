@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px10"
+        android:layout_marginRight="@dimen/px10"
+        android:background="@color/list_bg"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/px20"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@color/transparent" />
+
+    <!-- 【数据为空时展示】 -->
+
+    <TextView
+        android:id="@id/data_null_tv"
+        style="@style/Common_TextView_Style"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px135" />
+
+</LinearLayout>

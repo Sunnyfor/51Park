@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【停车卡】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <!-- 未绑定会员卡 -->
+
+    <RelativeLayout
+        android:id="@+id/unbind_card_rl"
+        style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+        android:background="@drawable/layer_dialog_circle_white"
+        android:visibility="gone" >
+
+        <!-- 添加按钮、文字 -->
+
+        <TextView
+            android:id="@+id/add_card_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/px40"
+            android:drawableTop="@drawable/btn_add_vipcard"
+            android:text="@string/bang_ding_ting_che_ka"
+            android:textColor="@color/gray_font" />
+    </RelativeLayout>
+
+    <!-- 绑定会员卡 -->
+
+    <RelativeLayout
+        android:id="@+id/bind_card_rl"
+        style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+        android:background="@drawable/bg_vipcard"
+        android:visibility="gone" >
+
+        <!-- 卡号 -->
+
+        <TextView
+            android:id="@+id/card_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/ka_hao"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!-- 提示语 -->
+
+    <TextView
+        android:id="@id/prompt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_prompt_red"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:gravity="center_vertical"
+        android:textColor="@color/gray_fontbb" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_White_Style" >
+
+    <!-- 【收费详情】对话框 -->
+
+    <RelativeLayout style="@style/Layout_Match_Vertical_White_Style" >
+
+        <!-- 关闭按钮 -->
+
+        <Button
+            android:id="@id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_close_circle" />
+
+        <!-- 收费详情（文字） -->
+
+        <TextView
+            android:id="@id/price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:text="@string/shou_fei_xiang_qing"
+            android:textColor="@color/gray_font" />
+
+        <!-- 虚线 -->
+
+        <View
+            android:id="@id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/price_tv"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/line_dash" />
+
+        <!-- 白天价格标题 -->
+
+        <TextView
+            android:id="@+id/today_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_view"
+            android:layout_centerHorizontal="true"
+            android:background="#f4c51f"
+            android:gravity="center"
+            android:text="@string/ri_jian_shi_jian_duan"
+            android:textColor="@color/white" />
+
+        <!-- 白天价格列表容器 -->
+
+        <LinearLayout
+            android:id="@+id/today_price_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/today_price_tv"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" />
+
+        <!-- 夜间价格标题 -->
+
+        <TextView
+            android:id="@+id/night_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/today_price_ll"
+            android:layout_centerHorizontal="true"
+            android:background="#34a6e5"
+            android:gravity="center"
+            android:text="@string/ri_jian_shi_jian_duan"
+            android:textColor="@color/white" />
+
+        <!-- 夜间价格列表容器 -->
+
+        <LinearLayout
+            android:id="@+id/night_price_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/night_price_tv"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+</ScrollView>

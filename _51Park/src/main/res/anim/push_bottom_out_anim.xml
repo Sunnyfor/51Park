@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 上下滑出式 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <!-- 选取照片的Activity的样式风格，采取对话框的风格 -->
+    <translate
+        android:duration="200"
+        android:fromYDelta="0"
+        android:toYDelta="50%p" />
+</set>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city_name">
+        <item>北京</item>
+        <item>上海</item>
+        <item>武汉</item>
+        <item>西安</item>
+    </string-array>
+    <string-array name="city_code">
+        <item>010</item>
+        <item>021</item>
+        <item>027</item>
+        <item>029</item>
+    </string-array>
+    <string-array name="city_point">
+        <item>39.996116,116.33216</item>
+        <item>31.239879, 121.499674</item>
+        <item>30.57923,114.270902</item>
+        <item>34.26481,108.94412</item>
+    </string-array>
+    <string-array name="layer_map">
+        <item>卫星视图</item>
+        <item>实时路况</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uubee_gray_dark" >
+
+    <TextView
+        android:id="@+id/tv_dialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pay_top_tip_height"
+        android:layout_below="@+id/layout_activity_title"
+        android:background="@color/yellow_ffface"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="@string/pay_no_pass_tip_text"
+        android:textColor="@color/black_666666"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/uubee_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_dialog_top"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true" >
+
+            <RelativeLayout
+                android:id="@+id/pay_money_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/pay_money_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/pay_money_title"
+                    android:textColor="@color/gray_light_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/pay_money_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pay_money_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:textColor="@color/uubee_red"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/pay_detail_open_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_money_layout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="-5dp" >
+
+                <View
+                    android:id="@+id/dot_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/uubee_dot_line"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/pay_detail_open_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/uubee_arrow_down" />
+            </FrameLayout>
+
+            <include
+                android:id="@+id/pay_detail_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_detail_open_layout"
+                layout="@layout/uubee_pay_detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/pay_layout"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_marketing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_666666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/customer_service_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black_666666"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_detail_open_layout"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/white_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#c8c8d0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/credit_account_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="23dp"
+                        android:background="@drawable/bg_card_pay"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <TextView
+                            android:id="@+id/title_verify_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/credit_account_id"
+                            android:text="@string/credit_account"
+                            android:textColor="@android:color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/credit_account_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_toRightOf="@id/title_verify_phone"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_credit_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/tv_balance"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="-12dp"
+                            android:text="@string/credit_money_remain"
+                            android:textColor="@android:color/white"
+                            android:textSize="11sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/cash_ticker_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/uubee_white_button"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/uubee_arrow_right"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/cash_ticker_num"
+                        android:textColor="@drawable/uubee_white_button_text"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attention_prepay_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:drawableLeft="@drawable/uubee_ico_check"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/attention_prepay"
+                        android:textColor="@color/black_666666"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/uubee_btn_activate"
+                        android:singleLine="true"
+                        android:text="@string/pay_button_text"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/credit_limit_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/uubee_bg_repay_date"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/uubee_repay_date"
+                        android:textColor="@color/gray_light_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@drawable/uubee_pay_divider" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ViewStub
+        android:id="@+id/active_account_dialog_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_activity_title"
+        android:layout="@layout/uubee_dialog_active" />
+
+    <ViewStub
+        android:id="@+id/dialog_verify_phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_activity_title"
+        android:layout="@layout/uubee_dialog_verify_phone" />
+
+    <ViewStub
+        android:id="@+id/dialog_verify_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_activity_title"
+        android:layout="@layout/uubee_dialog_verify_name" />
+
+    <ViewStub
+        android:id="@+id/dialog_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_activity_title"
+        android:layout="@layout/uubee_dialog_verify_code" />
+
+    <ViewStub
+        android:id="@+id/dialog_activate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_activity_title"
+        android:layout="@layout/uubee_dialog_activate" />
+
+    <include
+        android:id="@+id/first_pay_loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/uubee_loading_progress"
+        android:visibility="gone" />
+
+</RelativeLayout> <!-- From: file:/E:/workspace/PrepayDemo/prepay/src/main/res/layout/activity_first_pay.xml -->

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style" >
+
+    <!-- 【选择支付方式】布局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80" >
+
+        <TextView
+            android:id="@+id/choice_payway_tv"
+            style="@style/Common_Item_Text_Style"
+            android:layout_height="@dimen/px80"
+            android:drawableRight="@null"
+            android:text="@string/xuan_ze_zhi_fu_fang_shi"
+            android:textColor="@color/black_font99" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_w_view"
+        style="@style/View_W_Style" />
+
+    <RadioGroup style="@style/Layout_Wrap_Vertical_Style" >
+
+        <!-- 微信 -->
+
+        <RadioButton
+            android:id="@id/wechat_rbtn"
+            style="@style/RadioButton_PayWay_Item_Style"
+            android:checked="true"
+            android:drawableLeft="@drawable/icon_wechat"
+            android:text="@string/wei_xin" />
+
+        <View style="@style/View_W_Left_Style" />
+
+        <!-- 支付宝 -->
+
+        <RadioButton
+            android:id="@id/alipay_rbtn"
+            style="@style/RadioButton_PayWay_Item_Style"
+            android:drawableLeft="@drawable/icon_alipay"
+            android:text="@string/zhi_fu_bao" />
+
+        <View style="@style/View_W_Style" />
+
+        <!-- 有贝先付 -->
+
+        <RadioButton
+            android:id="@id/uubee_rbtn"
+            style="@style/RadioButton_PayWay_Item_Style"
+            android:drawableLeft="@drawable/icon_uubee"
+            android:text="@string/you_bei_xian_fu"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/uubee_line"
+            style="@style/View_W_Style"
+            android:visibility="gone" />
+
+        <!-- 信用卡 -->
+
+        <RadioButton
+            android:id="@id/credit_rbtn"
+            style="@style/RadioButton_PayWay_Item_Style"
+            android:drawableLeft="@drawable/icon_credit"
+            android:text="@string/xin_yong_ka"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/credit_line"
+            style="@style/View_W_Style"
+            android:visibility="gone" />
+    </RadioGroup>
+
+</LinearLayout>

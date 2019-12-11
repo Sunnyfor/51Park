@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 信用卡管理界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <View
+        style="@style/View_W_Style"
+        android:layout_marginTop="@dimen/left_margin" />
+
+    <RelativeLayout style="@style/Common_Item_Layout_Style" >
+
+        <TextView
+            android:id="@+id/tv_cn"
+            style="@style/Common_Item_Text_Style"
+            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:drawableRight="@null"
+            android:text="信用卡号" />
+
+        <cn.com.unispark.define.ClearEditText
+            android:id="@+id/tv_cardno"
+            style="@style/Common_Item_Text_Style"
+            android:layout_toRightOf="@id/tv_cn"
+            android:background="@color/white"
+            android:drawableRight="@null"
+            android:hint="信用卡号"
+            android:maxLength="11"
+            android:textColor="@color/black_font"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+    <View style="@style/View_W_Style" />
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_common_noselect"
+        android:text="下一步" />
+
+    <TextView
+        android:id="@+id/tv_tishi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="1.完成信用卡绑定后，可享受无忧停车自动交费服务。"
+        android:textColor="@color/gray_font"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_tishi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:text="信用卡号"
+        android:textColor="@color/gray_font"
+        android:textSize="12sp" />
+
+</LinearLayout>

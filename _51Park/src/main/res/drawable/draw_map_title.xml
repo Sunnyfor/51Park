@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 【地图】搜索栏以及停车场类型选择 -->
+    <item android:drawable="@color/transparent" android:state_checked="false"/>
+    <item android:drawable="@drawable/bg_park_type" android:state_checked="true"/>
+
+</selector>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【未使用的抵扣券】子条目 -->
+
+    <RelativeLayout
+        android:id="@+id/tingchequan_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_coupons_red" >
+        <!-- 优惠金额 -->
+
+        <LinearLayout
+            android:id="@+id/detail_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/coupon_type_tv"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/coupon_prompt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/gray_font80"
+                    android:text="@string/dai_jin_quan"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_youhuijine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@color/orange_font"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px2"
+                    android:gravity="center"
+                    android:text="元"
+                    android:textColor="@color/orange_font" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2015.03.15"
+                android:textColor="@color/gray_font80" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/is_show_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/draw_coupon_btn"
+            android:button="@null"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/coupon_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ems="1"
+            android:text="@string/you_hui_quan"
+            android:textColor="@color/gray_font80" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/coupon_desc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/gray_fontbb"
+        android:lineSpacingExtra="3dp"
+        android:text="仅需支付1.0元即可使用"
+        android:visibility="gone" />
+
+</LinearLayout>

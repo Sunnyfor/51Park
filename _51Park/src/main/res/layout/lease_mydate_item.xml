@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Wrap_Vertical_Style" >
+
+    <!-- 【我的停车位】过期子条目页面 -->
+
+    <RelativeLayout
+        style="@style/Layout_Wrap_Vertical_Style"
+        android:layout_marginTop="@dimen/px20"
+        android:background="#dcdcdc"
+        android:paddingRight="@dimen/px20" >
+
+        <!-- 停车场描述图片 -->
+
+        <ImageView
+            android:id="@id/desc_iv"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_default_park"
+            android:contentDescription="@string/image" />
+
+        <!-- 租赁类型：包月/计次 -->
+
+        <TextView
+            android:id="@id/type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_month_gray"
+            android:contentDescription="@string/image"
+            android:textColor="@color/white" />
+
+        <!-- 停车场名称 -->
+
+        <TextView
+            android:id="@id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/desc_iv"
+            android:singleLine="true"
+            android:text="@string/bai_hui_yi_bo_ting_che"
+            android:textColor="@color/gray_font"
+            android:textSize="18sp" />
+
+        <!-- 停车场租赁服务详情介绍 -->
+
+        <TextView
+            android:id="@id/detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_tv"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/desc_iv"
+            android:singleLine="true"
+            android:text="将于2015年9月21日到期"
+            android:textColor="@color/gray_font"
+            tools:ignore="HardcodedText" />
+
+        <!-- 停车场地址 -->
+
+        <TextView
+            android:id="@id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_tv"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/desc_iv"
+            android:drawableLeft="@drawable/icon_location_gray"
+            android:singleLine="true"
+            android:drawablePadding="@dimen/padding_drawable"
+            android:text="@string/yi_hai_da_sha_xue_yuan_lu"
+            android:textColor="@color/gray_font"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

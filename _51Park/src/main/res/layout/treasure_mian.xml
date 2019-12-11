@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【百宝箱】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <!-- 【车位租赁】 -->
+
+    <View style="@style/View_W_Top_Style" />
+
+    <RelativeLayout
+        android:id="@+id/car_lease_rl"
+        style="@style/Common_Item_Layout_Style" >
+
+        <ImageView
+            android:id="@+id/car_lease_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/icon_server_lease" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_title"
+            android:layout_toRightOf="@id/car_lease_iv"
+            android:drawableLeft="@null"
+            android:gravity="center_vertical"
+            android:text="@string/che_wei_zu_lin"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/font_comm" />
+
+        <TextView
+            android:id="@+id/car_lease_detail"
+            style="@style/Common_Item_Right_Style"
+            android:text="@string/geng_pian_yi_geng_you_hui"
+            android:textColor="@color/orange_font" />
+    </RelativeLayout>
+
+    <View style="@style/View_W_Bottom_Style" />
+
+    <!-- 【汽车专家】 -->
+
+    <View style="@style/View_W_Style" />
+
+    <RelativeLayout
+        android:id="@+id/car_home_rl"
+        style="@style/Common_Item_Layout_Style" >
+
+        <ImageView
+            android:id="@+id/car_home_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_server_answer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_title"
+            android:layout_toRightOf="@id/car_home_iv"
+            android:drawableLeft="@null"
+            android:gravity="center_vertical"
+            android:text="@string/qi_che_zhuan_jia"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/font_comm" />
+
+        <TextView
+            android:id="@+id/car_home_detail"
+            style="@style/Common_Item_Right_Style"
+            android:text="@string/qi_che_wen_da" />
+    </RelativeLayout>
+
+    <View style="@style/View_W_Bottom_Style" />
+
+   
+   
+    <!-- 车行易  违章查询 -->
+    <RelativeLayout
+        android:id="@+id/che_xing_yi_rl"
+        style="@style/Common_Item_Layout_Style" >
+
+        <ImageView
+            android:id="@+id/che_xing_yi_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/icon_server_weizhang" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_title"
+            android:layout_toRightOf="@id/che_xing_yi_iv"
+            android:drawableLeft="@null"
+            android:gravity="center_vertical"
+            android:text="@string/che_xing_yi"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/font_comm" />
+
+        <TextView
+            android:id="@+id/che_xing_yi_detail"
+            style="@style/Common_Item_Right_Style"
+            android:text="@string/qing_song_cha_wei_zhang" />
+    </RelativeLayout>
+
+    <View style="@style/View_W_Style" />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style" >
+
+    <!-- 【车位租赁】页面 -->
+
+    <include
+        android:id="@+id/title_ic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View
+        android:id="@id/line_view"
+        style="@style/View_W_Black_Style"
+        android:layout_below="@id/title_ic" />
+
+    <!-- 【城区选择】和【类型】 -->
+
+    <LinearLayout
+        android:id="@+id/choice_ll"
+        style="@style/Layout_Wrap_Horizontal_Style"
+        android:layout_height="@dimen/px80"
+        android:layout_below="@id/line_view"
+        android:background="@color/gray_title_bg" >
+
+        <LinearLayout
+            style="@style/Layout_Match_Horizontal_Alpha_Style"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/lease_city_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawablePadding="@dimen/px10"
+                android:drawableRight="@drawable/draw_show_city"
+                android:gravity="center"
+                android:text="@string/cheng_qu_xuan_ze"
+                android:textColor="@drawable/font_show_city"
+                android:textSize="@dimen/px28" />
+        </LinearLayout>
+
+        <View
+            style="@style/View_H_Match_Style"
+            android:layout_margin="@dimen/px16" />
+
+        <LinearLayout
+            style="@style/Layout_Match_Horizontal_Alpha_Style"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/lease_type_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawablePadding="@dimen/px10"
+                android:drawableRight="@drawable/draw_show_city"
+                android:gravity="center"
+                android:text="@string/lei_xing"
+                android:textColor="@drawable/font_show_city"
+                android:textSize="@dimen/px28" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@id/line0_view"
+        style="@style/View_W_Style"
+        android:layout_below="@id/choice_ll" />
+
+    <ListView
+        android:id="@id/listview"
+        style="@style/Common_ListView_Style"
+        android:layout_below="@id/line0_view" />
+
+    <TextView
+        android:id="@id/data_null_tv"
+        style="@style/Common_TextView_Style" />
+
+</RelativeLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/umeng-onlineconfig_v1.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="716926f94af2f74098d6579fcd72462ad4773c73">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/umeng-onlineconfig_v1.0.0_acd410c23cfdf566c3d9ed801469dafc24a6311a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/AMap_Services_V2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3057067b0d15469c99c2e8b1a87d66c94862ac7a">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/AMap_Services_V2.4.0_74d4601b498888635612d510ae5b5a88c6e16050/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/badgeview.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f77b0850a8adcf49b273a8f29ba481612aaaa19f">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/badgeview_d041fbaed83c66da2f57f9fe6f481f674e39c839/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/incremental-classes/androids/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="58d065ef23673ba674f17c1d25070e21c2ee28b1">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/10000/instant-run-bootstrap_28d1966f460dafeb31cc54436d6fd60593b1e83b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/fraudmetrix-2.0.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bc098c24e6474a5615b1f7df40644a5145bb126f">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/fraudmetrix-2.0.4_b037212592be5d61b2ccd31a82a5881053ed6ebb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/incremental-runtime-classes/androids/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/10000/instant-run_015528c030c39676a27c300075c8b2d3598a76cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/securepay-lib.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1e854e144149d7a2366430ac445905ff583332c7">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/securepay-lib_d636e7db26e50209fb4393deed39d3f4e2d2fbfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/com.umeng.fb.v5.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="877e13f8424604c708dfd061b2ef731c13289519">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/com.umeng.fb.v5.1.0_cc61fdf122945efefa7cf19cf453588d306432fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/nineoldandroids-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/nineoldandroids-2.4.0_734ec58018c1516f92eee56970dd97b73887cc6f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/bcprov-jdk15-143.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f01520ef76840559157b93c0043f3a7e1a964c16">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/bcprov-jdk15-143_30bd16166a4537ff8c55167d04e691fd3424c943/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="119ef9a57b5365288a68dae9ae94c5535acabb04">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/volley_c4404d19605e0394ab20a2664b20ea2ae5a8e6d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/MapApi.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="19585b9a850e7a831688ec5c237cfc0ca26dd8fb">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/MapApi_bd93b82647ec496b4724f269cf02d02889cf0ecd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/umeng-update-v2.6.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e76510af0986842b672c59d29502f3d29866320a">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/umeng-update-v2.6.0.1_3b20d45013fe50adbf660835514a29689093f2f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/alipaySDK-20150818.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6dde19fc34adb03c637b17fdaa754e0c02cf75a0">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/alipaySDK-20150818_fbfb1d09962a7800583555eade8f9325e3b0643c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/AMap_Android_3DMapSDK_V3.1.0_20151124.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3defe0196be8eb94f9fc28b4bf4b01cf267b9ce4">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/AMap_Android_3DMapSDK_V3.1.0_20151124_c41bd7e020476f89617a009f331ef9a6a4095b2d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/httpclient-4.3.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9783d89b8eea20a517a4afc5f979bd2882b54c44">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/httpclient-4.3.5_1172129741b6ded0b28f829dd7761dcd1f1dc01a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/Msc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="14e02a95fa56eb18b385a4f156b4fb14d4721df4">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/Msc_86898f734e36e1fbb2a887b84e77f2b774fa00ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/jpush-sdk-release1.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7c1b3d49baa7c2b66461fe638376de02c1aeccb6">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/jpush-sdk-release1.7.0_c51b98bf9ae1ab84425d56fcaaed893d9eb8fcc2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/Android_Location_V1.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b64d1f38ef7ee28b538d61a39d040f249c65587c">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/Android_Location_V1.3.2_13d1b6ae04ab4186f5e01e8256ed5deb93d4acc2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/Android_Navi_V1.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="608ac5c3d9ff1e979301a88f5cb8e66d75333db4">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/Android_Navi_V1.1.2_e611a3b6a9c773a3b1c530f01434877ef0a6b103/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/Amap_2DMap_V2.9.2_20161026.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dcbd36804ce96710b0acb0bc7e2e2854a800d2a3">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/Amap_2DMap_V2.9.2_20161026_333587e07eae278c1ca9b295b48469aa5a5af422/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/httpcore-4.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="31fbbff1ddbf98f3aa7377c94d33b0447c646b6e">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/httpcore-4.3.2_99fa1a7b7a417ec14e41870c53f880db6cc4cb4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/httpmime-4.3.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1dd0d38df9c6d21e893f2e52403f1cd99e91cd81">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/httpmime-4.3.5_1581a9a97ce9c84960efa3b8fccf8fe91be10b79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/core.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="327bddfe22740db0419bd719a0f950b6ad2b3c3f">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/core_d8e53392ebd6aed1fb8b61593a78843ce2868937/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/tbs_sdk_thirdapp_v2.3.0.1048_36801_sharewithdownload_obfs_20160829_200437.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="00494a2d8e0c2cb13230b7b7aea15d9d7fe92dc0">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/tbs_sdk_thirdapp_v2.3.0.1048_36801_sharewithdownload_obfs_20160829_200437_3c0d42e3f85cade9b0e765f5a1dfdcf8663ae0a1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/libs/umeng_social_sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="32732b2ad43b95f53939cff3acf31ace5a6a7f72">
+        <dex dex="/Users/aa/Desktop/Joann/unispark/51Park/_51Park/build/intermediates/transforms/dex/androids/debug/folders/1000/2/umeng_social_sdk_5ca599a7d4ca2aacc9133c755f1eddd15732c215/classes.dex" />
+    </item>
+
+</items>

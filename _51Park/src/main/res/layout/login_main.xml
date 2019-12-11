@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="#ececec" >
+
+    <!-- 【一键登录】界面 -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        layout="@layout/common_title" />
+
+    <View style="@style/View_W_Black_Style" />
+
+    <!-- 【无忧停车图片】 -->
+
+    <ImageView
+        android:id="@id/app_image_iv"
+        android:layout_width="@dimen/width_image"
+        android:layout_height="@dimen/width_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/px49"
+        android:contentDescription="@string/image"
+        android:src="@drawable/icon_login_51park" />
+
+    <!-- 【手机号】 -->
+
+    <View style="@style/View_W_Top_Style" />
+
+    <cn.com.unispark.define.ClearEditText
+        android:id="@+id/phone_et"
+        style="@style/Common_Item_Text_Style"
+        android:drawablePadding="@dimen/left_margin"
+        android:drawableRight="@null"
+        android:hint="@string/please_input_phone"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="@color/black_font"
+        android:textColorHint="@color/gray_fontbb"
+        android:textSize="@dimen/px28" />
+
+    <!-- 【获取验证码】 -->
+
+    <View style="@style/View_W_Style" />
+
+    <RelativeLayout
+        style="@style/Layout_Wrap_Horizontal_White_Style"
+        android:layout_height="@dimen/height_title" >
+
+        <TextView
+            android:id="@+id/time_down_tv"
+            android:layout_width="@dimen/px230"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/get_vertify_code"
+            android:textColor="@color/gray_fontbb"
+            android:textSize="@dimen/px28" />
+
+        <cn.com.unispark.define.ClearEditText
+            android:id="@+id/vertify_et"
+            style="@style/Common_Item_Text_Style"
+            android:layout_toLeftOf="@id/time_down_tv"
+            android:drawableRight="@null"
+            android:hint="@string/please_input_message"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/black_font"
+            android:textColorHint="@color/gray_fontbb"
+            android:textSize="@dimen/px28" />
+
+        <View
+            style="@style/View_H_Match_Style"
+            android:layout_toLeftOf="@id/time_down_tv" />
+    </RelativeLayout>
+
+    <View style="@style/View_W_Style" />
+
+    <!-- 【登录】按钮 -->
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/Common_Button_Red_Margin_Style"
+        android:layout_marginTop="@dimen/height_title"
+        android:background="@drawable/btn_common_noselect"
+        android:text="@string/login" />
+
+    <!-- 【无忧停车服务协议 】 -->
+
+    <LinearLayout
+        style="@style/Layout_Wrap_Horizontal_Alpha_Style"
+        android:layout_marginTop="@dimen/margin_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30"
+            android:text="@string/read_agreenment"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px24" />
+
+        <TextView
+            android:id="@+id/agreenment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/park_server_ment"
+            android:textColor="#32c6dd"
+            android:textSize="@dimen/px24" />
+    </LinearLayout>
+
+</LinearLayout>

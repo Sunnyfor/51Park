@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style"
+    android:orientation="vertical" >
+
+    <!-- 【省份键盘】界面 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <GridView
+            android:id="@id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@color/gray"
+            android:cacheColorHint="@android:color/transparent"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="10"
+            android:verticalSpacing="10dp" />
+    </FrameLayout>
+
+    <Button
+        android:id="@id/close_btn"
+        style="@style/Common_Button_Red_Margin_Style"
+        android:text="@string/qu_xiao" />
+
+</LinearLayout>
